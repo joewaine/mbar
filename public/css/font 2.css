@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  src: url('AvenirLTStd-Black.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Black.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Black.svg#2d55e36446b90be6f85f84e74f83cb6c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  src: url('AvenirLTStd-BlackOblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-BlackOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-BlackOblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-BlackOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-BlackOblique.svg#e1f1b9ff71f6fdb08b538f6fae257b49') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 45 Book';
+  src: url('AvenirLTStd-Book.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Book.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Book.svg#68ae522795537c9085762656931f5f55') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 45 Book';
+  src: url('AvenirLTStd-BookOblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-BookOblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-BookOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-BookOblique.svg#2d92c7089977381e7146422e05fbbf56') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  src: url('AvenirLTStd-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Heavy.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Heavy.svg#a1eb5a5cfcec2ff7c30fe732daf3b2e8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  src: url('AvenirLTStd-HeavyOblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-HeavyOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-HeavyOblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-HeavyOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-HeavyOblique.svg#f41fefacdf302de3efb9b2c9861fc114') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 35 Light';
+  src: url('AvenirLTStd-Light.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Light.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Light.svg#a3894d49b0c62da6d619d8a85ab36753') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 35 Light';
+  src: url('AvenirLTStd-LightOblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-LightOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-LightOblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-LightOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-LightOblique.svg#f6864133f6203c14080d854a2e6ba855') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  src: url('AvenirLTStd-Medium.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Medium.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Medium.svg#ef669aafc9b550b465914779447af056') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 65 Medium';
+  src: url('AvenirLTStd-MediumOblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-MediumOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-MediumOblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-MediumOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-MediumOblique.svg#16942b001d1c5a1b77694d27e48bb1ff') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  src: url('AvenirLTStd-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Oblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Oblique.svg#3940793a09c3eddee1217f9201c66bf9') format('svg'); /* Legacy iOS */
+       
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std 55 Roman';
+  src: url('AvenirLTStd-Roman.eot'); /* IE9 Compat Modes */
+  src: url('AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AvenirLTStd-Roman.woff') format('woff'), /* Modern Browsers */
+       url('AvenirLTStd-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirLTStd-Roman.svg#1297092b477b7e1dcddfcf3bbb416185') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
