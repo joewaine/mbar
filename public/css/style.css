@@ -112,10 +112,16 @@ img.logo{
   padding-top: 194px;
   padding-bottom: 176px;
   text-align: center;
-  width: 650px;
+  width: 100%;
   margin: 0 auto;
   display: inline-block;
 }
+
+.contact-items-container{
+  margin: 0 auto;
+  width: 650px;
+}
+
 
 .contact-item{
   background: url(../img/contact-item-bg.svg);
@@ -1344,6 +1350,11 @@ section.menu {
 .media {
     padding-bottom: 6px;
 }
+
+.contact-items-container{
+    width: 100%;
+  }
+
 
 }
 

@@ -15,6 +15,7 @@
 
 {% block content %}
 	<h1>News</h1>
+
 	{% for entry in craft.entries.section('news').find() %}
 		<article>
 			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
