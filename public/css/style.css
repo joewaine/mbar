@@ -1,15 +1,20 @@
-/**{
-      -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-      -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-      -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-      -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-      transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    }*/
-
 body{
     background: url(../img/clouds.jpg);
     font-family: 'Avenir LT Std 45 Book';
     background-position: top center;
+    cursor: url(../img/plane.svg), auto;
+}
+
+
+#image{
+position:absolute;
+}
+
+
+
+img#image{
+  width: 100px;
+  margin-left: -100px;
 }
 
 #content,
@@ -397,6 +402,15 @@ border-radius: 19px;
 }
 
 
+.panels.inside{
+  display: none;
+}
+.panels.inside:first-child{
+display: block
+}
+
+
+
 .menu-footer{
     background-image: url(../img/menu-footer.svg);
     background-repeat: no-repeat;
@@ -463,10 +477,18 @@ border-radius: 19px;
 }
 
 .find-us{
-  background: url(../img/find-us-bg.jpg);
+  /*background: url(../img/find-us-bg.jpg);*/
   padding-top: 174px;
   padding-bottom: 90px;
   text-align: center;
+
+  background: url(../img/find-us-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
 }
 
 
@@ -534,23 +556,19 @@ border-radius: 19px;
     margin-left: -86px;
     background-repeat: no-repeat;
     padding-top: 70px;
+    text-align: center;
   }
-
-
-
-
 
 .slideshow-big-about{
   position: relative;
 }
 
-
-
 .slideshow-box-text{
-background: #F2C217;
-height: 208px;
-width: 100%;
-position: relative;
+  background: #F2C217;
+  min-height: 208px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
 }
 
 .slideshow-box-text p{
@@ -725,6 +743,13 @@ input:focus {
   margin-right: 30px;
   margin-bottom: 30px;
   display: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 .item-name{
@@ -770,6 +795,7 @@ input:focus {
     color: #232323;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: center;
 }
 
 .media .article{
@@ -872,6 +898,9 @@ footer{
     padding-bottom: 100px;
 }
 
+
+
+
 .menu-expand{
   display: none;
 }
@@ -898,14 +927,14 @@ footer{
 
 
 .family-member{
-    background-image: url(http://placehold.it/350x150);
     margin-top: 0px;
     padding-top: 100px;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     height: 429px;
     color: transparent;
-    background: no-repeat center center fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -931,6 +960,15 @@ footer{
     line-height: 40px;
     margin-top: 0 !important;
     font-family: 'Avenir LT Std 65 Medium';
+}
+
+
+.our-family-header{
+  text-align: center;
+}
+
+section{
+   margin-top: -1px;
 }
 
 @media only screen and (max-width: 1560px) {
@@ -1047,8 +1085,29 @@ footer{
 }
 
 
+
+@media only screen and (max-width: 860px) {
+  .menu-tabs li:first-child,
+.menu-tabs li:last-child{
+      width: 0;
+}
+.menu-tabs li:nth-child(2){
+    border-top-left-radius: 20px;
+}
+.menu-tabs li:nth-last-child(2){
+    border-top-right-radius: 20px;
+}
+}
+
+
+
 @media only screen and (max-width: 768px) {
 
+
+  .family-member {
+    background-position: center center;
+    height: 200px;
+}
 
 
 .slideshow-box-text{
@@ -1080,7 +1139,6 @@ nav ul{
     height: 230px;
     float: left;
     position: relative;
-    background: pink;
     margin-right: 20px;
     margin-bottom: 20px;
     display: none;
@@ -1089,6 +1147,19 @@ nav ul{
 
 .expand-button {
   width: 46%;
+}
+
+
+/*expand-button members rotated*/
+
+.expand-button.rotated {
+bottom: 0;
+/*left: 50%;*/
+/*margin-left: -74px;*/
+/*width: 116px;*/
+/*height: 116px;*/
+margin-bottom: 20px;
+margin-top: 20px;
 }
 
 
@@ -1233,13 +1304,51 @@ nav ul li{
   padding: 0px 0 90px 0;
 }
 
+
+.family-member{
+    background-position: center center;
+    height: 200px;
+  }
+
+
+.item-description-modal p {
+    color: #00AEEF;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0 !important;
+    font-family: 'Avenir LT Std 65 Medium';
 }
+
+
+
+.item-description-modal h2 {
+    color: #031191;
+    font-size: 27px;
+    margin-bottom: 10px;
+     font-family: 'Avenir LT Std 65 Medium';
+    margin-top: 0;
+}
+
+
+.modal{
+    padding-bottom: 80px;
+}
+
+
+
+
+
+
+}
+
+
 
 @media only screen and (max-width: 660px) {
 
-
-
-
+  .family-member {
+    background-position: center center;
+    height: 100px;
+}
 
   .events-description {
     font-size: 16px;
@@ -1356,5 +1465,16 @@ section.menu {
   }
 
 
+.modal {
+    width: 86%;
+    margin-top: 6px;
 }
+
+}
+
+
+/*cursors*/
+
+
+
 

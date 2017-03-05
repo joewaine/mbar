@@ -24,19 +24,28 @@
 
 	<!-- {{ entry.body }} -->
 
-
-
 {% for block in entry.homePageModules %}
-
     {% if block.type == "hero" %}
-
 <header id="header">
     <div class="container">
     <ul class="social-links">
 
+
+{% for socialItem in craft.entries.section('socialLinks') %}
+<li>
+<a target="_blank" href="{{ socialItem.linkUrl }}">
+twitter
+{{ socialItem.title }}
+{% for asset in socialItem.image %}
+    <img src="{{ asset.url }}">
+{% endfor %}
+</a>
+</li>
+{% endfor %}
+
     </ul>
 
-    <h1><a href="http://localhost:8888/">
+    <h1><a href="{{ siteUrl }}">
         <img class="logo" src="img/logo.svg" alt="">
     </a></h1>
 
@@ -46,12 +55,21 @@
     menu    ↓
 </div>
     <ul>
-<li><a href="homepage">
-      Homepage
-      </a></li>
-    <li><a href="news">
-      News
-      </a></li>
+
+
+{% for topNavigation in craft.entries.section('topNavigation') %}
+<li>
+<a href="#{{ topNavigation.slug }}">
+{{ topNavigation.title }}
+</a>
+</li>
+{% endfor %}
+
+
+
+
+
+
             </ul>
 
 
@@ -111,142 +129,59 @@ eee
 <!-- menu tabs -->
 
 
-<section class="menu">
+
+
+
+
+
+<section id="menu" class="menu">
+
+
+
+
+
 
 <ul class="menu-tabs">
-    <li>first</li>
 <!-- repeater here: -->
-<li class="active">hello</li>
-<li>hello</li>
-<li>hello</li>
-<li>hello</li>
-<!-- repeater here: -->
-    <li>last</li>
+<li>first</li>
+{% for menuType in craft.entries.section('menus') %}
+<li>{{ menuType.title }}</li>
+{% endfor %}
+<li>last</li>
 </ul>
 
 <div class="panels one">
 <div class="panels two">
 <div class="panels three">
 
-<div class="panels inside" style="display: block;">
-<div class="clearfix">
-<div class="meal-group">
 
 
-<!-- list -->
 
 
 <!-- list -->
-
-
-
-<ul>
-<li>header</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-<div class="meal-group">
-<ul>
-<li>header</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-</div>
-<div class="menu-footer">menu</div>
-</div>
-
-
-<div class="panels inside" style="display: none;">
+<!-- potential first loop  -->
+{% for menuType in craft.entries.section('menus') %}
+<div class="panels inside">
 <div class="clearfix">
+{% for item in menuType.menuGroup %}
 <div class="meal-group">
 <ul>
-<li>2</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
+<li>{{ item.menuGroupTitle }}</li>
+{% for dish in item.menuGroupEntry %}
+<li>{{ dish.title }}  <span class="price">{{ dish.price }}</span></li>
+{% endfor %}
 </ul>
 </div>
-<div class="meal-group">
-<ul>
-<li>header</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
+{% endfor %}
 </div>
 <div class="menu-footer">menu</div>
+</div>
+{% endfor %}
+<!-- potential first loop -->
+<!-- list -->
+
 </div>
 
-<div class="panels inside" style="display: none;">
-<div class="clearfix">
-<div class="meal-group">
-<ul>
-<li>3</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-<div class="meal-group">
-<ul>
-<li>header</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-</div>
-<div class="menu-footer">menu</div>
-</div>
-<div class="panels inside" style="display: none;">
-<div class="clearfix">
-<div class="meal-group">
-<ul>
-<li>4</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-<div class="meal-group">
-<ul>
-<li>header</li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">13</span></li>
-<li>food  <span class="price">14</span></li>
-</ul>
-</div>
-</div>
-<div class="menu-footer">menu</div>
 </div>
 </div>
 </div>
@@ -258,11 +193,7 @@ eee
 
    {% elseif block.type == "findUs" %}
 
-
-
-<!-- find us -->
-
-<section class="find-us">
+<section id="find-us" class="find-us">
 
     <div class="find-panel">
 
@@ -270,9 +201,52 @@ eee
     find us!
 </div>
 
+
+
+<style>
+
+.youtube {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.youtube iframe,
+.youtube object,
+.youtube embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+</style>
+
+
 <div class="youtube">
     {{ block.youtubeUrl|raw }}
 </div>
+
+<style>
+    .map {
+        position: relative;
+        /*padding-bottom: 75%;*/
+        height: 0;
+        overflow: hidden;
+            height: 381px !important;
+    }
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 381px !important;
+    }
+</style>
+
+
 <div class="map">
     {{ block.googleMapsUrl|raw }}
 </div>
@@ -281,7 +255,6 @@ eee
 
 
 </section>
-
 
 
 
@@ -294,7 +267,7 @@ eee
 <!-- slideshow big about  -->
 
 
-<section class="slideshow-big-about">
+<section id="about" class="slideshow-big-about">
 
 <div class="embellishment">
     emb
@@ -303,40 +276,25 @@ eee
 <div id="owl2" class="owl-carousel owl-theme">
 
 
-<div class="item">
-<img src="img/about.jpg" alt="">
+
+<!-- list -->
+<!-- potential first loop  -->
+{% for aboutslides in craft.entries.section('aboutUs') %}
+
+        <div class="item" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}">
+{% for asset in aboutslides.image %}
+<img src="{{ asset.url }}" alt="">
+    {% endfor %}
+
 <div class="about">
-    <p>
-        first
-       First paragraph Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet.
-    </p>
+    <!-- <p> -->
+ {{ aboutslides.body }}
+  <!-- </p> -->
 </div>
 </div>
-
-<div class="item">
-<img src="img/about.jpg" alt="">
-<div class="about">
-    <p>
-        second
-       First paragraph Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet.
-    </p>
-</div>
-</div>
-
-
-<div class="item">
-<img src="img/about.jpg" alt="">
-<div class="about">
-    <p>
-        third
-       First paragraph Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit amet.
-    </p>
-</div>
-</div>
-
-
-
-
+{% endfor %}
+<!-- potential first loop -->
+<!-- list -->
 </div>
 
 
@@ -362,7 +320,7 @@ eee
 
 <!-- events booking -->
 
-<section class="events-booking">
+<section id="events-booking" class="events-booking">
 
     <div class="events-dodecagon">
             events booking
@@ -441,7 +399,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 <!-- our family -->
 
-<section class="our-family">
+<section id="our-family" class="our-family">
 <div class="our-family-header">
     our family
 </div>
@@ -450,100 +408,30 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 <div class="clearfix">
 
-<div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
+<!-- list -->
+<!-- potential first loop  -->
+{% for member in craft.entries.section('ourFamily') %}
+    {% for asset in member.image %}
+        <div class="item-single" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}">
+    {% endfor %}
+<div class="item-name">
+{{ member.title }}
+</div>
+<div class="item-description">
+{{ member.body }}
+</div>
+</div>
+{% endfor %}
+<!-- potential first loop -->
+<!-- list -->
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-        <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-        <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-        <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
 <div class="expand-button members">
     expand
@@ -562,7 +450,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 
 <!-- media-->
 
-<section class="media">
+<section id="media" class="media">
 <div class="media-header">
     media
 </div>
@@ -571,146 +459,45 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <div class="item-container">
 
 <div class="clearfix">
-<div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
 
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
-
-    <div class="item-single">
-    <div class="item-name">
-        Wassef
-    </div>
-    <div class="item-description">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    </div></div>
+<!-- list -->
+<!-- potential first loop  -->
+{% for mediaitem in craft.entries.section('media') %}
+{% for asset in mediaitem.image %}
+        <div class="item-single" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}">
+    {% endfor %}
+<div class="item-name">
+{{ mediaitem.title }}
+</div>
+<div class="item-description">
+{{ mediaitem.body }}
+</div>
+</div>
+{% endfor %}
+<!-- potential first loop -->
+<!-- list -->
 
 <div class="expand-button articles">
     expand
 </div>
 
-
 </div>
-
-
 </div></div>
-
-
 </section>
 
 <!-- our family -->
 
-
     {% endif %}
 
 {% endfor %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {% endblock %}
+
+
+
+
+
+
+

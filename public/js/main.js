@@ -109,6 +109,10 @@ $('.slideshow-box-text').append($('#owl2 .active .about').html());
 
 // menu switches
 
+
+$('.menu-tabs li:eq(1)').addClass('active');
+
+
 $('.menu-tabs li').click(function(){
 
 $('.menu-tabs li').removeClass('active');
@@ -132,6 +136,28 @@ $('.inside:eq(' + ind + ')').show();
 
 
 // members
+
+
+
+
+if($('.our-family .item-single').length < 6){
+
+
+$('.our-family .expand-button').hide();
+
+}
+
+
+
+if($('.media .item-single').length < 6){
+
+
+$('.media .expand-button').hide();
+
+}
+
+
+
 
 
 for(i=0;i<5;i++){
@@ -162,7 +188,14 @@ $('.members, .articles').click(function(){
 $('.item-single').click(function(){
 
 
-$('body').prepend('<div class="overlay"><div class="modal"><div class="family-member" style="background-image: url(http://placehold.it/350x150)">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p><button class="close-modal">x</button></div></div></div>');
+
+
+
+
+$('body').prepend('<div class="overlay"><div class="modal"><div class="family-member" style="background-image: url(' + $(this).data('image') + ')">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p><button class="close-modal">x</button></div></div></div>');
+
+
+
 
 // $('body').append('<div class="overlay"><div class="modal">fuck<button class="close-modal">x</button></div></div>');
 
@@ -197,5 +230,16 @@ $('nav ul').toggle();
 
 // menu
 
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
+
+
+
+// canvaus
 
 
