@@ -1027,6 +1027,19 @@ color: blue;
 text-decoration: none;
 }
 
+
+
+#waypoints.fixedwaypoint{
+  position: fixed;
+  top: -10px;
+  z-index: 1000;
+}
+
+body.fixedwaypoint{
+  margin-top: 87px;
+}
+
+
 @media only screen and (max-width: 1560px) {
 
 .item-row,.media-row{
