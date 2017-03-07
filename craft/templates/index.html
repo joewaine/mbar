@@ -98,13 +98,18 @@ twitter
 <section class="schedule-items">
 <div class="schedule">
 <div class="hours">
-tuesday/wednesday 4-9   thursday 4-11   friday 4-11   saturday 5-11   sunday 5-9
+
+{% for scheduleitems in craft.entries.section('scheduleModule') %}
+{{ scheduleitems.line1 }}
 <br>
-Happy Hour 4-6 (on patio weather permitting)
+{{ scheduleitems.line2 }}
 </div>
 <div class="address">
-eee
+{{ scheduleitems.line3Bottom }}
 </div>
+
+{% endfor %}
+
 </div>
 </section>
 <!-- schedule items -->
@@ -328,7 +333,7 @@ height: 100%;
 <div class="events-description">
 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quisaliquam erat volutpatLorem ipsum dolor sit amet, consectetuer adipiscing elit.
+{{ block.eventsbookingDescription }}
 
 </div>
 
@@ -377,15 +382,20 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="events-slideshow">
 <div id="owl3" class="owl-carousel owl-theme">
+
+
+
+<!-- list -->
+<!-- potential first loop  -->
+{% for eventSlides in craft.entries.section('eventsBookingSlides') %}
 <div class="item">
-    <img src="img/event-slide-1.png" alt="">
+{% for asset in eventSlides.image %}
+<img src="{{ asset.url }}" alt="">
+    {% endfor %}
 </div>
-<div class="item">
-    <img src="img/event-slide-2.png" alt="">
-</div>
-<div class="item">
-    <img src="img/event-slide-3.png" alt="">
-</div>
+{% endfor %}
+<!-- potential first loop -->
+<!-- list -->
 </div></div></div></div>
 
 </section>
@@ -471,10 +481,17 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
     {% endfor %}
 <div class="item-name">
 {{ mediaitem.title }}
+
+
 </div>
 <div class="item-description">
 {{ mediaitem.body }}
 </div>
+<div class="press-link-text">
+    {{ mediaitem.pressLinkText }}
+</div>
+<div class="press-link">{{ mediaitem.pressLinkUrl }}</div>
+
 </div>
 {% endfor %}
 <!-- potential first loop -->

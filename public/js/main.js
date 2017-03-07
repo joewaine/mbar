@@ -185,21 +185,16 @@ $('.members, .articles').click(function(){
 
 
 
-$('.item-single').click(function(){
-
-
-
-
-
-
+$('#our-family .item-single').click(function(){
 $('body').prepend('<div class="overlay"><div class="modal"><div class="family-member" style="background-image: url(' + $(this).data('image') + ')">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p><button class="close-modal">x</button></div></div></div>');
-
-
-
-
 // $('body').append('<div class="overlay"><div class="modal">fuck<button class="close-modal">x</button></div></div>');
+});
 
 
+
+$('#media .item-single').click(function(){
+$('body').prepend('<div class="overlay"><div class="modal"><div class="family-member" style="background-image: url(' + $(this).data('image') + ')">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p><p class="press-link-modal">link:<br><a target="_blank" href="' + $(this).find('.press-link').text() + '">' + $(this).find('.press-link-text').text() + '</a></p><button class="close-modal">x</button></div></div></div>');
+// $('body').append('<div class="overlay"><div class="modal">fuck<button class="close-modal">x</button></div></div>');
 });
 
 

@@ -678,7 +678,11 @@ form input[type="submit"]{
 
 
 form textarea{
-  height: 200px;
+/*height: 200px;*/
+
+height: 59px;
+padding-bottom: 150px;
+
 }
 
 button.close-modal,
@@ -819,6 +823,41 @@ input:focus {
   text-align: left;
 
 }
+
+
+.media .item-single .item-name,
+.our-family .item-single .item-name,
+.media .item-single,
+.our-family .item-single{
+     -webkit-transition: padding 50ms ease-out 0ms;
+    -moz-transition: padding 50ms ease-out 0ms;
+    -o-transition: padding 50ms ease-out 0ms;
+    transition: padding 50ms ease-out 0ms;
+}
+
+.media .item-single:hover .item-name{
+  padding-bottom:25px;
+
+
+  cursor: pointer;
+
+}
+
+
+.media .item-single:hover,
+.our-family .item-single:hover{
+    cursor: pointer;
+}
+
+.our-family .item-single:hover .item-name{
+  padding-bottom:25px;
+
+  cursor: pointer;
+}
+
+
+
+
 .media-row{
   width: 1558px;
   margin: 0 auto;
@@ -969,6 +1008,23 @@ footer{
 
 section{
    margin-top: -1px;
+}
+
+
+.menu-tabs li:first-child,
+.menu-tabs li:last-child{
+pointer-events: none !important;
+}
+
+.press-link-text,
+.press-link{
+  display: none;
+}
+
+
+p.press-link-modal a{
+color: blue;
+text-decoration: none;
 }
 
 @media only screen and (max-width: 1560px) {
