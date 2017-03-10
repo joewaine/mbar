@@ -9,22 +9,6 @@
 
 return array(
 
-        '*' => array(
-        ),
-
-        'testsite.mamnoon.webfactional.com' => array(
-    'siteUrl' => 'http://testsite.mamnoon.webfactional.com/',
-    'environmentVariables' => array(
-                'basePath' => $_SERVER['DOCUMENT_ROOT'].'/',
-                'siteUrl'  => 'http://testsite.mamnoon.webfactional.com/',
-    ),
-    'enableCsrfProtection' => true,
-    'omitScriptNameInUrls' => 'auto',
-    'cpTrigger' => 'admin',
-    'devMode' => false
-        ),
-
-        'localhost' => array(
     // Base site URL
     'siteUrl' => null,
 
@@ -43,10 +27,7 @@ return array(
     // Control Panel trigger word
     'cpTrigger' => 'admin',
 
-        // Dev Mode (see https://craftcms.com/support/dev-mode)
-        'devMode' => false,
-        ),
-
-
+	// Dev Mode (see https://craftcms.com/support/dev-mode)
+	'devMode' => false,
 
 );

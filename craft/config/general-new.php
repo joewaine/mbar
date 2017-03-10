@@ -1,3 +1,5 @@
+
+
 <?php
 
 /**
@@ -13,15 +15,13 @@ return array(
         ),
 
         'testsite.mamnoon.webfactional.com' => array(
-    'siteUrl' => 'http://testsite.mamnoon.webfactional.com/',
-    'environmentVariables' => array(
-                'basePath' => $_SERVER['DOCUMENT_ROOT'].'/',
-                'siteUrl'  => 'http://testsite.mamnoon.webfactional.com/',
-    ),
-    'enableCsrfProtection' => true,
-    'omitScriptNameInUrls' => 'auto',
-    'cpTrigger' => 'admin',
-    'devMode' => false
+                'siteUrl' => 'http://mamnoon.craft.dev/',
+                'devMode' => true,
+                'cache'   => true,
+                'environmentVariables' => array(
+                        'basePath' => $_SERVER['DOCUMENT_ROOT'].'/',
+                        'siteUrl'  => 'http://mamnoon.craft.dev/',
+                )
         ),
 
         'localhost' => array(
