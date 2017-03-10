@@ -250,8 +250,8 @@ var waypoint = new Waypoint({
   element: document.getElementById('waypoints'),
   handler: function(direction) {
 
-$('#waypoints').toggleClass('fixedwaypoint');
-$('body').toggleClass('fixedwaypoint');
+$('#waypoints').toggleClass('fixedwaypoint', direction=='down').fadeIn();
+$('body').toggleClass('fixedwaypoint', direction=='down');
 
 
   }
