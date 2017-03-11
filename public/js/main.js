@@ -238,3 +238,21 @@ $(document).on('click', 'a', function(event){
 // canvaus
 
 
+
+
+
+// waypoints
+
+
+
+
+var waypoint = new Waypoint({
+  element: document.getElementById('waypoints'),
+  handler: function(direction) {
+
+$('#waypoints').toggleClass('fixedwaypoint', direction=='down').fadeIn();
+$('body').toggleClass('fixedwaypoint', direction=='down');
+
+
+  }
+})
