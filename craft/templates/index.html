@@ -72,8 +72,16 @@ twitter
 
             </ul>
 
+{% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
+<div class="announcements">
+{{ timedAnnouncement.title }}
+f
+</div>
+{% endfor %}
 
             </nav>
+
+
         </header>
 
 <!-- contact items -->
@@ -173,7 +181,7 @@ twitter
 <ul>
 <li>{{ item.menuGroupTitle }}</li>
 {% for dish in item.menuGroupEntry %}
-<li>{{ dish.title }}  <span class="price">{{ dish.price }}</span></li>
+<li><span class="price">{{ dish.price }}</span><div class="dish-title">{{ dish.title }}</div></li>
 {% endfor %}
 </ul>
 </div>
@@ -247,12 +255,21 @@ height: 100%;
         top: 0;
         left: 0;
         width: 100% !important;
-        height: 381px !important;
+/*        height: 381px !important;*/
+            height: 530px !important;
     }
+
+
+
+    .scrolloff {
+        pointer-events: none;
+    }
+
+
 </style>
 
 
-<div class="map">
+<div class="map" id="canvas1">
     {{ block.googleMapsUrl|raw }}
 </div>
 

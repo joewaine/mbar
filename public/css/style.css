@@ -41,17 +41,18 @@ img#image{
 }
 
 nav{
-  background: #031191;
-  width: 100%;
-  height: 77px;
-  margin-top: 10px;
-  text-align: center;
+    background: #031191;
+    width: 100%;
+    height: 62px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 nav ul{
   display: inline-block;
   list-style-type: none;
   text-transform: lowercase;
+  margin-top: 10px;
 }
 
 nav ul li{
@@ -109,7 +110,7 @@ nav a:hover{
 
 
 img.logo{
-  width: 375px;
+  width: 335px;
 }
 
 
@@ -163,13 +164,14 @@ float: right
 }
 
 .schedule{
-  background-image: url(../img/hours-bg.svg);
-  background-repeat: no-repeat;
-  text-align: center;
-  width: 938px;
-  height: 175px;
-  margin: 0 auto;
-  padding: 25px 0 0;
+    background-image: url(../img/hours-bg.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 948px;
+    height: 185px;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    background-position: center top;
 }
 
 .schedule .hours{
@@ -512,6 +514,7 @@ display: block
     left: 50%;
     margin-left: -93px;
     padding-top: 42px;
+        font-family: 'Avenir LT Std 65 Medium';
 }
 
 
@@ -1037,6 +1040,20 @@ text-decoration: none;
 
 body.fixedwaypoint{
   margin-top: 87px;
+}
+
+
+.dish-title{
+  width: 90%;
+}
+
+.announcements{
+    width: 100%;
+    height: 50px;
+    background: #a7ccd7;
+    margin-top: -10px;
+    padding-top: 10px;
+    text-align: left;
 }
 
 
