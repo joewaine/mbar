@@ -68,18 +68,20 @@ twitter
 
 
 
-
-
             </ul>
+
+
+            </nav>
 
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
 <div class="announcements">
 {{ timedAnnouncement.title }}
-f
+
+<button class="close-announcement">X</button>
+
 </div>
 {% endfor %}
 
-            </nav>
 
 
         </header>
@@ -88,14 +90,24 @@ f
 <section class="contact-items">
     <div class="contact-items-container">
 <div class="contact-item">
-<div class="contact-item-text">
+<div class="contact-item-text left">
 
-  hello
+<span href="https://resy.com/cities/sea/mbar" id="resyButton-w6cxoffp">_</span>
+
+
+
+
+  <!-- <a href="" class="contact-line"> -->
+<!-- reserve -->
+<!-- <br> -->
+<!-- online -->
+
+<!-- </a> -->
 </div>
 </div>
 <div class="contact-item">
 <div class="contact-item-text">
-  hello
+<a href="tel:+12064578287">206 457 8287</a>
 </div>
 </div>
 </div>
