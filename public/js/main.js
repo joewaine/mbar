@@ -24,6 +24,7 @@ $('#owl1').prepend($('#instafeed').html());
 setTimeout(function(){
 
 $('#owl1').owlCarousel({
+  center: true,
     loop:true,
     margin:0,
     nav:true,
