@@ -227,9 +227,11 @@ $('nav ul').toggle();
 
 $(document).on('click', 'a', function(event){
     event.preventDefault();
-
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - 74;
+// alert($( $.attr(this, 'href') ).offset().top);
+// alert(amountOfScroll);
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: amountOfScroll
     }, 500);
 });
 
@@ -279,4 +281,17 @@ $('body').toggleClass('fixedwaypoint', direction=='down');
             $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
         });
     });
+
+
+
+
+
+
+
+$('.close-announcement').click(function(){
+
+    $(this).parent().fadeOut();
+});
+
+
 

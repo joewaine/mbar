@@ -3,6 +3,11 @@ body{
     font-family: 'Avenir LT Std 45 Book';
     background-position: top center;
     cursor: url(../img/plane.svg), auto;
+
+
+
+
+
 }
 
 
@@ -41,18 +46,19 @@ img#image{
 }
 
 nav{
-    background: #031191;
+    background: #0524d8;
     width: 100%;
-    height: 62px;
+    height: 77px;
     margin-top: 10px;
     text-align: center;
 }
 
 nav ul{
-  display: inline-block;
-  list-style-type: none;
-  text-transform: lowercase;
-  margin-top: 10px;
+    display: inline-block;
+    list-style-type: none;
+    text-transform: lowercase;
+    margin-top: 17px;
+    padding-left: 0;
 }
 
 nav ul li{
@@ -110,7 +116,7 @@ nav a:hover{
 
 
 img.logo{
-  width: 335px;
+  width: 375px;
 }
 
 
@@ -133,12 +139,12 @@ img.logo{
   background: url(../img/contact-item-bg.svg);
   background-repeat: no-repeat;
   background-position: right center;
-  height: 200px;
   width: 295px;
   color: white;
   font-family: 'Avenir LT Std 65 Medium';
   margin: 0 auto;
-  /*float: left;*/
+  height: 206px;
+
 }
 
 .contact-item:first-child{
@@ -167,7 +173,7 @@ float: right
     background-image: url(../img/hours-bg.svg);
     background-repeat: no-repeat;
     text-align: center;
-    width: 948px;
+    width: 940px;
     height: 185px;
     margin: 0 auto;
     padding: 25px 0 0;
@@ -177,7 +183,7 @@ float: right
 .schedule .hours{
 
   color: #EC1C24;
-  font-size: 22px;
+  font-size: 23px;
   margin-bottom: 26px;
   font-family: 'Avenir LT Std 65 Medium';
   line-height: 32px;
@@ -187,7 +193,7 @@ float: right
 }
 
 .schedule .address{
-  font-size: 22px;
+  font-size: 23px;
   color: #0524D8;
   font-family: 'Avenir LT Std 65 Medium Oblique';
   font-style:   oblique;
@@ -302,7 +308,7 @@ float: right
 
 
 #owl1 .item img{
-  width: 475px !important;
+  width: 480px !important;
 }
 
 
@@ -384,8 +390,9 @@ section.menu{
 
 
 .panels.one{
-margin: 0 180px;
-border-radius: 36px;
+  width: 1562px;
+  margin: 0 auto;
+  border-radius: 36px;
 }
 
 .panels.two{
@@ -435,9 +442,10 @@ display: block
 }
 
 .inside ul li{
-  font-size: 18px;
+  font-size: 19px;
   color: #BBBDBF;
-  margin-top: 16px;
+  margin-top: 32px;
+
 }
 
 
@@ -452,8 +460,11 @@ display: block
 .inside ul li:first-child{
     color: #F2C217;
     border-bottom: 3px solid #F2C217;
-    padding-bottom: 4px;
+    padding-bottom: 10px;
     padding-top: 0;
+    font-size: 24px;
+    margin-bottom: 6px;
+
 }
 
 .meal-group{
@@ -631,11 +642,22 @@ display: block
 }
 
 
+
+
+
+
 .events-slideshow{
   background: #F7D151;
   width: 48%;
   padding: 12px;
 }
+
+
+.events-row {
+    width: 1556px;
+    margin: -12px auto 0;
+}
+
 
 
 
@@ -655,7 +677,7 @@ form input[type="text"],
 form input[type="email"]{
     background: #F7D151;
     color: #434444;
-    width: 100%;
+    width: 724px;
     display: block;
     border: 0;
     padding: 8px;
@@ -671,7 +693,8 @@ form input[type="submit"]{
     height: 133px;
     position: absolute;
     bottom: 0px;
-    right: -24px;
+    /*right: -24px;*/
+    right: -1px;
     border: 0;
     color: transparent;
     background: transparent;
@@ -924,8 +947,7 @@ footer{
   background-color: rgba(0,0,0,.5);
   position: fixed;
   top: 0;
-  z-index: 1000;
-
+  z-index: 2000;
 }
 
 
@@ -1051,13 +1073,105 @@ body.fixedwaypoint{
     width: 100%;
     height: 50px;
     background: #a7ccd7;
-    margin-top: -10px;
     padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ffa2b3;
+    border-bottom: 1px solid #ffa2b3;
+    /*position: relative;*/
+    position: absolute;
+}
+
+
+.close-announcement{
+  position: absolute;
+  background: transparent;
+  border: 0;
+  right: 10px;
+  top: 10px;
+}
+
+
+.close-announcement,
+.close-announcement:active,
+.close-announcement:focus{outline:0;}
+
+.contact-line{
+  text-decoration: none;
+  color: white;
+  font-family: 'Avenir LT Std 55 Roman'
+}
+
+.contact-item-text {
+    width: 206px;
+    float: right;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 93px;
+}
+
+
+
+
+.contact-item-text.left{
     text-align: left;
+    width: 142px;
+    float: right;
+    font-size: 26px;
+    padding-top: 56px;
+    margin-left: 50px;
+}
+
+
+.contact-item-text.left span{
+  background-image: url() !important;
+  color: transparent !important;
+  width: 100px !important;
+  bottom: -4px !important;
+  position: absolute !important;
+  top: 58px;
+
+}
+
+
+.contact-item-text.left{
+    position: relative !important;
+    top: 14px;
+    left: 0;
+}
+
+
+
+.contact-item-text.left span:before{
+  content: "reserve online";
+  color: white !important;
+  width: 100px !important;
+  font-size: 26px;
+}
+
+
+
+
+.contact-item-text a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#owl1.owl-carousel .owl-stage{
+  margin-left: 7.23% !important;
 }
 
 
 @media only screen and (max-width: 1560px) {
+
+
+
+
+
+  .panels.one {
+    width: 90%;
+  }
 
 .item-row,.media-row{
   width: 96%;
@@ -1069,6 +1183,35 @@ body.fixedwaypoint{
   position: inherit;
   right: inherit;
 }
+
+
+.events-row{
+  width: 90%;
+}
+
+form input[type="text"], form input[type="email"] {
+    background: #F7D151;
+    color: #434444;
+    width: 100%;
+    display: block;
+    border: 0;
+    padding: 8px;
+    padding-left: 16px;
+    padding-top: 12px;
+    margin-bottom: 48px;
+    resize: none;
+    position: relative;
+}
+
+
+form textarea{
+      width: 100%;
+}
+
+
+form input[type="submit"] {
+     right: -24px;
+  }
 
 }
 
@@ -1086,7 +1229,7 @@ body.fixedwaypoint{
   }
 
 .inside ul li {
-    margin-top: 6px;
+    /*margin-top: 6px;*/
 }
 
 
@@ -1190,6 +1333,15 @@ footer{
 @media only screen and (max-width: 768px) {
 
 
+.owl-carousel .owl-stage{
+  margin-left: 0 !important;
+}
+
+
+
+
+
+
   .family-member {
     background-position: center center;
     height: 200px;
@@ -1268,6 +1420,7 @@ margin-top: 20px;
 .panels.one {
     margin: 4px;
     margin-top: 0;
+    margin: 0 auto;
 }
 
 
@@ -1422,7 +1575,45 @@ nav ul li{
 
 
 
+.contact-item-text.left{
+    text-align: left;
+    width: 46%;
+    float: right;
+    font-size: 20px;
+    margin-left: 90px;
+    padding-top: 67px;
+  }
 
+.contact-item-text.left{
+    width: 122px;
+}
+
+
+
+
+
+.contact-item:first-child{
+  float: none;
+  margin-top: 10px;
+}
+
+
+.contact-item:last-child{
+  float: none;
+}
+
+.contact-item {
+    width: 240px;
+}
+
+
+.contact-item-text{
+    width: 164px;
+    float: right;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 91px;
+}
 
 
 }
@@ -1441,20 +1632,22 @@ nav ul li{
     line-height: 30px;
     padding-right: 0;
   }
-
+==
 
   .slideshow-box-text p {
     font-size: 16px;
     line-height: 30px;
 }
-
+/*
 .contact-item-text {
-    width: 70%;
+    width: 68%;
     float: right;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
-    padding-top: 86px;
+    padding-top: 80px;
 }
+*/
+
 
 
 img.logo {
@@ -1555,6 +1748,75 @@ section.menu {
     width: 86%;
     margin-top: 6px;
 }
+
+
+.contact-items{
+  padding-top: 0;
+}
+
+
+
+
+
+    /*.contact-item-text.left span:before {*/
+    /*background-image: url() !important;*/
+    /*color: transparent !important;*/
+    /*width: 100px !important;*/
+    /* font-size: 0; */
+      /*font-size: 18px;*/
+/*}*/
+
+
+
+
+.contact-item-text {
+    font-size: 22px;
+  }
+
+
+.contact-item-text {
+    width: 163px;
+  }
+
+
+  form textarea, form input[type="text"], form input[type="email"]{
+    background: #F7D151;
+    color: #434444;
+    width: 96%;
+    display: block;
+    border: 0;
+    padding: 8px;
+    padding-left: 16px;
+    padding-top: 12px;
+    margin-bottom: 48px;
+    resize: none;
+    position: relative;
+    padding-right: 0;
+}
+
+
+form textarea{
+height: 200px;
+}
+
+.events-form {
+    width: 100%;
+    float: left;
+}
+.events-row {
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+  right: -2px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
 
 }
 
