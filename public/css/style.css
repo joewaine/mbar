@@ -1,14 +1,40 @@
+
+
+/*thicker fonts*/
+
+@font-face {
+  font-family: 'AvenirLTStd-HeavyOblique-thick';
+  src: url('avheavy/AvenirLTStd-HeavyOblique.eot');
+  src: url('avheavy/AvenirLTStd-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+    url('avheavy/AvenirLTStd-HeavyOblique.woff') format('woff'),
+    url('avheavy/AvenirLTStd-HeavyOblique.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-thick';
+  src: url('avheavy/AvenirLTStd-Heavy.eot');
+  src: url('avheavy/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('avheavy/AvenirLTStd-Heavy.woff') format('woff'),
+    url('avheavy/AvenirLTStd-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/*thicker fonts*/
+
+
 body{
     background: url(../img/clouds.jpg);
     font-family: 'Avenir LT Std 45 Book';
     background-position: top center;
     cursor: url(../img/plane.svg), auto;
 
-
-
-
-
 }
+
+
 
 
 #image{
@@ -141,10 +167,11 @@ img.logo{
   background-position: right center;
   width: 295px;
   color: white;
-  font-family: 'Avenir LT Std 65 Medium';
+  /*font-family: 'Avenir LT Std 65 Medium';*/
   margin: 0 auto;
   height: 206px;
 
+  font-family: 'AvenirLTStd-thick';
 }
 
 .contact-item:first-child{
@@ -195,8 +222,11 @@ float: right
 .schedule .address{
   font-size: 23px;
   color: #0524D8;
-  font-family: 'Avenir LT Std 65 Medium Oblique';
-  font-style:   oblique;
+  /*font-family: 'Avenir LT Std 65 Medium Oblique';*/
+  /*font-style:   oblique;*/
+  font-family: 'AvenirLTStd-HeavyOblique-thick';
+
+
 }
 
 
