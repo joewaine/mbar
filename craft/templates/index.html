@@ -409,11 +409,6 @@ height: 100%;
 
 <form id="ajax-contact" method="post" action="mailer.php" style="position:relative;">
     {{ getCsrfInput() }}
-
-
-
-<input type="hidden" name="toEmail" value="{{ 'joe.waine@gmail.com'|hash }}">
-
     <input type="hidden" name="action" value="contactForm/sendMessage">
     <!-- <input type="hidden" name="redirect" value="contact/thanks"> -->
 
@@ -558,6 +553,7 @@ height: 100%;
 
 
 </div>
+
 </div>
 
 <div class="expand-button articles">
