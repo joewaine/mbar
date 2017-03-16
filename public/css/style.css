@@ -810,18 +810,26 @@ input:focus {
     -o-background-size: cover;
     background-size: cover;
 
-}
-
-.item-name{
-  background: #425960;
-  bottom: 0;
-  color: white;
-  width: 200px;
-  padding: 15px;
-  position: absolute;
-  text-align: left;
 
 }
+
+
+
+.item-name {
+    background: #425960;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    text-align: left;
+    box-sizing: border-box;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+
+
 .item-row{
   width: 1558px;
   margin: 0 auto;
@@ -873,13 +881,30 @@ input:focus {
   background: #F2C217;
   bottom: 0;
   color: #232323;
-  width: 200px;
-  padding: 15px;
+  /*width: 200px;*/
   position: absolute;
   text-align: left;
+  box-sizing: border-box;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 
 }
 
+
+
+/*.media .item-name {
+    background: #425960;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    text-align: left;
+    box-sizing: border-box;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+*/
 
 .media .item-single .item-name,
 .our-family .item-single .item-name,
@@ -919,24 +944,23 @@ input:focus {
   margin: 0 auto;
 }
 .expand-button{
-  background-image: url(../img/expand-button.svg);
-  background-repeat: no-repeat;
-  color: transparent;
-  width: 230px;
-  height: 230px;
-  float: left;
-
-/* Firefox */
--moz-transition: all .5s ease;
-/* WebKit */
--webkit-transition: all .5s ease;
-/* Opera */
--o-transition: all .5s ease;
-/* Standard */
-transition: all .5s ease;
+    background-image: url(../img/expand-button.svg);
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 182px;
+    height: 182px;
+    float: left;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
     position: absolute;
-    right: 0;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -91px;
 }
+
+
 
 
 
@@ -1186,9 +1210,42 @@ body.fixedwaypoint{
     color: white;
 }
 
+
+.mobile-nav{
+  display: none;
+}
+
+.desktop-nav{
+  display: block;
+}
+
+
+.hide-on-desk{
+  display: none;
+}
+
+
+.item-single{
+      margin-right: 35px;
+}
+
+.item-single:nth-child(6n+6){
+  margin-right: 0;
+
+}
+
+.expand-button-container{
+    height: 180px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 1560px) {
 
-
+.item-single:nth-child(6n+6){
+    margin-right: 35px;
+}
 
 
 
@@ -1199,7 +1256,7 @@ body.fixedwaypoint{
 .item-row,.media-row{
   width: 96%;
   margin: 0 auto;
-  margin-right: 0;
+/*  margin-right: 0;*/
 }
 
 .expand-button{
@@ -1356,6 +1413,19 @@ footer{
 @media only screen and (max-width: 768px) {
 
 
+
+.hide-on-desk{display: block;}
+
+.mobile-nav{
+  display: none;
+}
+
+.desktop-nav{
+  display: none;
+}
+
+
+
 .owl-carousel .owl-stage{
   margin-left: 0 !important;
 }
@@ -1407,7 +1477,7 @@ nav ul{
 }
 
 .expand-button {
-  width: 46%;
+  /*width: 46%;*/
 }
 
 
@@ -1791,9 +1861,20 @@ section.menu {
 
 
 
+.contact-item-text.left {
+    width: 110px;
+}
+
+.contact-item-text.left span{
+  top: 65px;
+}
+
+.contact-item-text.left span:before {
+    font-size: 18px;
+}
 
 .contact-item-text {
-    font-size: 22px;
+    font-size: 18px;
   }
 
 
@@ -1801,6 +1882,10 @@ section.menu {
     width: 163px;
   }
 
+
+.item-row, .media-row{
+    margin-left: 13px;
+}
 
   form textarea, form input[type="text"], form input[type="email"]{
     background: #F7D151;
@@ -1849,3 +1934,11 @@ form input[type="submit"] {
 
 
 
+/*sticky*/
+
+#headersticky{
+  height: 75px;
+  display: block;
+  background: green;
+  width: 100%;
+}
