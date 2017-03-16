@@ -24,6 +24,7 @@
 
 	<!-- {{ entry.body }} -->
 
+
 {% for block in entry.homePageModules %}
     {% if block.type == "hero" %}
 <header id="header">
@@ -51,9 +52,25 @@ twitter
 
 </div>
 <nav id="waypoints">
+    <div class="hide-on-desk">
 <div class="menu-expand">
     menu    ↓
 </div>
+
+<ul class="mobile-nav">
+{% for topNavigation in craft.entries.section('topNavigation') %}
+<li>
+<a href="#{{ topNavigation.slug }}">
+{{ topNavigation.title }}
+</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+
+
+
+
     <ul>
 
 
@@ -356,6 +373,42 @@ height: 100%;
 
 <section id="events-booking" class="events-booking">
 
+
+
+<div style="display:none;">
+
+
+    <div id="page-wrapper">
+      <div id="form-messages"></div>
+
+        <form id="ajax-contact" method="post" action="mailer.php">
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="field">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
+
+
+
     <div class="events-dodecagon">
             events booking
     </div>
@@ -472,11 +525,14 @@ height: 100%;
 
 
 
+</div>
+
+
+<div class="expand-button-container">
 <div class="expand-button members">
     expand
 </div>
 </div>
-
 
 
 </div></div>
@@ -526,12 +582,17 @@ height: 100%;
 <!-- potential first loop -->
 <!-- list -->
 
+
+
+</div>
+</div>
+
 <div class="expand-button articles">
     expand
 </div>
 
+
 </div>
-</div></div>
 </section>
 
 <!-- our family -->

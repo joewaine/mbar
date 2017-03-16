@@ -45,9 +45,6 @@ $('#owl1').owlCarousel({
 
 },1000);
 
-
-
-
 $('#owl2').owlCarousel({
     loop:true,
     margin:00,
@@ -86,82 +83,38 @@ $('#owl3').owlCarousel({
     }
 });
 
-
-
-
 // $('.slideshow-box-text').append($('#owl2 .item.active .about').text());
-
 $('.slideshow-box-text').append($('#owl2 .active .about').html());
-
-
-
 $('#owl2 .owl-next, #owl2 .owl-prev').click(function(){
-
 $('.slideshow-box-text p').remove();
-
 $('.slideshow-box-text').append($('#owl2 .active .about').html());
-
-
 });
 
 
 
-
-
 // menu switches
-
-
 $('.menu-tabs li:eq(1)').addClass('active');
-
-
 $('.menu-tabs li').click(function(){
-
 $('.menu-tabs li').removeClass('active');
 $(this).addClass('active');
-
 $('.inside').hide();
-
 var ind = $(this).index() - 1;
-
 $('.inside:eq(' + ind + ')').show();
-
-
 // alert($(this).index());
 
 });
 
 
 // menu switches
-
-
-
-
 // members
-
-
-
-
-if($('.our-family .item-single').length < 6){
-
-
+if($('.our-family .item-single').length < 7){
 $('.our-family .expand-button').hide();
-
 }
-
-
-
-if($('.media .item-single').length < 6){
-
-
+if($('.media .item-single').length < 7){
 $('.media .expand-button').hide();
-
 }
 
-
-
-
-
-for(i=0;i<5;i++){
+for(i=0;i<6;i++){
     $('.our-family .item-single:eq('+ i + ')').show();
     $('.media .item-single:eq('+ i + ')').show();
 }
@@ -169,15 +122,15 @@ for(i=0;i<5;i++){
 $('.members, .articles').click(function(){
     if($(this).hasClass('rotated')){
         $(this).removeClass('rotated')
-            for(i=0;i<5;i++){
-            $(this).parent().find('.item-single:first-child').show();
+            for(i=0;i<6;i++){
+            $(this).parents(2).find('.item-single:first-child').show();
         }
 
-        $(this).parent().find('.item-single:nth-child(n+6)').slideUp();
+        $(this).parents(2).find('.item-single:nth-child(n+7)').slideUp();
 
         }else{
 
-            $(this).parent().find('.item-single').fadeIn();
+            $(this).parents(2).find('.item-single').fadeIn();
             $(this).addClass('rotated');
 
 }
@@ -208,24 +161,17 @@ $('.overlay').remove();
 
 
 // media
-
-
 // menu
-
 
 $('.menu-expand').click(function(){
 
 
 $('nav').toggleClass('height-matter');
 
-$('nav ul').toggle();
+$('.mobile-nav').toggle();
 
 });
-
-
-
 // menu
-
 $(document).on('click', 'a', function(event){
     event.preventDefault();
 var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - 74;
@@ -236,38 +182,8 @@ var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - 74;
     }, 500);
 });
 
-
-
-// canvaus
-
-
-
-
-
-// waypoints
-
-
-
-
-var waypoint = new Waypoint({
-  element: document.getElementById('waypoints'),
-  handler: function(direction) {
-
-$('#waypoints').toggleClass('fixedwaypoint', direction=='down').fadeIn();
-$('body').toggleClass('fixedwaypoint', direction=='down');
-
-
-  }
-});
-
-
-
-
 // map fixedwaypoint
-
-
-
-    $(document).ready(function () {
+$(document).ready(function () {
 
         // you want to enable the pointer events only on click;
 
@@ -284,15 +200,96 @@ $('body').toggleClass('fixedwaypoint', direction=='down');
     });
 
 
-
-
-
-
-
 $('.close-announcement').click(function(){
 
     $(this).parent().fadeOut();
 });
 
+var h = document.getElementById("waypoints");
+
+var stuck = false;
+var stickPoint = getDistance();
+
+function getDistance() {
+  var topDist = h.offsetTop;
+  return topDist;
+}
+
+window.onscroll = function(e) {
+  var distance = getDistance() - window.pageYOffset;
+  var offset = window.pageYOffset;
+  if ( (distance <= 0) && !stuck) {
+    h.style.position = 'fixed';
+    h.style.top = '-10px';
+    h.style.zIndex = '10000';
+    stuck = true;
+  } else if (stuck && (offset <= stickPoint)){
+    h.style.position = 'static';
+    stuck = false;
+  }
+}
 
 
+
+
+
+
+// contact form
+
+
+$(function() {
+
+    // Get the form.
+    var form = $('#ajax-contact');
+
+    // Get the messages div.
+    var formMessages = $('#form-messages');
+
+    // Set up an event listener for the contact form.
+    $(form).submit(function(e) {
+        // Stop the browser from submitting the form.
+        e.preventDefault();
+
+        // Serialize the form data.
+        var formData = $(form).serialize();
+
+        // Submit the form using AJAX.
+        $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+        })
+        .done(function(response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
+
+            // Set the message text.
+            $(formMessages).text(response);
+
+            // Clear the form.
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+        })
+        .fail(function(data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+                $(formMessages).text(data.responseText);
+            } else {
+                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+        });
+
+    });
+
+});
+
+
+
+
+// contact form
