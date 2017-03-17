@@ -259,30 +259,60 @@ $('#container').css('margin-top', 0);
 
 // form
 
+$(function() {
 
+    // Get the form.
+    var form = $('#ajax-contact');
 
+    // Get the messages div.
+    var formMessages = $('#form-messages');
 
-$('#ajax-contact').submit(function(ev) {
-    // Prevent the form from actually submitting
-    ev.preventDefault();
+    // Set up an event listener for the contact form.
+    $(form).submit(function(e) {
+        // Stop the browser from submitting the form.
+        e.preventDefault();
 
-    // Get the post data
-    var data = $(this).serialize();
+        // Serialize the form data.
+        var formData = $(form).serialize();
 
-    // Send it to the server
-    $.post('/', data, function(response) {
-        if (response.success) {
+        // Submit the form using AJAX.
+        $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+        })
+        .done(function(response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
 
-alert('success');
+            // Set the message text.
+            $(formMessages).text(response);
 
-        } else {
-            // response.error will be an object containing any validation errors that occurred, indexed by field name
-            // e.g. response.error.fromName => ['From Name is required']
-            alert('An error occurred. Please try again.');
-            alert('no success');
-        }
+            // Clear the form.
+            $('#name').val('');
+            $('#email').val('');
+            $('#message').val('');
+        })
+        .fail(function(data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+                $(formMessages).text(data.responseText);
+            } else {
+                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+        });
+
     });
+
 });
+
+
+// form
 
 
 
@@ -307,7 +337,7 @@ $('#owl2 .owl-stage-outer').css('height', fixedAboutSlides + 'px' );
 
 $('.menu-expand').click(function(){
 
-$('.mobile-nav').toggle();
+$('.mobile-nav').toggle()
 
 
 });
