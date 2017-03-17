@@ -259,6 +259,11 @@ $('#container').css('margin-top', 0);
 
 // form
 
+
+    window.csrfTokenName = "{{ craft.config.get('csrfTokenName') }}";
+    window.csrfTokenValue = "{{ craft.request.getCsrfToken }}";
+
+
 $(function() {
 
     // Get the form.
@@ -274,6 +279,8 @@ $(function() {
 
         // Serialize the form data.
         var formData = $(form).serialize();
+
+        formData[window.csrfTokenName] = window.csrfTokenValue;
 
         // Submit the form using AJAX.
         $.ajax({
