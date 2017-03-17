@@ -855,7 +855,7 @@ input:focus {
   height: 230px;
   float: left;
   position: relative;
-  background: pink;
+  background: transparent;
   margin-right: 30px;
   margin-bottom: 30px;
   display: none;
@@ -868,6 +868,27 @@ input:focus {
 
 
 }
+
+/*.item-single{
+      width: 12.66%;
+    height: 230px;
+    float: left;
+    position: relative;
+    background: pink;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-right: 35px solid #F2C217;
+}
+
+
+*/
 
 
 
@@ -1269,6 +1290,9 @@ body.fixedwaypoint{
 
 .mobile-nav{
   display: none;
+
+
+
 }
 
 .desktop-nav{
@@ -1278,6 +1302,8 @@ body.fixedwaypoint{
 
 .hide-on-desk{
   display: none;
+      background: #0524d8;
+    /*padding-bottom: 10px;*/
 }
 
 
@@ -1309,6 +1335,9 @@ body.fixedwaypoint{
 }
 
 
+.hide-on-desk {
+    padding-bottom: 10px;
+}
 
 @media only screen and (max-width: 1560px) {
 
@@ -1998,14 +2027,87 @@ form input[type="submit"] {
   right: -2px;
 }
 
+.slideshow-box-text p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
 }
 
 
 
 @media only screen and (max-width: 400px) {
+.menu-tabs li:first-child{
+      margin-right: 0;
+}
+
+
+.menu-tabs li:last-child{
+      margin-left: 0;
+}
+
+
+.menu-tabs li:nth-child(2){
+  border-top-left-radius: 0;
+}
+
+.menu-tabs li:nth-last-child(2) {
+    border-top-right-radius: 0;
+}
+
+
+.menu-tabs li {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+.panels.one,
+.panels.two,
+.panels.three,
+ .panels.inside{
+    border-radius: 0px;
+    width: 100%;
+    border-left: 0 solid #F2C217;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+
+.menu-tabs li:first-child {
+    margin-right: 0;}
+
+
+
+.menu-tabs li:last-child {
+    margin-left: 0;}
+
 
 
 }
+
+
+
+/*items{*/
+
+
+/*.item-single{
+  margin-right: 0;
+      width: 14.66%;
+}
+.item-single:nth-child(6n+6){
+    border-right: 0px solid #F2C217;
+}
+*/
+
+
+/*}*/
+
+
 
 
 /*cursors*/

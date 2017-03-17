@@ -163,24 +163,33 @@ $('.overlay').remove();
 // media
 // menu
 
-$('.menu-expand').click(function(){
 
-
-$('nav').toggleClass('height-matter');
-
-$('.mobile-nav').toggle();
-
-});
 // menu
 $(document).on('click', 'a', function(event){
-    event.preventDefault();
+
+
+  event.preventDefault();
 var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
 // alert($( $.attr(this, 'href') ).offset().top);
 // alert(amountOfScroll);
     $('html, body').animate({
         scrollTop: amountOfScroll
     }, 500);
+
+
+
+
+
 });
+
+
+$('.mobile-nav a').click(function(){
+    $('.mobile-nav').toggle();
+});
+
+
+
+
 
 // map fixedwaypoint
 $(document).ready(function () {
@@ -288,6 +297,17 @@ $(window).resize(function(){
 
 var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
 $('#owl2 .owl-stage-outer').css('height', fixedAboutSlides + 'px' );
+
+
+});
+
+
+
+
+
+$('.menu-expand').click(function(){
+
+$('.mobile-nav').toggle();
 
 
 });
