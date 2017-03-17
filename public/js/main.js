@@ -174,7 +174,7 @@ $('.mobile-nav').toggle();
 // menu
 $(document).on('click', 'a', function(event){
     event.preventDefault();
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - 74;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
 // alert($( $.attr(this, 'href') ).offset().top);
 // alert(amountOfScroll);
     $('html, body').animate({
@@ -223,9 +223,24 @@ window.onscroll = function(e) {
     h.style.top = '-10px';
     h.style.zIndex = '10000';
     stuck = true;
+
+ var offSetHeight = $('#waypoints').height() + 10;
+
+
+
+$('#container').css('margin-top', offSetHeight + 'px');
+
+// document.getElementById("waypointschild").style.marginTop = offSetHeight;
+
+
   } else if (stuck && (offset <= stickPoint)){
     h.style.position = 'static';
     stuck = false;
+
+
+$('#container').css('margin-top', 0);
+
+
   }
 }
 
@@ -234,6 +249,10 @@ window.onscroll = function(e) {
 
 
 // form
+
+
+
+
 $('#ajax-contact').submit(function(ev) {
     // Prevent the form from actually submitting
     ev.preventDefault();
@@ -256,3 +275,19 @@ alert('success');
     });
 });
 
+
+
+$(document).ready(function(){
+
+var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
+$('#owl2 .owl-stage-outer').css('height', fixedAboutSlides + 'px' );
+
+});
+
+$(window).resize(function(){
+
+var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
+$('#owl2 .owl-stage-outer').css('height', fixedAboutSlides + 'px' );
+
+
+});

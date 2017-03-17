@@ -332,9 +332,15 @@ height: 100%;
 <!-- potential first loop  -->
 {% for aboutslides in craft.entries.section('aboutUs') %}
 
-        <div class="item" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}">
+<!--         <div class="item" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}"> -->
+
 {% for asset in aboutslides.image %}
-<img src="{{ asset.url }}" alt="">
+        <div class="item" style="background-image:url(..{{ asset.url }});" data-image="{{ asset.url }}">
+{% endfor %}
+
+
+{% for asset in aboutslides.image %}
+<!-- <img src="{{ asset.url }}" alt=""> -->
     {% endfor %}
 
 <div class="about">
@@ -393,6 +399,8 @@ height: 100%;
 
 <div class="clearfix">
 <div class="events-form">
+
+
 {% macro errorList(errors) %}
     {% if errors %}
         <ul class="errors">
@@ -407,28 +415,49 @@ height: 100%;
 
 
 
-<form id="ajax-contact" method="post" action="mailer.php" style="position:relative;">
+<form id="ajax-contact" method="post" action="" style="position:relative;">
     {{ getCsrfInput() }}
     <input type="hidden" name="action" value="contactForm/sendMessage">
     <!-- <input type="hidden" name="redirect" value="contact/thanks"> -->
 
     <!-- <h3><label for="fromName">Your Name</label></h3> -->
+
     <input placeholder="name" id="fromName" type="text" name="fromName" value="{% if message is defined %}{{ message.fromName }}{% endif %}">
-    {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+ {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
 
     <!-- <h3><label for="fromEmail">Your Email</label></h3> -->
     <input placeholder="email" id="fromEmail" type="email" name="fromEmail" value="{% if message is defined %}{{ message.fromEmail }}{% endif %}">
     {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
+
+
     <!-- <h3><label for="subject">Subject</label></h3> -->
+
+
+
     <input placeholder="subject" id="subject" type="text" name="subject" value="{% if message is defined %}{{ message.subject }}{% endif %}">
     {{ message is defined and message ? errorList(message.getErrors('subject')) }}
+
+
+
+
+
+
 
     <!-- <h3><label for="message">Message</label></h3> -->
      <textarea placeholder="message" rows="10" cols="40" id="message" name="message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
     {{ message is defined and message ? errorList(message.getErrors('message')) }}
     <input type="submit" value="Send">
 </form>
+
+
+
+
+
+
+
+
+
 </div>
 <div class="events-slideshow">
 <div id="owl3" class="owl-carousel owl-theme">
