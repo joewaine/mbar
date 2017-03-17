@@ -280,7 +280,7 @@ $(function() {
         // Serialize the form data.
         var formData = $(form).serialize();
 
-        formData[window.csrfTokenName] = window.csrfTokenValue;
+        // formData[window.csrfTokenName] = window.csrfTokenValue;
 
         // Submit the form using AJAX.
         $.ajax({
