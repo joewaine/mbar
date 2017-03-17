@@ -3,7 +3,7 @@
 /*thicker fonts*/
 
 @font-face {
-  font-family: 'AvenirLTStd-HeavyOblique-thick';
+  font-family: 'AvenirLTStdHeavyObliquethick';
   src: url('avheavy/AvenirLTStd-HeavyOblique.eot');
   src: url('avheavy/AvenirLTStd-HeavyOblique.eot?#iefix') format('embedded-opentype'),
     url('avheavy/AvenirLTStd-HeavyOblique.woff') format('woff'),
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'AvenirLTStd-thick';
+  font-family: 'AvenirLTStdthick';
   src: url('avheavy/AvenirLTStd-Heavy.eot');
   src: url('avheavy/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
     url('avheavy/AvenirLTStd-Heavy.woff') format('woff'),
@@ -29,10 +29,29 @@
 body{
     background: url(../img/clouds.jpg);
     font-family: 'Avenir LT Std 45 Book';
-    background-position: top center;
-    cursor: url(../img/plane.svg), auto;
+    cursor: url(../img/plane.svg), pointer;
+
+  background: url(../img/clouds.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
 
 }
+
+#content{
+    background: url(../img/clouds.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
 
 
 
@@ -171,7 +190,7 @@ img.logo{
   margin: 0 auto;
   height: 206px;
 
-  font-family: 'AvenirLTStd-thick';
+  font-family: 'AvenirLTStdthick';
 }
 
 .contact-item:first-child{
@@ -223,8 +242,10 @@ float: right
   font-size: 23px;
   color: #0524D8;
   /*font-family: 'Avenir LT Std 65 Medium Oblique';*/
-  /*font-style:   oblique;*/
-  font-family: 'AvenirLTStd-HeavyOblique-thick';
+  font-style:   oblique;
+  font-family: 'AvenirLTStdHeavyObliquethick';
+
+  /*font-family: AvenirLTStdthick;*/
 
 
 }
@@ -241,10 +262,13 @@ float: right
   transform: rotate(180deg);
   width: 108px;
   height: 125px;
-  margin-top: -313px !important;
   z-index: 1000;
   position: absolute;
   left: 0;
+  top: 50%;
+  margin-top: -66px;
+
+
 }
 
 #owl1 .owl-next{
@@ -255,10 +279,11 @@ float: right
     color: transparent !important;
     width: 108px;
     height: 125px;
-    margin-top: -313px !important;
     z-index: 1000;
     position: absolute;
     right: 0;
+    top: 50%;
+    margin-top: -66px;
 }
 
 
@@ -274,10 +299,16 @@ float: right
   transform: rotate(180deg);
   width: 108px;
   height: 125px;
-  margin-top: -580px !important;
+  /*margin-top: -580px !important;*/
   z-index: 1000;
   position: absolute;
   left: 0;
+
+
+    top: 50%;
+    margin-top: -65px;
+
+
 }
 
 #owl2 .owl-next{
@@ -288,10 +319,14 @@ float: right
     color: transparent !important;
     width: 108px;
     height: 125px;
-    margin-top: -580px !important;
+    /*margin-top: -580px !important;*/
     z-index: 1000;
     position: absolute;
     right: 0;
+
+    top: 50%;
+    margin-top: -65px;
+
 }
 
 
@@ -308,10 +343,12 @@ float: right
   transform: rotate(180deg);
   width: 54px;
   height: 63px;
-  margin-top: -282px !important;
   z-index: 1000;
   position: absolute;
   left: 0;
+  top: 50%;
+  margin-top: -32px;
+
 }
 
 #owl3 .owl-next{
@@ -322,10 +359,11 @@ float: right
     color: transparent !important;
     width: 54px;
     height: 63px;
-    margin-top: -282px !important;
     z-index: 1000;
     position: absolute;
     right: 0;
+    top: 50%;
+    margin-top: -32px;
 }
 
 
@@ -376,6 +414,7 @@ float: right
 .menu-tabs li.active{
   color: #EC297B;
   cursor: pointer;
+  /*cursor: url(../img/plane.svg), pointer;*/
 }
 
 
@@ -405,6 +444,14 @@ float: right
 section.menu{
   background: url(../img/trees.jpg);
   padding-bottom: 64px;
+
+  background: url(../img/trees.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
 }
 
 .owl-theme .owl-nav {
@@ -562,7 +609,7 @@ display: block
 .youtube,
 .map{
   height: 381px;
-  background: white;
+  background: black;
 }
 
 .youtube{
@@ -630,6 +677,15 @@ display: block
     background: url(../img/waves.jpg);
     padding-top: 76px;
     padding-bottom: 76px;
+
+  background: url(../img/waves.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
 }
 
 
@@ -918,22 +974,21 @@ input:focus {
 
 .media .item-single:hover .item-name{
   padding-bottom:25px;
-
-
-  cursor: pointer;
-
+  /*cursor: pointer;*/
+  cursor: url(../img/plane.svg), pointer;
 }
 
 
 .media .item-single:hover,
 .our-family .item-single:hover{
-    cursor: pointer;
+    /*cursor: pointer;*/
+  cursor: url(../img/plane.svg), pointer;
 }
 
 .our-family .item-single:hover .item-name{
   padding-bottom:25px;
-
-  cursor: pointer;
+  /*cursor: pointer;*/
+  cursor: url(../img/plane.svg), pointer;
 }
 
 
@@ -958,6 +1013,7 @@ input:focus {
     bottom: 20px;
     left: 50%;
     margin-left: -91px;
+    cursor: pointer;
 }
 
 
@@ -1241,6 +1297,19 @@ body.fixedwaypoint{
     margin-top: 20px;
 }
 
+
+#owl2 .item{
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 680px;
+}
+
+
+
 @media only screen and (max-width: 1560px) {
 
 .item-single:nth-child(6n+6){
@@ -1336,7 +1405,7 @@ nav a{
 
 #owl2 .owl-next,
 #owl2 .owl-prev{
-    margin-top: -440px !important;
+    /*margin-top: -440px !important;*/
 }
 
 
@@ -1388,7 +1457,7 @@ footer{
 
 #owl2 .owl-next,
 #owl2 .owl-prev{
-    margin-top: -340px !important;
+    /*margin-top: -340px !important;*/
 }
 
 }
@@ -1592,9 +1661,15 @@ nav ul li{
 
 #owl1 .owl-next,
 #owl1 .owl-prev{
-    margin-top: -230px !important;
+    /*margin-top: -230px !important;*/
     width: 40px;
     height: 50px;
+
+
+
+
+margin-top: -25px;
+
 
 }
 
@@ -1602,24 +1677,29 @@ nav ul li{
 
 #owl2 .owl-next,
 #owl2 .owl-prev{
-    margin-top: -230px !important;
+    /*margin-top: -230px !important;*/
     width: 40px;
     height: 50px;
+    margin-top: -25px;
 
 }
 
 
 #owl3 .owl-next,
 #owl3 .owl-prev{
-    margin-top: -230px !important;
+    /*margin-top: -230px !important;*/
     width: 40px;
     height: 50px;
+
+margin-top: -25px;
+
 }
 
 .menu-expand{
   display: block;
   color: #FDE66C;
   cursor: pointer;
+  cursor: url(../img/plane.svg), pointer;
   padding-top: 22px;
 }
 
@@ -1784,13 +1864,12 @@ img.logo {
 
 #owl2 .owl-next,
 #owl2 .owl-prev{
-    margin-top: -128px !important;
-
+    /*margin-top: -128px !important;*/
 }
 
 #owl3 .owl-next,
 #owl3 .owl-prev{
-    margin-top: -136px !important;
+/*    margin-top: -136px !important;*/
 }
 
 

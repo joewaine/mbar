@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.7 66.72"><defs><style>.cls-1{fill:#d7d7d7;}.cls-2{fill:#f2f3f3;}.cls-3{fill:#707171;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="30.27 47.6 23.36 59.26 35.56 51.42 30.27 47.6"/><polygon class="cls-2" points="89.7 0 0 25.84 20.91 40.84 20.91 40.84 20.91 40.84 89.7 0"/><polygon class="cls-2" points="89.7 0 30.26 47.6 30.26 47.6 30.26 47.6 56.84 66.72 89.7 0 89.7 0"/><polygon points="89.7 0 89.7 0 89.7 0 89.7 0"/><polygon class="cls-3" points="89.7 0 20.91 40.84 20.91 40.84 23.36 59.26 30.26 47.6 30.26 47.6 89.7 0 89.7 0"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 29.9 22.2" style="enable-background:new 0 0 29.9 22.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D7D7D7;}
+	.st1{fill:#F2F3F3;}
+	.st2{fill:#707171;}
+</style>
+<title>Asset 3</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<polygon class="st0" points="18,17.1 22.1,19.8 19.8,15.9 		"/>
+		<polygon class="st1" points="22.9,13.6 22.9,13.6 22.9,13.6 29.9,8.6 0,0 		"/>
+		<polygon class="st1" points="0,0 11,22.2 19.8,15.9 19.8,15.9 19.8,15.9 0,0 		"/>
+		<polygon points="0,0 0,0 0,0 		"/>
+		<polygon class="st2" points="0,0 19.8,15.9 19.8,15.9 22.1,19.8 22.9,13.6 22.9,13.6 0,0 		"/>
+	</g>
+</g>
+</svg>
