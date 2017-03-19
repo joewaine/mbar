@@ -198,6 +198,7 @@ img.logo{
 
 .contact-item:first-child{
 float: left;
+    margin-left: 10px;
 }
 
 .contact-item:last-child{
@@ -1271,22 +1272,25 @@ body.fixedwaypoint{
 
 .contact-item-text.left{
     text-align: left;
-    width: 102px;
-    float: right;
-    font-size: 19px;
-    padding-top: 56px;
-    margin-left: 50px;
+    width: 50%;
+    /*float: right;*/
+    /*font-size: 19px;*/
+    /*padding-top: 56px;*/
+    /*margin-left: 50px;*/
 }
 
 
-.contact-item-text.left span{
-  background-image: url() !important;
-  color: transparent !important;
-  width: 100px !important;
-  bottom: -4px !important;
-  position: absolute !important;
-  top: 58px;
 
+
+
+.contact-item-text.left span {
+    background-image: url() !important;
+    color: transparent !important;
+    width: 80px !important;
+    bottom: -4px !important;
+    position: absolute !important;
+    top: 58px;
+    left: 3px;
 }
 
 
@@ -1301,7 +1305,7 @@ body.fixedwaypoint{
 .contact-item-text.left span:before{
     content: "reserve online";
     color: white !important;
-    width: 100px !important;
+
     font-size: 19px;
 }
 
@@ -1475,7 +1479,7 @@ width: 100%;
     line-height: 36px;
     position: relative;
     margin-bottom: -105px;
-    z-index: 10000;
+    z-index: 9999;
 
   }
 
@@ -1494,10 +1498,12 @@ width: 100%;
     right: 0;
     top: 0;
     border: 0;
-     background: transparent;
+    background-color: transparent;
     right: 10px;
-    top: 50%;
+    top: 28px;
     margin-top: -16px;
+    width: 15px;
+    height: 14px;
 
 }
 
@@ -1514,6 +1520,11 @@ button.close-announcement{
     color: transparent;
 }
 
+
+
+.announcements{
+  /*display: none;*/
+}
 
 @media only screen and (max-width: 1560px) {
 
@@ -1689,7 +1700,7 @@ footer{
 
 
 .announcements p{
-  width: 100%;
+    width: 90%;
 }
 
   .menu-tabs li:first-child,
@@ -1863,10 +1874,10 @@ display: none;
   padding-bottom: 60px;
 }
 
-.contact-item{
+/*.contact-item{
   width: 50%;
 }
-
+*/
 
 
 .media .item-name{
@@ -1989,7 +2000,7 @@ margin-top: -25px;
 
 .contact-item-text.left{
     text-align: left;
-    width: 46%;
+    /*width: 50%;*/
     float: right;
     font-size: 20px;
     margin-left: 90px;
@@ -1997,14 +2008,14 @@ margin-top: -25px;
   }
 
 .contact-item-text.left{
-    width: 122px;
+    /*width: 122px;*/
 }
 
 
 
 
 
-.contact-item:first-child{
+/*.contact-item:first-child{
   float: none;
   margin-top: 10px;
 }
@@ -2012,11 +2023,11 @@ margin-top: -25px;
 
 .contact-item:last-child{
   float: none;
-}
+}*/
 
-.contact-item {
+/*.contact-item {
     width: 240px;
-}
+}*/
 
 
 .contact-item-text{
@@ -2033,6 +2044,29 @@ margin-top: -25px;
 
 
 @media only screen and (max-width: 660px) {
+
+
+
+.contact-item-text.for-tel {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contact-item-text.for-tel{
+width: 103px;
+padding-top: 55px;
+}
+
+
+
+.contact-item{
+  /*width: 50%;*/
+
+
+    width: 150px;
+
+}
+
 
 
   .item-spacer {
@@ -2052,7 +2086,7 @@ margin-top: -25px;
     line-height: 30px;
     padding-right: 0;
   }
-==
+
 
   .slideshow-box-text p {
     font-size: 16px;
@@ -2103,11 +2137,11 @@ img.logo {
     margin-left: -8px;
 }
 
-.contact-items {
+/*.contact-items {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+*/
 
 #owl2 .owl-next,
 #owl2 .owl-prev{
@@ -2158,9 +2192,6 @@ section.menu {
     padding-bottom: 6px;
 }
 
-.contact-items-container{
-    width: 100%;
-  }
 
 
 .modal {
@@ -2188,11 +2219,11 @@ section.menu {
 
 
 .contact-item-text.left {
-    width: 110px;
+    width: 80px;
 }
 
 .contact-item-text.left span{
-  top: 65px;
+  /*top: 65px;*/
 }
 
 .contact-item-text.left span:before {
@@ -2256,7 +2287,38 @@ form input[type="submit"] {
 }
 
 
+.contact-item-text.left span{
+    left: -2px;
 }
+
+
+.contact-items-container{
+    width: 60%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 560px) {
+
+.contact-items-container{
+    width: 70%;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.contact-items-container{
+    width: 80%;
+  }
+
+
+}
+
+
 
 
 
@@ -2311,6 +2373,22 @@ form input[type="submit"] {
 
 
 
+.contact-items-container{
+    width: 90%;
+  }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+.contact-items-container{
+    width: 100%;
+  }
 }
 
 
