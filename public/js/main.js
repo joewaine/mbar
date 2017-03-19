@@ -303,6 +303,8 @@ $(function() {
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
 
+
+
             // Set the message text.
             $(formMessages).text(response);
 
