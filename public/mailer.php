@@ -43,7 +43,7 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "<div class='gay faggot'>Thank You! Your message has been sent.</div>";
+            echo "<div class=''>Thank You! Your message has been sent.</div>";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
