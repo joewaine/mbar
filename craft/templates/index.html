@@ -54,7 +54,7 @@ twitter
 <nav id="waypoints">
     <div class="hide-on-desk">
 <div class="menu-expand">
-    menu    ↓
+    <img class="menu-expand-image" src="img/menu.svg" alt="menu">
 </div>
 
 <ul class="mobile-nav">
@@ -92,9 +92,15 @@ twitter
 
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
 <div class="announcements">
-{{ timedAnnouncement.title }}
 
 <button class="close-announcement">X</button>
+
+<span class="announcement-header">
+    {{ timedAnnouncement.title }}
+</span>
+{{ timedAnnouncement.body }}
+
+
 
 </div>
 {% endfor %}
@@ -277,7 +283,7 @@ height: 100%;
         /*padding-bottom: 75%;*/
         height: 0;
         overflow: hidden;
-            height: 381px !important;
+        height: 288px !important;
     }
     .map iframe {
         position: absolute;
@@ -285,7 +291,7 @@ height: 100%;
         left: 0;
         width: 100% !important;
 /*        height: 381px !important;*/
-            height: 530px !important;
+            height: 450px !important;
     }
 
 
@@ -481,18 +487,15 @@ height: 100%;
 <!-- our family -->
 
 <section id="our-family" class="our-family">
+
 <div class="our-family-header">
-    our family
+    our<br>family
 </div>
+
 <div class="item-row itemized">
 <div class="item-container">
 
 <div class="clearfix">
-
-
-
-
-
 
 <!-- list -->
 <!-- potential first loop  -->
@@ -527,13 +530,12 @@ height: 100%;
 <!-- potential first loop -->
 <!-- list -->
 
+<!-- </div> -->
 
 
+</div>
 
-
-
-
-
+</div>
 </div>
 
 <div class="expand-button-container">
@@ -542,8 +544,6 @@ height: 100%;
 </div>
 </div>
 
-
-</div>
 </section>
 
 
@@ -557,14 +557,9 @@ height: 100%;
 <div class="media-header">
     media
 </div>
-
 <div class="item-row itemized">
 <div class="item-container">
-
 <div class="clearfix">
-
-
-
 
 <!-- list -->
 <!-- potential first loop  -->
@@ -589,20 +584,22 @@ height: 100%;
 <div class="press-link-text">
     {{ mediaitem.pressLinkText }}
 </div>
-<div class="press-link">{{ mediaitem.pressLinkUrl }}</div>
+<div class="press-link">
+    <a href="{{ mediaitem.pressLinkUrl }}">link</a>
+
+</div>
+
 
 </div>
 
 
 
+
 </div>
-
-
 
     <div class="side-spacer">
         _
     </div>
-
 
 
 </div>
@@ -613,18 +610,22 @@ height: 100%;
 
 
 
+
+
+</div>
 </div>
 
 </div>
 
 
 
-
-</div>
-
+<div class="expand-button-container">
 <div class="expand-button articles">
     expand
 </div>
+
+</div>
+
 
 
 </section>
