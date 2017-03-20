@@ -301,11 +301,10 @@ $(function() {
             $(formMessages).removeClass('error');
             $(formMessages).addClass('success');
 
-
+            $(formMessages).delay(1000).fadeOut('slow');
 
             // Set the message text.
             $(formMessages).text(response);
-
             // Clear the form.
             $('#name').val('');
             $('#email').val('');

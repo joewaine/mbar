@@ -98,8 +98,9 @@ twitter
 <span class="announcement-header">
     {{ timedAnnouncement.title }}
 </span>
-{{ timedAnnouncement.body }}
-
+<p>
+{{ timedAnnouncement.announcementText }}
+</p>
 
 
 </div>
@@ -411,7 +412,14 @@ height: 100%;
 
     <div id="page-wrapper">
 
-      <div id="form-messages"></div>
+      <div id="form-messages">
+
+<div class="good-message">Thank You! Your message has been sent.</div>
+
+<div class="bad-message">Something went wrong, please try sending the message again or contact us by phone at <a href="tel:+12064578287">206 457 8287</a></div>
+
+
+      </div>
 
         <form id="ajax-contact" method="post" action="mailer.php" style="position:relative;">
             <div class="field">
