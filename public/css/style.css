@@ -1362,6 +1362,7 @@ body.fixedwaypoint{
     position: relative;
     padding-bottom: 20px;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -1564,6 +1565,11 @@ font-family: 'Avenir LT Std 45 Book';
 
 
 
+
+form input[type="submit"] {
+
+border-radius: 0 !important;
+}
 
 
 
@@ -1880,8 +1886,8 @@ bottom: 0;
 /*margin-left: -74px;*/
 /*width: 116px;*/
 /*height: 116px;*/
-margin-bottom: 20px;
-margin-top: 20px;
+/*margin-bottom: 20px;*/
+/*margin-top: 20px;*/
 }
 
 
@@ -2307,8 +2313,11 @@ section.menu {
 
 
 .contact-item-text.left {
-    width: 80px;
+  width: 80px;
+  line-height: 24px;
 }
+
+
 
 .contact-item-text.left span{
   /*top: 65px;*/
@@ -2329,7 +2338,7 @@ section.menu {
 
 
 .item-row, .media-row{
-    margin-left: 13px;
+    /*margin-left: 13px;*/
 }
 
   form textarea, form input[type="text"], form input[type="email"]{
@@ -2371,7 +2380,7 @@ form input[type="submit"] {
 
 
 .side-spacer{
-  width: 0;
+  /*width: 0;*/
 }
 
 
