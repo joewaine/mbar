@@ -1744,6 +1744,7 @@ form textarea, form input[type="text"], form input[type="email"] {
   width: 100%;
 
     min-height: 130px;
+        height: inherit;
 
 }
 
