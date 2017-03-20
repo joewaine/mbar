@@ -1710,6 +1710,13 @@ form input[type="submit"] {
 
 }
 
+/*@media only screen and (max-width: 1080px){
+  .events-row {
+    width: 100%;
+}
+}*/
+
+
 @media only screen and (max-width: 960px) {
 
 
@@ -1764,6 +1771,12 @@ form textarea, form input[type="text"], form input[type="email"] {
 form input[type="submit"] {
     right: -24px;
 }
+
+
+.hours p {
+    margin-left: 0;
+  }
+
 
 }
 
@@ -2369,8 +2382,10 @@ height: 200px;
     margin: 0 auto;
 }
 
+
+
 form input[type="submit"] {
-  right: -2px;
+    right: 8px;
 }
 
 .slideshow-box-text p {
