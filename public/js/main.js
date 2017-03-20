@@ -24,6 +24,8 @@ $('#owl1').prepend($('#instafeed').html());
 setTimeout(function(){
 
 $('#owl1').owlCarousel({
+    touchDrag  : false,
+    mouseDrag  : false,
   center: true,
     loop:true,
     margin:0,
@@ -46,6 +48,8 @@ $('#owl1').owlCarousel({
 },1000);
 
 $('#owl2').owlCarousel({
+    touchDrag  : false,
+    mouseDrag  : false,
     loop:true,
     margin:00,
     nav:true,
@@ -66,6 +70,8 @@ $('#owl2').owlCarousel({
 
 
 $('#owl3').owlCarousel({
+    touchDrag  : false,
+    mouseDrag  : false,
     loop:true,
     margin:00,
     nav:true,
