@@ -774,7 +774,7 @@ form textarea,
 form input[type="text"],
 form input[type="email"]{
       background: #F7D151;
-    color: #434444;
+    color: #031191;
     width: 530px;
     display: block;
     border: 0;
@@ -785,6 +785,12 @@ form input[type="email"]{
     resize: none;
     position: relative;
     border-radius: 0 !important;
+}
+
+
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+      background: #F7D151 !important;
 }
 
 
@@ -805,7 +811,7 @@ form input[type="submit"]{
 
 
 form textarea{
-  height: 58px;
+  height: 56px;
   padding-bottom: 110px;
 }
 
@@ -1526,6 +1532,41 @@ button.close-announcement{
   /*display: none;*/
 }
 
+
+
+#form-messages{
+  display: none;
+
+
+}
+
+
+
+
+#form-messages.success{
+position: fixed;
+width: 100%;
+height: 100vh;
+top: 0;
+background: #F2C217;
+color: #031191;
+left: 0;
+z-index: 100000;
+display: block;
+color: green;
+font-size: 100px;
+padding-top: 200px;
+font-size: 22.5px;
+font-family: 'Avenir LT Std 45 Book';
+
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 1560px) {
 
 .item-single:nth-child(6n+6){
@@ -1550,32 +1591,30 @@ button.close-announcement{
 }
 
 
-.events-row{
-  width: 90%;
-}
+
 
 form input[type="text"], form input[type="email"] {
     background: #F7D151;
     color: #434444;
-    width: 100%;
+    /*width: 100%;*/
     display: block;
     border: 0;
     padding: 8px;
     padding-left: 16px;
     padding-top: 12px;
-    margin-bottom: 48px;
+    /*margin-bottom: 48px;*/
     resize: none;
     position: relative;
 }
 
 
 form textarea{
-      width: 100%;
+      /*width: 100%;*/
 }
 
 
 form input[type="submit"] {
-     right: -24px;
+/*     right: -24px;*/
   }
 
 
@@ -1644,6 +1683,25 @@ nav a{
     width: 80%;
 }
 
+.events-row{
+  width: 90%;
+}
+
+.events-slideshow {
+    width: 46%;
+  }
+
+
+
+form textarea, form input[type="text"], form input[type="email"] {
+   width: 96%;
+}
+
+
+form input[type="submit"] {
+    right: -7px;
+}
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -1660,14 +1718,19 @@ footer{
 /*forms*/
 
 .events-slideshow{
-    width: 90%;
+    width: 100%;
     float: left;
 }
 
 .events-form{
-  width: 90%;
+  width: 100%;
   float: left;
 }
+
+form textarea, form input[type="text"], form input[type="email"] {
+    width: 100%;
+}
+
 
 /*forms*/
 
@@ -1685,6 +1748,11 @@ footer{
 #owl2 .owl-next,
 #owl2 .owl-prev{
     /*margin-top: -340px !important;*/
+}
+
+
+form input[type="submit"] {
+    right: -24px;
 }
 
 }
@@ -2039,11 +2107,27 @@ margin-top: -25px;
 }
 
 
+
+
+.announcements{
+    margin-bottom: 0 !important;
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+}
+
+
 }
 
 
 
 @media only screen and (max-width: 660px) {
+
+
+  .events-slideshow {
+    width: 94%;
+    float: left;
+}
 
 
 
@@ -2303,7 +2387,7 @@ form input[type="submit"] {
 @media only screen and (max-width: 560px) {
 
 .contact-items-container{
-    width: 70%;
+    width: 80%;
   }
 
 
