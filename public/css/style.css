@@ -2630,7 +2630,9 @@ section.menu{
 
 
 .hours p{
-      font-size: 14px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .schedule .hours, .schedule .address {
