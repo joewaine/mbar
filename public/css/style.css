@@ -1600,7 +1600,7 @@ border-radius: 0 !important;
     top: -10px;
     font-size: 18.75px;
     padding-top: 8.5px;
-        height: 30px;
+        height: 29px;
 
   }
 
@@ -1619,7 +1619,7 @@ border-radius: 0 !important;
     top: -10px;
     font-size: 18.75px;
     padding-top: 8.5px;
-        height: 30px;
+        height: 29px;
 
   }
 
@@ -1638,7 +1638,7 @@ border-radius: 0 !important;
     top: -10px;
     font-size: 18.75px;
     padding-top: 8.5px;
-        height: 30px;
+        height: 29px;
 
   }
 
@@ -2224,10 +2224,10 @@ margin-top: -25px;
 
 
 .announcements{
-    margin-bottom: 0 !important;
+/*    margin-bottom: 0 !important;
     position: fixed;
     bottom: 0;
-    min-height: 100px;
+    min-height: 100px;*/
 
     padding-top: 34px;
 }
