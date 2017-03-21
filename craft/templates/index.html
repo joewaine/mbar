@@ -422,27 +422,29 @@ height: 100%;
       </div>
 
         <form id="ajax-contact" method="post" action="mailer.php" style="position:relative;">
-            <div class="field">
+            <div class="field for-name">
                 <!-- <label for="name">Name:</label> -->
                 <input placeholder="name" type="text" id="name" name="name" required>
             </div>
 
-            <div class="field">
+            <div class="field for-email">
                 <!-- <label for="email">Email:</label> -->
                 <input placeholder="email" type="email" id="email" name="email" required>
             </div>
 
 
-            <div class="field">
+            <div class="field for-subject">
                 <!-- <label for="subject">Subject:</label> -->
                 <input placeholder="subject" type="text" id="subject" name="subject" required>
             </div>
 
 
-            <div class="field">
+            <div class="field for-message">
                 <!-- <label for="message">Message:</label> -->
-                <input type="submit" value="Send" style="z-index: 1000;">
+
                 <textarea placeholder="message" id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send" style="z-index: 1000;">
             </div>
 <!--
             <div class="field">
