@@ -396,12 +396,12 @@ $('.mobile-nav').slideToggle();
     $('.announcements').css('margin-bottom', '-' + announcementHeight + 'px');
     announcementHeight = 0;
 
-    if($(window).width() > 768){
+    // if($(window).width() > 768){
         var announcementHeight = $('.announcements').height() + 15;
         $('.contact-items').css('padding-top', announcementHeight + 40 + 'px');
-    }else{
+    // }else{
        // $('.contact-items').css('padding-top', '0px');
-    }
+    // }
 
 
 
@@ -412,12 +412,12 @@ $('.mobile-nav').slideToggle();
     $('.announcements').css('margin-bottom', '-' + announcementHeight + 'px');
     announcementHeight = 0;
 
-    if($(window).width() > 768){
+    // if($(window).width() > 768){
         var announcementHeight = $('.announcements').height() + 15;
         $('.contact-items').css('padding-top', announcementHeight + 40 + 'px');
-    }else{
+    // }else{
        // $('.contact-items').css('padding-top', '0px');
-    }
+    // }
 
 
 
