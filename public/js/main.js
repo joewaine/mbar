@@ -355,7 +355,7 @@ $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 'px' )
 
 $('.menu-expand').click(function(){
 
-$('.mobile-nav').toggle();
+$('.mobile-nav').slideToggle();
 
 
 });
