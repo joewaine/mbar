@@ -2237,7 +2237,7 @@ nav ul{
 }
 
 section.menu{
-  background-size: 600%;
+  background-size: 800%;
 }
 
 }
@@ -2407,6 +2407,7 @@ section.menu {
 
 .contact-items{
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 
