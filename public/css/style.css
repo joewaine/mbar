@@ -1434,23 +1434,14 @@ nav ul li:last-child{
 }
 
 .middle-spacer{width: 88%;float:left;}
-
-
-
-
 .panels.inside{
   padding: 22px;
   padding-bottom: 80px;
 }
-
-
-
 .menu-expand-image{
-  width: 31.25px;
+  width: 26.25px;
   height: 25.25px;
 }
-
-
 
 ::-webkit-scrollbar {
     display: none;
@@ -2494,15 +2485,10 @@ form input[type="submit"] {
 }
 
 .slideshow-box-text p {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 16px;
 }
-
-
-.side-spacer{
-  /*width: 0;*/
-}
-
 
 .contact-item-text.left span{
     left: -2px;
@@ -2513,12 +2499,7 @@ form input[type="submit"] {
     width: 60%;
   }
 
-
-
-
-/*submit button*/
-
-    form input[type="submit"] {
+form input[type="submit"] {
     width: 100px;
     height: 100px;
     bottom: 0px;
@@ -2535,11 +2516,20 @@ form input[type="submit"] {
     margin-bottom: 36px;
     width: 100%;
     padding: 8px;
-    /* padding-right: 17px; */
     padding-left: 16px;
     margin-left: 8px;
 
     }
+
+.contact-item:last-child{
+        margin-right: 5px;
+}
+
+.contact-item:first-child{
+        margin-left: 5px;
+}
+
+
 
 
 
@@ -2656,30 +2646,6 @@ section.menu{
     width: 100%;
   }
 }
-
-
-
-/*items{*/
-
-
-/*.item-single{
-  margin-right: 0;
-      width: 14.66%;
-}
-.item-single:nth-child(6n+6){
-    border-right: 0px solid #F2C217;
-}
-*/
-
-
-/*}*/
-
-
-
-
-/*cursors*/
-
-
 
 
 /*sticky*/
