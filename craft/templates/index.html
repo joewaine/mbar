@@ -93,7 +93,7 @@ twitter
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
 <div class="announcements">
 
-<button class="close-announcement">X</button>
+<!-- <button class="close-announcement">X</button> -->
 
 <span class="announcement-header">
     {{ timedAnnouncement.title }}
@@ -157,6 +157,36 @@ twitter
 </div>
 </section>
 <!-- schedule items -->
+
+
+
+
+<!-- mobile announcements -->
+
+
+{% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
+<div class="announcements-mobile">
+
+<!-- <button class="close-announcement">X</button> -->
+
+<span class="announcement-header">
+    {{ timedAnnouncement.title }}
+</span>
+<p>
+{{ timedAnnouncement.announcementText }}
+</p>
+
+
+</div>
+{% endfor %}
+
+
+
+
+<!-- mobile announcements -->
+
+
+
 
 {% elseif block.type == "instagramFeed" %}
 
