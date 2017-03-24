@@ -1713,6 +1713,20 @@ border-radius: 0 !important;
   display: none;
 }
 
+
+
+.field textarea {
+    padding-top: 7px;
+}
+
+.field.for-name input,
+.field.for-subject input,
+.field.for-email input {
+    padding-top: 10px;
+}
+
+
+
 @media only screen and (max-width: 1560px) {
 
 .item-single:nth-child(6n+6){
@@ -2299,7 +2313,7 @@ nav ul{
 }
 
 section.menu{
-  background-size: 800%;
+  /*background-size: 800%;*/
 }
 
 }
