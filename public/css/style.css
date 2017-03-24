@@ -1571,8 +1571,8 @@ border-radius: 0 !important;
 
 
 .field.for-message:before  {
-      background: #F7D151;
-      color: #434444;
+    background: #F7D151;
+    color: #434444;
     content: "message";
     width: 98px;
     height: 20px;
@@ -1582,14 +1582,14 @@ border-radius: 0 !important;
     position: absolute;
     top: -10px;
     font-size: 18.75px;
-    padding-top: 9.5px;
-
+    padding-top: 7px;
+    pointer-events: none;
   }
 
 
 .field.for-subject:before  {
-      background: #F7D151;
-      color: #434444;
+    background: #F7D151;
+    color: #434444;
     content: "subject";
     width: 87px;
     height: 20px;
@@ -1599,9 +1599,9 @@ border-radius: 0 !important;
     position: absolute;
     top: -10px;
     font-size: 18.75px;
-    padding-top: 8.5px;
-        height: 29px;
-
+    padding-top: 7px;
+    height: 29px;
+    pointer-events: none;
   }
 
 
@@ -1618,9 +1618,9 @@ border-radius: 0 !important;
     position: absolute;
     top: -10px;
     font-size: 18.75px;
-    padding-top: 8.5px;
-        height: 29px;
-
+    padding-top: 7px;
+    height: 29px;
+    pointer-events: none;
   }
 
 
@@ -1637,9 +1637,9 @@ border-radius: 0 !important;
     position: absolute;
     top: -10px;
     font-size: 18.75px;
-    padding-top: 8.5px;
-        height: 29px;
-
+    padding-top: 7px;
+    height: 29px;
+    pointer-events: none;
   }
 
 
@@ -1656,8 +1656,28 @@ border-radius: 0 !important;
 
 
 .field textarea{
-      padding-top: 10px;
+  padding-top: 10px;
 }
+
+.field.for-subject input{
+  text-indent: 76px;
+}
+
+
+.field.for-name input{
+  text-indent: 62px;
+}
+
+
+.field.for-email input{
+  text-indent: 62px;
+}
+
+
+.field textarea{
+  text-indent: 92px;
+}
+
 
 
 .little-message-label{
@@ -2003,12 +2023,13 @@ nav ul{
   display: none;
 }
 
+
+
+
 .item-single {
-    /*width: 46%;*/
     height: 230px;
     float: left;
     position: relative;
-    /*margin-right: 20px;*/
     margin-bottom: 20px;
     display: none;
     overflow: hidden;
@@ -2512,6 +2533,7 @@ section.menu {
 
 form textarea{
 height: 200px;
+padding-top: 7px;
 }
 
 .events-form {
