@@ -15,10 +15,19 @@
     userFeed.run();
 
 
+
+
+if($("#instafeed").length == 0) {
+  //it doesn't exist
+}else{
+
 setTimeout(function(){
 $('#owl1').prepend($('#instafeed').html());
-
 },500);
+}
+
+
+
 
 
 setTimeout(function(){
