@@ -2320,6 +2320,24 @@ section.menu{
   /*background-size: 800%;*/
 }
 
+
+/*images correct*/
+#content,
+section.menu{
+      -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+}
+
+
+
+
+/*images correct*/
+
+
+
+
 }
 
 @media only screen and (max-width: 660px) {
