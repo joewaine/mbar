@@ -170,6 +170,7 @@ nav a:hover{
 
 img.logo{
   width: 280px;
+  margin-left: 10px;
 }
 
 
@@ -189,15 +190,30 @@ img.logo{
 
 
 .contact-item{
-  background: url(../img/contact-item-bg.svg);
+  background-image: url(../img/contact-item-bg.png);
+  background-size: 210px 144px;
   background-repeat: no-repeat;
-  background-position: right center;
   width: 210px;
   color: white;
-  /* font-family: 'Avenir LT Std 65 Medium'; */
   margin: 0 auto;
   height: 144px;
   font-family: 'AvenirLTStdthick';
+  -webkit-transition: background-image 0.2s ease-in;
+  transition: background-image 0.2s ease-in;
+}
+
+.contact-item:hover{
+        background-image: url(../img/contact-item-bg-hover.png);
+      /*background-color: white;*/
+    /*-webkit-mask:  url(../img/contact-item-bg.svg) no-repeat 50% 50%;*/
+    /*mask: url(../img/contact-item-bg.svg) no-repeat 50% 50%;*/
+}
+
+
+
+.contact-item:hover .contact-item-text a,
+.contact-item:hover .contact-item-text span:before{
+  color: #0524d8 !important;
 }
 
 .contact-item:first-child{
@@ -468,20 +484,20 @@ section.menu{
 
 
 .panels{
-  border: 3px solid #F2C217;
+  border: 2.8px solid #F2C217;
   border-radius: 10px;
-  padding: 4px;
+  padding: 3px;
 }
 
 
 .panels.one{
   width: 1170px;
   margin: 0 auto;
-    border-radius: 34px;
+    border-radius: 30px;
 }
 
 .panels.two{
-    border-radius: 27px;
+    border-radius: 25px;
 }
 
 .panels.three{
@@ -489,7 +505,7 @@ section.menu{
 }
 .panels.inside{
     background-color: #425960;
-    border-radius: 13px;
+    border-radius: 15px;
     padding: 32px 0 120px 0;
     text-align: left;
     position: relative;
@@ -583,7 +599,7 @@ display: block
   padding-top: 144px;
   padding-bottom: 74px;
   text-align: center;
-  background: url(../img/find-us-bg.jpg) no-repeat center center;
+  background: url(../img/find-us-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -646,17 +662,17 @@ display: block
 
 .about-triangle{
     background: url(../img/about-triangle.svg);
-    height: 162px;
-    width: 162px;
+    height: 136px;
+    width: 136px;
     color: #525252;
     font-size: 21.75px;
     position: absolute;
-    top: -112px;
+    top: -94px;
     z-index: 100;
     left: 50%;
-    margin-left: -81px;
+    margin-left: -68px;
     background-repeat: no-repeat;
-    padding-top: 64px;
+    padding-top: 52px;
     text-align: center;
   }
 
@@ -726,7 +742,7 @@ display: block
     color: #FADC6A;
     font-size: 15px;
     line-height: 32px;
-    margin: -2px auto 0;
+    margin: -3px auto 0;
     padding: 24px;
     padding-top: 16px;
     width: 634px;
@@ -793,31 +809,38 @@ form input[type="email"]{
 
 
 
+
+
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       background: #F7D151 !important;
 }
-
 
 
 form input[type="submit"]{
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: 0px;
+    /*bottom: -100px;*/
     /* right: -24px; */
     right: 10px;
     border: 0;
     color: transparent;
-    background: transparent;
+    background: #F7D151;
     background-image: url(../img/send.svg);
     background-repeat: no-repeat;
+    width: 100px;
+    background-position: right;
 }
-
 
 form textarea{
   height: 56px;
-  padding-bottom: 110px;
+  padding-bottom: 15px;
 }
+
+/*form textarea{
+width: 430px;
+padding-right: 108px;
+}*/
 
 button.close-modal,
 button.close-modal:focus,
@@ -1068,7 +1091,7 @@ input:focus {
     -o-transition: all .5s ease;
     transition: all .5s ease;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 50%;
     margin-left: -69px;
     cursor: pointer;
@@ -1121,11 +1144,11 @@ footer{
 
 .modal{
     background: #ffffff;
-    width: 900px;
+    width: 678px;
     margin: 20px auto;
-    /*padding: 30px;*/
+    /* padding: 30px; */
     border-radius: 35px;
-    border: 20px solid #00AEEF;
+    border: 18px solid #00AEEF;
     position: relative;
     padding-bottom: 100px;
 }
@@ -1149,12 +1172,12 @@ footer{
     background-repeat: no-repeat;
     border: 0;
     color: transparent;
-    width: 46px;
-    height: 46px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     bottom: 18px;
     left: 50%;
-    margin-left: -23px;
+    margin-left: -16px;
 }
 
 
@@ -1163,7 +1186,7 @@ footer{
     padding-top: 100px;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    height: 429px;
+    height: 220px;
     color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1181,14 +1204,15 @@ footer{
 
 .item-description-modal h2{
     color: #031191;
-    font-size: 27px;
-    margin-bottom: 10px;
-    font-family: 'Avenir LT Std 65 Medium';
+    font-size: 22px;
+    margin-bottom: 0;
+    font-family: 'AvenirLTStdthick';
+    margin-top: 0;
 }
 
 .item-description-modal p{
     color: #00AEEF;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 40px;
     margin-top: 0 !important;
     font-family: 'Avenir LT Std 65 Medium';
@@ -1365,8 +1389,8 @@ body.fixedwaypoint{
     height: 118px;
     position: relative;
     padding-bottom: 20px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -1416,7 +1440,7 @@ nav ul li:last-child{
 
 .schedule .hours{
     padding-top: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 
@@ -1730,6 +1754,37 @@ border-radius: 0 !important;
 }
 
 
+#ajax-contact .field{
+  background: #F7D151;
+}
+
+
+form textarea{
+      /*background: pink;*/
+      /*width: 430px;*/
+}
+
+
+form input[type="submit"]{
+  right: 0;
+
+
+}
+
+/*.field{*/
+  /*background: #F7D151;*/
+  /*width: 100%;*/
+/*}*/
+
+form textarea{
+  margin-bottom: 0 !important;
+}
+
+
+.field.submission{
+  height:100px;
+  margin-bottom: 36px;
+}
 
 @media only screen and (max-width: 1560px) {
 
@@ -1934,6 +1989,20 @@ right: -21px;
   }
 
 
+
+.events-description{
+  text-align: center;
+}
+
+
+
+.events-booking-text-box{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 }
 
 
@@ -2022,11 +2091,18 @@ right: -21px;
   padding-bottom: 26px;
 }
 
+
+
+
+
 .slideshow-box-text p,
 .events-description {
     width: 90%;
 }
 
+.events-description{
+      width: 96%;
+}
 
 .schedule .hours,
 .schedule .address{
@@ -2340,6 +2416,9 @@ section.menu{
 
 }
 
+
+
+
 @media only screen and (max-width: 660px) {
 
 
@@ -2388,8 +2467,9 @@ padding-top: 55px;
     font-size: 16px;
     line-height: 30px;
     padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 14px;
   }
-
 
   .slideshow-box-text p {
     font-size: 16px;
@@ -2487,12 +2567,12 @@ section.menu {
   }
 
 .our-family {
-  padding-bottom: 6px;
+  /*padding-bottom: 6px;*/
 }
 
 
 .media {
-    padding-bottom: 6px;
+    /*padding-bottom: 6px;*/
 }
 
 
@@ -2523,8 +2603,10 @@ section.menu {
 
 
 .contact-item-text.left {
+  /*width: 80px;*/
+  /*line-height: 24px;*/
   width: 80px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 
@@ -2634,6 +2716,22 @@ form input[type="submit"] {
 
 
 
+#ajax-contact .field{
+  background: transparent;
+}
+
+
+
+
+#ajax-contact .field{
+      background: #F7D151;
+}
+
+.field.submission{
+  background: transparent !important;
+  margin-bottom: 0;
+  height: 76px;
+}
 
 }
 
