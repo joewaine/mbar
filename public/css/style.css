@@ -191,7 +191,7 @@ img.logo{
 
 .contact-item{
   background-image: url(../img/contact-item-bg.svg);
-  background-size: 210px 144px;
+  /*background-size: 210px 144px;*/
   background-repeat: no-repeat;
   width: 210px;
   color: white;
