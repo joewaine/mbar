@@ -190,7 +190,7 @@ img.logo{
 
 
 .contact-item{
-  background-image: url(../img/contact-item-bg.png);
+  background-image: url(../img/contact-item-bg.svg);
   background-size: 210px 144px;
   background-repeat: no-repeat;
   width: 210px;
@@ -203,7 +203,7 @@ img.logo{
 }
 
 .contact-item:hover{
-        background-image: url(../img/contact-item-bg-hover.png);
+        background-image: url(../img/contact-item-bg-hover.svg);
       /*background-color: white;*/
     /*-webkit-mask:  url(../img/contact-item-bg.svg) no-repeat 50% 50%;*/
     /*mask: url(../img/contact-item-bg.svg) no-repeat 50% 50%;*/
