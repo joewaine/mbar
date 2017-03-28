@@ -202,13 +202,13 @@ img.logo{
    background-position: right center;
 }
 
-.contact-item:hover{
+.contact-item:first-child:hover{
   background-image: url(../img/contact-item-bg-hover.svg);
 }
 
 
 
-.contact-item:hover .contact-item-text a,
+/*.contact-item:hover .contact-item-text a,*/
 .contact-item:hover .contact-item-text span:before{
   color: #0524d8 !important;
 }
@@ -2235,7 +2235,7 @@ nav ul li{
 }
 
 .about-triangle{
-  display: none;
+  /*display: none;*/
 }
 
 
@@ -2396,18 +2396,12 @@ section.menu{
 
 
 /*images correct*/
-#content,
-section.menu{
+#content{
       -webkit-background-size: initial;
     -moz-background-size: initial;
     -o-background-size: initial;
-    background-size: initial;
-}
+  }
 
-
-
-
-/*images correct*/
 
 
 
@@ -2419,6 +2413,16 @@ section.menu{
 
 @media only screen and (max-width: 660px) {
 
+
+
+
+.contact-item:hover .contact-item-text a{
+  color: #0524d8 !important;
+}
+
+.contact-item:hover{
+  background-image: url(../img/contact-item-bg-hover.svg);
+}
 
   .events-slideshow {
     width: 94%;
