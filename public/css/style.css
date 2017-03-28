@@ -50,7 +50,7 @@ body{
 }
 
 #content{
-    background: url(../img/clouds.jpg) no-repeat top center fixed;
+    /*background: url(../img/clouds.jpg) no-repeat top center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
