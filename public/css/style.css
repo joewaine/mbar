@@ -199,7 +199,7 @@ img.logo{
   font-family: 'AvenirLTStdthick';
   -webkit-transition: background-image 0.2s ease-in;
   transition: background-image 0.2s ease-in;
-    background-position: center center;
+   background-position: right center;
 }
 
 .contact-item:hover{
