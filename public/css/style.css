@@ -1790,6 +1790,13 @@ form textarea{
   margin-bottom: 36px;
 }
 
+
+
+#owl1{
+  position: relative;
+}
+
+
 @media only screen and (max-width: 1560px) {
 
 .item-single:nth-child(6n+6){
