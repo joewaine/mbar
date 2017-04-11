@@ -367,7 +367,7 @@ float: right
   height: 63px;
   z-index: 1000;
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 50%;
   margin-top: -32px;
 
@@ -383,7 +383,7 @@ float: right
     height: 63px;
     z-index: 1000;
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 50%;
     margin-top: -32px;
 }
@@ -488,7 +488,7 @@ section.menu{
 
 
 .panels.one{
-  width: 1170px;
+    width: 1156px;
   margin: 0 auto;
     border-radius: 30px;
     margin-top: -1px;
@@ -764,8 +764,13 @@ display: block
 .events-slideshow{
     background: #F7D151;
     width: 554px;
-    /*height: 368px;*/
+    height: 368px;
     padding: 12px;
+    height: 360px;
+    padding: 12px;
+    overflow: hidden;
+    border-bottom: 12px solid #F7D151;
+    position: relative;
 }
 
 
@@ -967,7 +972,8 @@ input:focus {
   width: 1596px;
 
 
-      width: 1164px;
+      /*width: 1164px;*/
+          width: 1192px;
 }
 
 
