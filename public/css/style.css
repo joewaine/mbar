@@ -2921,3 +2921,11 @@ form input[type="submit"] {
     margin-left: 0;
 
     }
+
+
+
+.field.submission{
+    height: transparent;
+    background: transparent;
+}
+
