@@ -99,7 +99,7 @@ img#image{
 }
 
 nav{
-    background: #0524d8;
+    background: #6EBAFF;
     width: 100%;
     height: 57px;
     margin-top: 10px;
@@ -679,7 +679,7 @@ display: block
 }
 
 .slideshow-box-text{
-    background: #F2C217;
+    background: #FFCC3E;
     min-height: 154px;
     padding-bottom: 4px;
     width: 100%;
@@ -882,7 +882,7 @@ input:focus {
 
 
 .our-family{
-  background: #F2C217;
+  background: #FFCC3E;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -2570,8 +2570,9 @@ section.menu {
 
 .find-us {
     padding-top: 102px;
-   padding-bottom: 26px;
-
+    padding-bottom: 26px;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 
   .schedule-items {
