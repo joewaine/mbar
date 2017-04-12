@@ -2939,36 +2939,16 @@ form input[type="submit"] {
 
 }
 
-
-
-@media only screen and (max-width: 1236px) {
+#ajax-contact .field.submission input{
+      z-index: 1000;
+    padding: 0;
+}
 
 
 #ajax-contact .field.submission{
-    margin-left: 0;
-
+  padding-left: 10px;
 }
 
-
-
-}
-
-
-@media only screen and (max-width: 1124px) {
-
-#ajax-contact .field.submission{
-    padding: 0px 8px 0px 12px;
-    margin-bottom: 36px;
-}
-
-}
-
-
-@media only screen and (max-width: 1056px) {
-#ajax-contact .field.submission{
-    background: no-repeat rgb(3, 17, 145);
-}
-}
 
 
 
