@@ -2939,6 +2939,20 @@ form input[type="submit"] {
 }
 
 
+
+@media only screen and (max-width: 1236px) {
+
+
+#ajax-contact .field.submission{
+    margin-left: 0;
+
+}
+
+
+
+}
+
+
 @media only screen and (max-width: 1124px) {
 
 #ajax-contact .field.submission{
