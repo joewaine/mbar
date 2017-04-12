@@ -3279,16 +3279,9 @@ float: right
 }
 
 .schedule .address{
-  /*font-size: 23px;*/
-      /*margin-left: 28px;*/
   font-size: 16.5px;
   color: #0524D8;
-  /*font-family: 'Avenir LT Std 65 Medium Oblique';*/
   font-style:   oblique;
-  font-family: 'AvenirLTStdHeavyObliquethick';
-    font-family: "Avenir LT Std 65 Medium";
-  /*font-family: AvenirLTStdthick;*/
-
 font-family: 'Avenir LT Std 65 Medium';
 }
 
