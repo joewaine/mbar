@@ -2938,6 +2938,7 @@ form input[type="submit"] {
 #ajax-contact .field.submission input{
       z-index: 1000;
     padding: 0;
+   color: rgb(255, 204, 62) !important;
 }
 
 
@@ -2950,7 +2951,8 @@ form input[type="submit"] {
 
 #ajax-contact .field.submission{
   margin-bottom: 36px;
-  background: no-repeat rgb(3, 17, 145);
+  /*background: no-repeat rgb(3, 17, 145);*/
+  background: #324144;
     padding-left: 10px;
     width: initial;
         padding-left: 8px;
