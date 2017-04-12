@@ -552,7 +552,7 @@ window.open('https://goo.gl/maps/gZLnSb6DpV12', '_blank');
 $('.menus-grid').masonry({
   // options
   itemSelector: '.menus-grid-item',
-    isAnimated: false
+transitionDuration: 0
 });
 
 
@@ -564,7 +564,7 @@ $('.menu-tabs li').click(function(){
 $('.menus-grid').masonry({
   // options
   itemSelector: '.menus-grid-item',
-    isAnimated: false
+transitionDuration: 0
 });
 
 });
