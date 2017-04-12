@@ -2947,6 +2947,7 @@ form input[type="submit"] {
 
 #ajax-contact .field.submission{
   padding-left: 10px;
+  margin-left: 0;
 }
 
 
