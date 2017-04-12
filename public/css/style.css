@@ -100,7 +100,8 @@ img#image{
 
 nav{
     background: #6EBAFF;
-background: #31A7FF;
+background: #324144;
+
     width: 100%;
     height: 57px;
     margin-top: 10px;
@@ -1131,7 +1132,7 @@ transform: rotate(180deg);
 
 
 footer{
-    background: #031191;
+    background: #324144;
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
@@ -1374,9 +1375,9 @@ body.fixedwaypoint{
 
 .hide-on-desk{
   display: none;
-  background: #31A7FF;
+  /*background: #31A7FF;*/
 
-
+background: #324144;
 }
 
 
