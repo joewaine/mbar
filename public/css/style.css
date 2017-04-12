@@ -2957,4 +2957,6 @@ form input[type="submit"] {
 #ajax-contact .field.submission{
   margin-bottom: 36px;
   background: no-repeat rgb(3, 17, 145);
+    padding-left: 10px;
+    width: initial;
 }
