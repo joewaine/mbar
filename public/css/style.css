@@ -764,12 +764,12 @@ display: block
 .events-slideshow{
     background: #F7D151;
     width: 554px;
-    height: 368px;
     padding: 12px;
     /*height: 362px;*/
+    height: 368px;
     padding: 12px;
     overflow: hidden;
-    border-bottom: 9px solid #F7D151;
+    border-bottom: 12px solid #F7D151;
     position: relative;
 }
 
