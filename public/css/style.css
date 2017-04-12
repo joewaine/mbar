@@ -118,7 +118,7 @@ nav ul li{
 }
 
 nav a{
-  color: yellow;
+  color: #FFCC3E;
   font-size: 18px;
   text-decoration: none;
 }
@@ -1082,7 +1082,7 @@ input:focus {
   margin: 0 auto;
 }
 .expand-button{
-    background-image: url(../img/expand-button.svg);
+    background-image: url(../img/expand-button-gr.svg);
     background-repeat: no-repeat;
     color: transparent;
     width: 138px;
