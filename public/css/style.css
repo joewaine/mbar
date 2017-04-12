@@ -2455,6 +2455,9 @@ section.menu{
   .events-slideshow {
     width: 94%;
     float: left;
+
+        height: initial;
+    border-bottom: 0;
 }
 
 
