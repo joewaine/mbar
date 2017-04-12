@@ -538,4 +538,13 @@ window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_
 
 });
 
-$('.find-panel').prepend('<div class="address"><a href="https://goo.gl/maps/gZLnSb6DpV12" target="_blank">' + $('.address').text() + '<a></div>');
+// $('.find-panel').prepend('<div class="address"><a href="https://goo.gl/maps/gZLnSb6DpV12" target="_blank">' + $('.address').text() + '<a></div>');
+
+
+
+$('.find-header').click(function(){
+
+window.open('https://goo.gl/maps/gZLnSb6DpV12', '_blank');
+
+
+});
