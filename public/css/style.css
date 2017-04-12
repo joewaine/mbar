@@ -1372,8 +1372,9 @@ body.fixedwaypoint{
 
 .hide-on-desk{
   display: none;
-      background: #0524d8;
-    /*padding-bottom: 10px;*/
+
+
+    background: rgb(110, 186, 255);
 }
 
 
