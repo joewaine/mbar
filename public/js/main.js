@@ -538,4 +538,4 @@ window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_
 
 });
 
-$('.find-panel').prepend('<div class="address">' + $('.address').text() + '</div>');
+$('.find-panel').prepend('<div class="address"><a href="https://goo.gl/maps/gZLnSb6DpV12" target="_blank">' + $('.address').text() + '<a></div>');
