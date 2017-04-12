@@ -531,4 +531,10 @@ $('.contact-items').css('padding-top', contItemValBot + 'px');
     });
 
 
+$('.contact-item:first-child').click(function(){
+
+window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_blank');
+
+
+});
 
