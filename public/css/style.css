@@ -3286,7 +3286,7 @@ float: right
   /*font-family: 'Avenir LT Std 65 Medium Oblique';*/
   font-style:   oblique;
   font-family: 'AvenirLTStdHeavyObliquethick';
-
+    font-family: "Avenir LT Std 65 Medium";
   /*font-family: AvenirLTStdthick;*/
 
 
@@ -5987,6 +5987,7 @@ form input[type="submit"] {
   color: rgb(242, 194, 23);
   font-style: oblique;
   font-family: AvenirLTStdHeavyObliquethick;
+    font-family: "Avenir LT Std 65 Medium";
   margin-bottom: 10px;
 }
 
