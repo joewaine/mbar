@@ -766,7 +766,7 @@ display: block
     width: 554px;
     height: 368px;
     padding: 12px;
-    height: 362px;
+    /*height: 362px;*/
     padding: 12px;
     overflow: hidden;
     border-bottom: 9px solid #F7D151;
