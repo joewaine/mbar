@@ -241,9 +241,9 @@ twitter
 <!-- potential first loop  -->
 {% for menuType in craft.entries.section('menus') %}
 <div class="panels inside">
-<div class="clearfix">
+<div class="clearfix  menus-grid">
 {% for item in menuType.menuGroup %}
-<div class="meal-group">
+<div class="meal-group menus-grid-item">
 <ul>
 <li>{{ item.menuGroupTitle }}</li>
 {% for dish in item.menuGroupEntry %}
