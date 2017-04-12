@@ -3015,3 +3015,10 @@ background: transparent;
 }
 
 }
+
+
+
+.expand-button{
+    background-image: url(../img/expand-button-gr.svg) !important;
+
+}
