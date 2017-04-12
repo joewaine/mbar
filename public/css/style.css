@@ -2967,6 +2967,8 @@ form input[type="submit"] {
   background: no-repeat rgb(3, 17, 145);
     padding-left: 10px;
     width: initial;
+        padding-left: 8px;
+    padding-right: 12px;
 }
 
 
