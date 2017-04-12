@@ -2975,4 +2975,5 @@ form input[type="submit"] {
     font-size: 16.5px;
   color: rgb(242, 194, 23);
   font-style: oblique;
+  text-decoration: none;
 }
