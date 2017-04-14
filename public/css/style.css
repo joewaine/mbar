@@ -191,7 +191,7 @@ img.logo{
 
 
 .contact-item{
-  background-image: url(../img/contact-item-bg.svg);
+  background-image: url(../img/contact-item-bg.png);
   background-repeat: no-repeat;
   width: 210px;
   color: white;
@@ -201,10 +201,11 @@ img.logo{
   -webkit-transition: background-image 0.2s ease-in;
   transition: background-image 0.2s ease-in;
    background-position: right center;
+       background-size: 210px 144px;
 }
 
 .contact-item:first-child:hover{
-  background-image: url(../img/contact-item-bg-hover.svg);
+  background-image: url(../img/contact-item-bg-hover.png);
 }
 
 
@@ -251,7 +252,7 @@ float: right
 
 .schedule .hours{
 
-  color: #EC1C24;
+  color: rgb(66, 89, 96);
   font-size: 22px;
   margin-bottom: 26px;
   font-family: 'Avenir LT Std 65 Medium';
@@ -263,10 +264,10 @@ float: right
 
 .schedule .address{
   font-size: 16.5px;
-  color: #0524D8;
+  color: #324144;
   font-style:   oblique;
-font-family: 'Avenir LT Std 65 Medium';
-    font-family: 'AvenirLTStdHeavyObliquethick';
+  font-family: 'Avenir LT Std 65 Medium';
+  font-family: 'AvenirLTStdHeavyObliquethick';
 }
 
 
@@ -682,13 +683,19 @@ display: block
 }
 
 .slideshow-box-text p{
-    color: #EC1C24;
+    color: #425960;
     font-size: 15px;
     margin: 0 auto;
     padding-top: 26px;
     width: 800px;
     text-align: left;
     line-height: 36px;
+        font-size: 14px;
+    line-height: 24px;
+
+        font-size: 14px;
+    line-height: 25px;
+    padding-top: 25px;
 }
 
 .events-booking{
@@ -1178,8 +1185,8 @@ footer{
     width: 32px;
     height: 32px;
     position: absolute;
-    bottom: 18px;
-    left: 50%;
+    top: 10px;
+    right: 10px;
     margin-left: -16px;
 }
 
@@ -2436,7 +2443,7 @@ section.menu{
 }
 
 .contact-item:hover{
-  background-image: url(../img/contact-item-bg-hover.svg);
+  background-image: url(../img/contact-item-bg-hover.png);
 }
 
   .events-slideshow {
@@ -2466,6 +2473,7 @@ padding-top: 55px;
 
 
     width: 150px;
+    background-size: 150px 102px;
 
 }
 
@@ -2603,6 +2611,7 @@ section.menu {
 .modal {
     width: 86%;
     margin-top: 10px;
+        margin-top: 50px;
 }
 
 
