@@ -1214,7 +1214,7 @@ footer{
 
 
 .item-description-modal h2{
-    color: #031191;
+      color: #324144;
     font-size: 22px;
     margin-bottom: 0;
     font-family: 'AvenirLTStdthick';
@@ -1222,7 +1222,7 @@ footer{
 }
 
 .item-description-modal p{
-    color: #00AEEF;
+    color: rgb(66, 89, 96);
     font-size: 16px;
     line-height: 24px;
     margin-top: 0 !important;
@@ -1505,7 +1505,7 @@ width: 100%;
 
 .announcements{
 
-  color: #EC1C24;
+    color: rgb(66, 89, 96);
     font-size: 15px;
     margin: 0 auto;
     padding-top: 20px;
@@ -2331,7 +2331,6 @@ margin-top: -25px;
 
 
 .item-description-modal p {
-    color: #00AEEF;
     font-size: 16px;
     line-height: 24px;
     margin-top: 0 !important;
@@ -2341,7 +2340,6 @@ margin-top: -25px;
 
 
 .item-description-modal h2 {
-    color: #031191;
     font-size: 27px;
     margin-bottom: 10px;
      font-family: 'Avenir LT Std 65 Medium';
@@ -2458,14 +2456,17 @@ section.menu{
 
 
 .contact-item-text.for-tel {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
 }
 
 .contact-item-text.for-tel{
-width: 103px;
-padding-top: 55px;
+    width: 86px;
+    padding-top: 55px;
+    margin-right: 10px;
 }
+
+
 
 
 
@@ -2638,7 +2639,7 @@ section.menu {
 .contact-item-text.left {
   /*width: 80px;*/
   /*line-height: 24px;*/
-  width: 80px;
+  width: 76px;
   line-height: 22px;
 }
 
@@ -2649,7 +2650,7 @@ section.menu {
 }
 
 .contact-item-text.left span:before {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .contact-item-text {
