@@ -616,7 +616,7 @@ display: block
     background-repeat: no-repeat;
     position: absolute;
     top: -70px;
-    color: #F05A28;
+    color: #425960;
     font-size: 21.75px;
     width: 140px;
     height: 62px;
@@ -748,7 +748,8 @@ display: block
     width: 634px;
     text-align: left;
 
-
+    font-size: 14px;
+    line-height: 25px;
 
 }
 
