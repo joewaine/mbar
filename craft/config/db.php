@@ -35,10 +35,14 @@ return array(
 					'password' => 'root',
 						// The prefix to use when naming tables. This can be no more than 5 characters.
 				'tablePrefix' => 'craft',
-      )
+      ),
 
-
-
+'mbarseattle.com' => array(
+	'server' => 'localhost',
+	'database' => 'mbar_craft_install',
+	'user' => 'mbar_webmaster',
+	'password' => 'Seattle98109Mbar',
+	'tablePrefix' => 'craft')
 
 
 );
