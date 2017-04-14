@@ -3002,6 +3002,12 @@ background: transparent;
 
 
 
+@media only screen and (max-width: 660px) {
+  #ajax-contact .field.submission {
+          background: rgb(50, 65, 68) !important;
+  }
+
+}
 
 
 
