@@ -2968,6 +2968,7 @@ form input[type="submit"] {
   width: initial;
     padding-left: 8px;
     padding-right: 12px;
+        background: rgb(50, 65, 68);
 }
 
 
