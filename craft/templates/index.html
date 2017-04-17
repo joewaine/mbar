@@ -573,41 +573,26 @@ height: 100%;
 {{ member.body }}
 </div>
 </div>
-
 </div>
-
 <div class="side-spacer">_</div>
 </div>
-
-
 
 {% endfor %}
 <!-- potential first loop -->
 <!-- list -->
-
 <!-- </div> -->
-
-
-</div>
-
 </div>
 </div>
-
+</div>
 <div class="expand-button-container">
 <div class="expand-button members">
     expand
 </div>
 </div>
-
 </section>
-
-
 <!-- our family -->
-
     {% elseif block.type == "media" %}
-
 <!-- media-->
-
 <section id="media" class="media">
 <div class="media-header">
     media
@@ -615,23 +600,17 @@ height: 100%;
 <div class="item-row itemized">
 <div class="item-container">
 <div class="clearfix">
-
 <!-- list -->
 <!-- potential first loop  -->
 {% for mediaitem in craft.entries.section('media') %}
 {% for asset in mediaitem.image %}
-
 <div class="item-spacer">
 <div class="side-spacer">_</div>
-
 <div class="middle-spacer">
-
         <div class="item-single" style="background-image:url({{ asset.getUrl('thumb') }});" data-image="{{ asset.url }}">
     {% endfor %}
 <div class="item-name">
 {{ mediaitem.title }}
-
-
 </div>
 <div class="item-description">
 {{ mediaitem.body }}
@@ -641,60 +620,22 @@ height: 100%;
 </div>
 <div class="press-link">
     <a href="{{ mediaitem.pressLinkUrl }}">link</a>
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
+</div></div></div>
     <div class="side-spacer">
         _
     </div>
-
-
 </div>
-
 {% endfor %}
 <!-- potential first loop -->
 <!-- list -->
-
-
-
-
-
-</div>
-</div>
-
-</div>
-
-
-
+</div></div></div>
 <div class="expand-button-container">
 <div class="expand-button articles">
     expand
 </div>
-
 </div>
-
-
-
 </section>
-
 <!-- our family -->
-
     {% endif %}
-
 {% endfor %}
 {% endblock %}
-
-
-
-
-
-
-

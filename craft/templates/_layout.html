@@ -16,69 +16,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
-
-
 	{% includeCssFile "css/owl.carousel.min.css" %}
 	{% includeCssFile "css/owl.theme.default.min.css" %}
 	{% includeCssFile "css/owl.theme.green.min.css" %}
-
 	{% includeCssFile "css/normalize.css" %}
 	{% includeCssFile "css/font.css" %}
-	{% includeCssFile "css/style.css" %}
-
-
-
-
-
+	{% includeCssFile "css/style.min.css" %}
 </head>
-
 <body id ="waypointschild" class="planecursor">
-
 	<div id="container">
-
 		<main id="content" role="main">
-
 			{% block content %}
-
-stuff here
-
 			{% endblock %}
 		</main>
-
 		<footer id="footer">
-
-
 				<img class="logo" src="img/logo.svg" alt="">
-
-
-
 		</footer>
 	</div>
-
 {% includeJsFile "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" %}
 {% includeJsFile "js/instafeed.min.js" %}
 {% includeJsFile "js/owl.carousel.min.js" %}
 {% includeJsFile "js/jquery.sticky.js" %}
-
-
 {% includeJsFile "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" %}
-
-
-
-{% includeJsFile "js/main.js" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% includeJsFile "js/main.min.js" %}
 </body>
 </html>
