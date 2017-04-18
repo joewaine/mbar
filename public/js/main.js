@@ -6,53 +6,82 @@
         get: 'user',
         userId: '4012759170',
         accessToken: '4012759170.1677ed0.8c1873c7a2ab4300a45e13d6b26b2cde',
-        // limit: 10,
+        limit: 16,
         resolution: 'standard_resolution',
-        template: '<div class="item"><img src="{{image}}" /></div>',
-        after: $('.owl-item').addClass('visible')
+        autoWidth: false,
+        template: '<div class="owl-item"><div class="item"><img src="{{image}}" /></div></div>',
+        // after: $('.owl-item').addClass('visible')
+        after: function() {
 
+        // for (var i = 0; i < 9; i++) {
+        //     $newdiv = $('<div class="item"></div>').html('<img src="http://placehold.it/200x200">');
+        //     $('#instafeed').append($newdiv);
+        // }
+
+           $('#instafeed').owlCarousel({
+                touchDrag  : false,
+                mouseDrag  : false,
+                center: true,
+                loop:true,
+                margin:0,
+                nav:true,
+                dots: false,
+                responsive:{
+                    0:{
+                    items:1
+                },
+                660:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+
+        });
+    }
     });
     userFeed.run();
 
 
 
 
-if($("#instafeed").length == 0) {
-  //it doesn't exist
-}else{
+// if($("#instafeed").length == 0) {
+//   //it doesn't exist
+// }else{
+
+// setTimeout(function(){
+// $('#owl1').prepend($('#instafeed').html());
+// },500);
+// }
+
+
+
+
 
 setTimeout(function(){
-$('#owl1').prepend($('#instafeed').html());
-},500);
-}
 
-
-
-
-
-setTimeout(function(){
-
-$('#owl1').owlCarousel({
-    touchDrag  : false,
-    mouseDrag  : false,
-  center: true,
-    loop:true,
-    margin:0,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    },
-    autoWidth:true
-});
+// $('#instafeed').owlCarousel({
+//     touchDrag  : false,
+//     mouseDrag  : false,
+//   center: true,
+//     loop:true,
+//     margin:0,
+//     nav:true,
+//     dots: false,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:4
+//         }
+//     },
+//     autoWidth:true
+// });
 
 },1000);
 

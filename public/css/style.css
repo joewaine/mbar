@@ -270,7 +270,7 @@ float: right
   font-family: 'AvenirLTStdHeavyObliquethick';
 }
 
-
+#instafeed .owl-prev,
 #owl1 .owl-prev{
     float: left;
     background-image: url(../img/next.svg) !important;
@@ -291,6 +291,7 @@ float: right
 
 }
 
+#instafeed .owl-next,
 #owl1 .owl-next{
     float: right;
     background-image: url(../img/next.svg) !important;
@@ -392,10 +393,14 @@ float: right
   margin-right: 0 !important;
 }
 
-
+#instafeed .item img,
 #owl1 .item img{
-  width: 360px !important;
+  /*width: 360px !important;*/
 }
+
+
+
+
 
 
 .menu-tabs{
@@ -1797,12 +1802,13 @@ form textarea{
 }
 
 
-
+#instafeed,
 #owl1{
   position: relative;
 }
 
 
+#instafeed .owl-stage,
 #owl1 .owl-stage{
   margin-top: -4px !important;
   margin-bottom: -4px !important;
@@ -2266,21 +2272,19 @@ nav ul li{
 
 
 
-
+#instafeed .owl-next,
+#instafeed .owl-prev,
 #owl1 .owl-next,
 #owl1 .owl-prev{
     /*margin-top: -230px !important;*/
     width: 40px;
     height: 50px;
-
-
-
-
 margin-top: -25px;
-
-
 }
 
+#instafeed .owl-item{
+    width: 360px !important;
+}
 
 
 #owl2 .owl-next,
