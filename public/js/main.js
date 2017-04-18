@@ -443,10 +443,22 @@ $(document).ready(function(){
 var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
 $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 'px' );
 
+
+var rightArrowHeight = fixedAboutSlides / 2;
+
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+
+
 }else{
 
 var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
 $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 100 + 'px' );
+
+
+var rightArrowHeight = fixedAboutSlides / 2;
+
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+
 
 }
 
@@ -459,10 +471,18 @@ if($(window).width() > 768){
 var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
 $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 'px' );
 
+var rightArrowHeight = fixedAboutSlides / 2;
+
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+
 }else{
 
 var fixedAboutSlides = $(window).height() - $('.slideshow-box-text').height() - $('#waypoints').height();
 $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 100 + 'px' );
+
+var rightArrowHeight = fixedAboutSlides / 2;
+
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
 
 }
 
