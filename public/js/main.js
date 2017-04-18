@@ -446,7 +446,7 @@ $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 'px' )
 
 var rightArrowHeight = fixedAboutSlides / 2;
 
-$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', rightArrowHeight + 'px');
 
 
 }else{
@@ -457,7 +457,7 @@ $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 100 + 
 
 var rightArrowHeight = fixedAboutSlides / 2;
 
-$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', rightArrowHeight + 'px');
 
 
 }
@@ -473,7 +473,7 @@ $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 'px' )
 
 var rightArrowHeight = fixedAboutSlides / 2;
 
-$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', rightArrowHeight + 'px');
 
 }else{
 
@@ -482,7 +482,7 @@ $('#owl2 .owl-stage-outer, #owl2 .item').css('height', fixedAboutSlides + 100 + 
 
 var rightArrowHeight = fixedAboutSlides / 2;
 
-$('#owl2 .owl-next, #owl2 .owl-prev').css('top', '-' + rightArrowHeight + 'px');
+$('#owl2 .owl-next, #owl2 .owl-prev').css('top', rightArrowHeight + 'px');
 
 }
 
