@@ -322,7 +322,7 @@ float: right
     /* margin-top: -580px !important; */
     z-index: 1000;
     position: absolute;
-    left: 20px;
+    left: 30px;
     top: 50%;
     margin-top: -48px;
 
@@ -340,7 +340,7 @@ float: right
     /*margin-top: -580px !important;*/
     z-index: 1000;
     position: absolute;
-    right: 20px;
+    right: 30px;
 
     top: 50%;
     margin-top: -48px;
