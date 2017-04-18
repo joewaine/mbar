@@ -1162,7 +1162,7 @@ footer{
     margin: 20px auto;
     /* padding: 30px; */
     border-radius: 35px;
-    border: 18px solid #00AEEF;
+    border: 18px solid rgb(66, 89, 96);
     position: relative;
     padding-bottom: 100px;
 }
