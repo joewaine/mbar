@@ -3021,6 +3021,13 @@ background: transparent;
   width: 100%;
 }
 
+
+#instafeed{
+    height: 352px;
+}
+
+}
+
 @media only screen and (max-width: 660px) {
 
 #ajax-contact .field.submission {
@@ -3030,6 +3037,8 @@ background: transparent;
 #owl2 .owl-next,
 #owl2 .owl-prev{
     top: 20%;
+}
+
 }
 
 
