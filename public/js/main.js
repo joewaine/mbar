@@ -240,7 +240,7 @@ $('.articles').click(function(){
 
 
 $('#our-family .item-single').click(function(){
-$('body').prepend('<div class="overlay"><div class="modal"><div class="family-member" style="background-image: url(' + $(this).data('image') + ')">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p></div></div><button class="close-modal">x</button></div>');
+$('body').prepend('<div class="overlay"><button class="close-modal">x</button><div class="modal"><div class="family-member" style="background-image: url(' + $(this).data('image') + ')">hello</div><div class="item-description-modal"><h2>' + $(this).find('.item-name').text() + '</h2><p>' + $(this).find('.item-description').text() +'</p></div></div></div>');
 
 });
 
