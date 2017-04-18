@@ -6,7 +6,7 @@
         get: 'user',
         userId: '4012759170',
         accessToken: '4012759170.1677ed0.8c1873c7a2ab4300a45e13d6b26b2cde',
-        limit: 16,
+        limit: 64,
         resolution: 'standard_resolution',
         autoWidth: false,
         template: '<div class="owl-item"><div class="item"><img src="{{image}}" /></div></div>',
