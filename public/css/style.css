@@ -3026,6 +3026,9 @@ background: transparent;
   width: initial;
 }
 
+#owl2 .owl-next,
+#owl2 .owl-prev{
+    top: 30%;
 }
 
 
