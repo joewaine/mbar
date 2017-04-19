@@ -2117,7 +2117,7 @@ right: -21px;
   height: inherit;
   padding-bottom: 26px;
     height: 250px;
-
+    min-height: 328px;
 }
 
 
@@ -3038,6 +3038,15 @@ background: transparent;
 #owl2 .owl-next,
 #owl2 .owl-prev{
     top: 20%;
+}
+
+
+#owl2 .owl-prev{
+left: 0;
+}
+
+#owl2 .owl-next{
+right: 0;
 }
 
 }
