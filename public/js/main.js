@@ -560,13 +560,28 @@ fixedPadding = null;
 if($(window).width() > 768){
 
 
+if($('.announcements')){
+
 annoHeight = $('.announcements').height();
+
+}else{
+
+annoHeight = 137;
+
+}
 
 
 var contItemValBot = parseInt($('.contact-items').css('padding-bottom'));
 
 
+
+if($('.announcements')){
+
 fixedPadding = contItemValBot + annoHeight + 'px';
+
+}else{
+fixedPadding = annoHeight + 'px';
+}
 
 $('.contact-items').css('padding-top', fixedPadding);
 
