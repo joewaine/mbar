@@ -3063,3 +3063,20 @@ right: 0;
     background-image: url(../img/expand-button-gr.svg) !important;
 
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+.events-booking, .find-us, section.menu {
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: initial;
+    background-position: top;
+}
+
+.events-description {
+    width: 92%;
+}
+
+}

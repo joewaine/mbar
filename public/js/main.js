@@ -615,10 +615,20 @@ window.open('https://goo.gl/maps/gZLnSb6DpV12', '_blank');
 
 $('.menus-grid').masonry({
   // options
-  itemSelector: '.menus-grid-item',
-transitionDuration: 0
+    itemSelector: '.menus-grid-item',
+    transitionDuration: 0
 });
 
+
+$(document).ready(function(){
+
+    $('.menus-grid').masonry({
+  // options
+    itemSelector: '.menus-grid-item',
+    transitionDuration: 0
+});
+
+});
 
 $('.menu-tabs li').click(function(){
 
