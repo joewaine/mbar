@@ -5,6 +5,11 @@
 
 /*thicker fonts*/
 
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
 @font-face {
   font-family: 'AvenirLTStdHeavyObliquethick';
   src: url('avheavy/AvenirLTStd-HeavyOblique.eot');
@@ -1921,7 +1926,7 @@ nav a{
 
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
 
 .modal{
     width: 80%;
@@ -3056,5 +3061,22 @@ right: 0;
 
 .expand-button{
     background-image: url(../img/expand-button-gr.svg) !important;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+.events-booking, .find-us, section.menu {
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: initial;
+    background-position: top;
+}
+
+.events-description {
+    width: 92%;
+}
 
 }

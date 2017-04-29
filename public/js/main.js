@@ -560,13 +560,28 @@ fixedPadding = null;
 if($(window).width() > 768){
 
 
+if($('.announcements')){
+
 annoHeight = $('.announcements').height();
+
+}else{
+
+annoHeight = 137;
+
+}
 
 
 var contItemValBot = parseInt($('.contact-items').css('padding-bottom'));
 
 
+
+if($('.announcements')){
+
 fixedPadding = contItemValBot + annoHeight + 'px';
+
+}else{
+fixedPadding = annoHeight + 'px';
+}
 
 $('.contact-items').css('padding-top', fixedPadding);
 
@@ -600,10 +615,20 @@ window.open('https://goo.gl/maps/gZLnSb6DpV12', '_blank');
 
 $('.menus-grid').masonry({
   // options
-  itemSelector: '.menus-grid-item',
-transitionDuration: 0
+    itemSelector: '.menus-grid-item',
+    transitionDuration: 0
 });
 
+
+$(document).ready(function(){
+
+    $('.menus-grid').masonry({
+  // options
+    itemSelector: '.menus-grid-item',
+    transitionDuration: 0
+});
+
+});
 
 $('.menu-tabs li').click(function(){
 
