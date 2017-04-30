@@ -3147,3 +3147,7 @@ right: 0;
       line-height: 26px !important;
           padding-top: 20px !important;
 }
+
+.schedule-items.top .schedule .hours{
+  margin-top: 20px !important;
+}
