@@ -488,7 +488,6 @@ $('.mobile-nav').slideToggle();
 
 if($(window).width() > 768){
 
-
 var annoHeight = null;
 var contItemVal = null;
 var fixedPadding = null;
@@ -512,26 +511,22 @@ $(window).resize(function(){
 
 if($(window).width() > 768){
 
-var annoHeight = null;
-var contItemVal = null;
-var fixedPadding = null;
+var annoHeight2 = null;
+var contItemVal2 = null;
+var fixedPadding2 = null;
 
-annoHeight = $('.announcements').height();
-contItemVal = 30;
-fixedPadding = annoHeight + contItemVal + 'px';
+annoHeight2 = $('.announcements').height();
+contItemVal2 = 30;
+fixedPadding2 = annoHeight2 + contItemVal2 + 'px';
 
 // $('.schedule-items.top').css('margin-top', '0px');
-$('.schedule-items.top .schedule').css('margin-top', fixedPadding);
+$('.schedule-items.top .schedule').css('margin-top', fixedPadding2);
 
-
-annoHeight = null;
-contItemVal = null;
-fixedPadding = null;
-
+annoHeight2 = null;
+contItemVal2 = null;
+fixedPadding2 = null;
 
 }
-
-
 
 }
 
