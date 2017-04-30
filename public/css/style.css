@@ -3143,7 +3143,7 @@ right: 0;
 }
 
 .schedule-items.top .schedule .address p{
-  margin-top: 0;
-      line-height: 26px;
-          padding-top: 20px;
+  margin-top: 0 !important;
+      line-height: 26px !important;
+          padding-top: 20px !important;
 }
