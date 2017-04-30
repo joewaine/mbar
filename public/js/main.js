@@ -506,28 +506,35 @@ annoHeight = null;
 contItemVal = null;
 fixedPadding = null;
 
+}
+
+$(window).resize(function(){
+
+if($(window).width() > 768){
+
+var annoHeight = null;
+var contItemVal = null;
+var fixedPadding = null;
+
+annoHeight = $('.announcements').height();
+contItemVal = 30;
+fixedPadding = annoHeight + contItemVal + 'px';
+
+// $('.schedule-items.top').css('margin-top', '0px');
+$('.schedule-items.top .schedule').css('margin-top', fixedPadding);
+
+
+annoHeight = null;
+contItemVal = null;
+fixedPadding = null;
+
 
 }
 
-//     $(window).resize(function(){
-// if($(window).width() > 768){
-// if($('.announcements')){
-// annoHeight = $('.announcements').height();
-// }else{
-// annoHeight = 137;
-// }
-// var contItemValBot = parseInt($('.contact-items').css('padding-bottom'));
-// if($('.announcements')){
-// fixedPadding = contItemValBot + annoHeight + 'px';
-// }else{
-// fixedPadding = annoHeight + 'px';
-// }
-// $('.contact-items').css('padding-top', fixedPadding);
-// }else{
-// var contItemValBot = parseInt($('.contact-items').css('padding-bottom'));
-// $('.contact-items').css('padding-top', contItemValBot + 'px');
-// }
-// });
+
+
+}
+
 
 
 $('.contact-item:first-child').click(function(){
