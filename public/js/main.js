@@ -628,9 +628,12 @@ function rotate(el, degs) {
 
 var imgheightfix = function(){
     var owl3imgheight = parseInt($('#owl3 img').width() * 0.66606498194) + 'px';
+
+     console.log(owl3imgheight);
+
      $('#owl3 .events-slideshow ').css('height', owl3imgheight);
 
-     console.log('happening');
+
 }
 
 $(document).ready(function () {
