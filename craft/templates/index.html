@@ -240,6 +240,27 @@ twitter
 
 
 
+
+
+<!-- privacy policy -->
+
+
+{% elseif block.type == "privacyPolicy" %}
+
+
+
+{% for privacyPolicy in craft.entries.section('privacyPolicy') %}
+
+{{ privacyPolicy.privacyText }}
+
+
+{% endfor %}
+
+<!-- privacy policy -->
+
+
+
+
     {% elseif block.type == "menu" %}
 
 
