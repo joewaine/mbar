@@ -1560,7 +1560,7 @@ width: 100%;
 .announcements p{
   margin: 0 auto 16px auto;
   width: 800px;
-
+  line-height: 26px;
 }
 
 button.close-announcement{
