@@ -3099,22 +3099,8 @@ right: 0;
   }
 
 
-/*dyellow*/
-    /*background: rgb(255, 204, 62);*/
-
- vvv
-
-/*l yellow*/
-    /*background: rgb(247, 209, 81);*/
 
 
-
-/*960*/
-
-
-.schedule-items.top .schedule .address p{
-  margin-top: 0;
-}
 
 @media only screen and (max-width: 960px) {
 
@@ -3154,4 +3140,8 @@ right: 0;
 
 }
 
+}
+
+.schedule-items.top .schedule .address p{
+  margin-top: 0;
 }
