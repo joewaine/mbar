@@ -3148,6 +3148,15 @@ right: 0;
 
 }
 
+
+.item-description-modal h2 {
+    font-size: 18px;
+}
+
+.item-description-modal p{
+  font-size: 14px;
+}
+
 }
 
 .schedule-items.top .schedule .address p{
