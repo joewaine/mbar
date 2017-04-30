@@ -31,6 +31,27 @@
 		</main>
 		<footer id="footer">
 				<img class="logo" src="img/logo.svg" alt="">
+
+<div style="display:none;">
+    <ul class="social-links">
+
+
+{% for socialItem in craft.entries.section('socialLinks') %}
+<li>
+<a target="_blank" href="{{ socialItem.linkUrl }}">
+twitter
+{{ socialItem.title }}
+{% for asset in socialItem.image %}
+    <img src="{{ asset.url }}">
+{% endfor %}
+</a>
+</li>
+{% endfor %}
+
+    </ul>
+</div>
+
+
 		</footer>
 	</div>
 {% includeJsFile "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" %}
