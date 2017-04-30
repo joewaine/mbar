@@ -2441,6 +2441,16 @@ section.menu{
 
 
 
+@media only screen and (max-width: 1204px) {
+  .events-slideshow {
+    height: 290px;
+    border-bottom: 12px solid rgb(247, 209, 81);
+    padding-bottom: 0;
+}
+}
+
+
+
 @media only screen and (max-width: 660px) {
 
 
