@@ -2620,24 +2620,25 @@ section.menu {
 
 
 .modal {
-    width: 86%;
+    width: 94%;
     margin-top: 10px;
     padding-bottom: 10px;
+    border-width: 6px;
+    border-radius: 12px;
 }
 
-
+.family-member {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
 
 .contact-items{
   padding-top: 0;
   padding-bottom: 0;
 }
 
-
-
-
-
-    /*.contact-item-text.left span:before {*/
-    /*background-image: url() !important;*/
+/*.contact-item-text.left span:before {*/
+        /*background-image: url() !important;*/
     /*color: transparent !important;*/
     /*width: 100px !important;*/
     /* font-size: 0; */
