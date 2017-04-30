@@ -3200,7 +3200,7 @@ footer{
   display: block;
 }
 
-.social-links{
+footer .social-links{
       float: left;
     margin-right: 0;
     padding-left: 0 !important;
