@@ -2121,8 +2121,8 @@ right: -21px;
 .slideshow-box-text{
   height: inherit;
   padding-bottom: 26px;
-    height: 250px;
-    min-height: 328px;
+    /*height: 250px;*/
+    /*min-height: 328px;*/
 }
 
 
