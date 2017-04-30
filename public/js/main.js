@@ -570,9 +570,6 @@ $(document).ready(function(){
 
 $('.menu-tabs li').click(function(){
 
-
-
-
 $('.menus-grid').masonry({
   // options
   itemSelector: '.menus-grid-item',
@@ -581,3 +578,49 @@ transitionDuration: 0
 
 });
 
+
+(function($) {
+  $.fn.nodoubletapzoom = function() {
+      $(this).bind('touchstart', function preventZoom(e) {
+        var t2 = e.timeStamp
+          , t1 = $(this).data('lastTouch') || t2
+          , dt = t2 - t1
+          , fingers = e.originalEvent.touches.length;
+        $(this).data('lastTouch', t2);
+        if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+
+        e.preventDefault(); // double tap - prevent the zoom
+        // also synthesize click events we just swallowed up
+        $(this).trigger('click').trigger('click');
+      });
+  };
+})(jQuery);
+
+
+$(window).bind('orientationchange resize', function(event){
+  if (event.orientation) {
+    if (event.orientation == 'landscape') {
+      if (window.rotation == 90) {
+        rotate(this, -90);
+      } else {
+        rotate(this, 90);
+      }
+    }
+  }
+});
+
+function rotate(el, degs) {
+  iedegs = degs/90;
+  if (iedegs < 0) iedegs += 4;
+  transform = 'rotate('+degs+'deg)';
+  iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
+  styles = {
+    transform: transform,
+    '-webkit-transform': transform,
+    '-moz-transform': transform,
+    '-o-transform': transform,
+    filter: iefilter,
+    '-ms-filter': iefilter
+  };
+  $(el).css(styles);
+}
