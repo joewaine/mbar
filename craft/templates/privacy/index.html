@@ -13,11 +13,17 @@
 {% extends "_layout" %}
 {% set title = "Privacy Policy" %}
 
+
 {% block content %}
-	<h1>Privacy Policy</h1>
+
+<div style="background: #a3a4a5;height: 84vh;">
+	<h1 style="color: white;margin-top:0;padding-top:80px;">Privacy Policy</h1>
 	{% for entry in craft.entries.section('privacy').find() %}
 		<article>
 			{{ entry.body.getPage(1) }}
 		</article>
+
+</div>
+
 	{% endfor %}
 {% endblock %}
