@@ -3148,13 +3148,14 @@ right: 0;
 
 }
 
-
 .item-description-modal h2 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .item-description-modal p{
-  font-size: 14px;
+    font-size: 12px;
+    padding-top: 0;
+    line-height: 16px;
 }
 
 }
