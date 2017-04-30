@@ -2622,7 +2622,9 @@ section.menu {
 .modal {
     width: 86%;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
+
 
 
 .contact-items{
