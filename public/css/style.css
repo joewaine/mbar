@@ -2457,9 +2457,9 @@ section.menu{
   .events-slideshow {
     width: 94%;
     float: left;
-
-        height: initial;
-    border-bottom: 0;
+    height: 228px;
+    border-bottom: 12px solid rgb(247, 209, 81);
+    padding-bottom: 0;
 }
 
 
