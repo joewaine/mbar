@@ -179,8 +179,8 @@ img.logo{
 
 .contact-items{
   /*padding-top: 146px;*/
-  padding-top: 137px;
-  padding-bottom: 134px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -3066,6 +3066,70 @@ right: 0;
 
 
 
+.schedule-items.top .schedule{
+  background-image: url(../img/hours-bg-2.svg);
+}
+
+
+.schedule-items.top{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.schedule-items.top .schedule .hours{
+    font-size: 16.5px;
+    color: rgb(247, 209, 81);
+    font-style: oblique;
+    font-family: AvenirLTStdHeavyObliquethick;
+    margin-bottom: 0;
+
+}
+
+.schedule-items.top .schedule .address{
+    font-size: 16.5px;
+      color: rgb(255, 204, 62);
+    font-style: oblique;
+    font-family: AvenirLTStdHeavyObliquethick;
+
+
+    font-family: "Avenir LT Std 65 Medium";
+    line-height: 32px;
+
+
+  }
+
+
+/*dyellow*/
+    /*background: rgb(255, 204, 62);*/
+
+ vvv
+
+/*l yellow*/
+    /*background: rgb(247, 209, 81);*/
+
+
+
+/*960*/
+
+@media only screen and (max-width: 960px) {
+
+
+.schedule-items.top .schedule {
+    width: 100%;
+    min-height: 130px;
+    height: inherit;
+    border-bottom: rgb(71, 98, 109);
+    background: 10px solid rgb(253, 230, 108);
+    background-image: url() !important;
+}
+
+
+.schedule-items.top{
+    margin-top: 26px !important;
+}
+
+}
+
 @media only screen and (max-width: 768px) {
 
 .events-booking, .find-us, section.menu {
@@ -3077,6 +3141,12 @@ right: 0;
 
 .events-description {
     width: 92%;
+}
+
+.schedule-items.top .schedule .hours,
+.schedule-items.top .schedule .address{
+    font-size: 14px;
+
 }
 
 }

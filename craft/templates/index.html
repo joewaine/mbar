@@ -110,6 +110,42 @@ twitter
 
         </header>
 
+
+
+
+<!-- new lines -->
+
+
+
+<!-- new lines -->
+
+<!-- schedule items -->
+<section class="schedule-items top">
+<div class="schedule">
+<div class="hours">
+
+{% for scheduleitems in craft.entries.section('topScheduleModule') %}
+{{ topScheduleitems.line1 }}
+<!-- <br> -->
+{{ topScheduleitems.line2 }}
+</div>
+<div class="address">
+{{ topScheduleitems.line3Bottom }}
+</div>
+
+{% endfor %}
+
+</div>
+</section>
+<!-- schedule items -->
+
+
+<!-- end new lines -->
+
+<!-- end new lines -->
+
+
+
 <!-- contact items -->
 <section class="contact-items">
     <div class="contact-items-container">
