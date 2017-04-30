@@ -627,21 +627,16 @@ function rotate(el, degs) {
 
 
 var imgheightfix = function(){
-    var owl3imgheight = parseInt($('#owl3 img').width() * 0.66606498194) + 'px';
-
-     console.log(owl3imgheight);
-
+    var owl3imgheight = parseInt($('#owl3 img').width() * 0.66606498194) - 12 + 'px';
      $('#owl3').parent().css('height', owl3imgheight);
-
-
 }
 
 $(document).ready(function () {
-imgheightfix();
+    imgheightfix();
 });
 
 $(window).resize(function () {
-imgheightfix();
+    imgheightfix();
 });
 
 
