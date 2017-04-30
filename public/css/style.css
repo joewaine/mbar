@@ -3170,6 +3170,13 @@ right: 0;
     line-height: 16px;
 }
 
+.menu-tabs li:first-child,
+.menu-tabs li:last-child{
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 0 !important;
+}
+
 }
 
 .schedule-items.top .schedule .address p{
