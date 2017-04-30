@@ -495,10 +495,10 @@ var fixedPadding = null;
 
 
 annoHeight = $('.announcements').height();
-contItemVal = parseInt($('.contact-items').css('padding-top'));
-fixedPadding = annoHeight + contItemVal + 'px';
+// contItemVal = 50;
+fixedPadding = annoHeight + 'px';
 
-$('.schedule-items.top').css('margin-top', '0px');
+// $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding);
 
 
