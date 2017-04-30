@@ -3112,6 +3112,14 @@ right: 0;
     border-bottom: rgb(71, 98, 109);
     background: 10px solid rgb(253, 230, 108);
     background-image: url() !important;
+    background: rgb(71, 98, 109);
+    border-bottom: 10px solid  rgb(253, 230, 108);
+
+
+    background: rgb(71, 98, 109);
+    border-bottom: 10px solid rgb(253, 230, 108);
+
+
 }
 
 
