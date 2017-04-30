@@ -631,7 +631,7 @@ var imgheightfix = function(){
 
      console.log(owl3imgheight);
 
-     $('#owl3 .events-slideshow ').css('height', owl3imgheight);
+     $('#owl3').parent().css('height', owl3imgheight);
 
 
 }
