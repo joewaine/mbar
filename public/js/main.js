@@ -526,6 +526,10 @@ annoHeight2 = null;
 contItemVal2 = null;
 fixedPadding2 = null;
 
+}else{
+
+$('.schedule-items.top .schedule').css('margin-top', '30px');
+
 }
 
 });
