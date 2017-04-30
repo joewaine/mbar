@@ -528,7 +528,7 @@ fixedPadding2 = null;
 
 }
 
-}
+});
 
 
 
