@@ -1,5 +1,3 @@
-
-
 // instafeed
 
     var userFeed = new Instafeed({
@@ -10,13 +8,7 @@
         resolution: 'standard_resolution',
         autoWidth: false,
         template: '<div class="owl-item"><div class="item"><img src="{{image}}" /></div></div>',
-        // after: $('.owl-item').addClass('visible')
         after: function() {
-
-        // for (var i = 0; i < 9; i++) {
-        //     $newdiv = $('<div class="item"></div>').html('<img src="http://placehold.it/200x200">');
-        //     $('#instafeed').append($newdiv);
-        // }
 
            $('#instafeed').owlCarousel({
                 touchDrag  : false,
@@ -31,7 +23,7 @@
                     items:1
                 },
                 660:{
-                    items:1
+                    items:3
                 },
                 1000:{
                     items:5
@@ -45,44 +37,7 @@
 
 
 
-
-// if($("#instafeed").length == 0) {
-//   //it doesn't exist
-// }else{
-
-// setTimeout(function(){
-// $('#owl1').prepend($('#instafeed').html());
-// },500);
-// }
-
-
-
-
-
 setTimeout(function(){
-
-// $('#instafeed').owlCarousel({
-//     touchDrag  : false,
-//     mouseDrag  : false,
-//   center: true,
-//     loop:true,
-//     margin:0,
-//     nav:true,
-//     dots: false,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },
-//         1000:{
-//             items:4
-//         }
-//     },
-//     autoWidth:true
-// });
-
 },1000);
 
 $('#owl2').owlCarousel({
