@@ -3173,24 +3173,22 @@ right: 0;
 }
 
 .schedule-items.top .schedule .address p{
-    margin-top: 0 !important;
-    line-height: 26px !important;
-    padding-top: 2px !important;
+    margin-top: 0;
+    line-height: 26px;
+    padding-top: 2px;
 
 }
 
 .schedule-items.top .schedule .hours p{
-  margin-top: 10px !important;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+
+.hours p,
+.address p{
+font-size: 12px;
 }
 
 
-/*@media only screen and (max-width: 660px) {
-
-#instafeed .owl-item{
-  width: 100%;
 }
-#instafeed .owl-item img{
-    width: 100% !important;
-}
-
-}*/
