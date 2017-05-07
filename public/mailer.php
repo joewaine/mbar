@@ -19,6 +19,13 @@
             exit;
         }
 
+
+
+        $doc = new DOMDocument();
+        $doc->loadHTML($buffer);
+        $recipEmail = $doc->getElementById('recipient_email');
+
+
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
         $recipient = "erin@mbarseattle.com";
