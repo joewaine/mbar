@@ -41,7 +41,7 @@ nav ul a{
 body{
     background: url(../img/clouds.jpg);
     font-family: 'Avenir LT Std 45 Book';
-    cursor: url(../img/plane.svg), pointer;
+    /*cursor: url(../img/plane.svg), pointer;*/
 
   background: url(../img/clouds.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
@@ -1071,20 +1071,20 @@ input:focus {
 .media .item-single:hover .item-name{
   padding-bottom:25px;
   /*cursor: pointer;*/
-  cursor: url(../img/plane.svg), pointer;
+  /*cursor: url(../img/plane.svg), pointer;*/
 }
 
 
 .media .item-single:hover,
 .our-family .item-single:hover{
     /*cursor: pointer;*/
-  cursor: url(../img/plane.svg), pointer;
+  /*cursor: url(../img/plane.svg), pointer;*/
 }
 
 .our-family .item-single:hover .item-name{
   padding-bottom:25px;
   /*cursor: pointer;*/
-  cursor: url(../img/plane.svg), pointer;
+  /*cursor: url(../img/plane.svg), pointer;*/
 }
 
 
