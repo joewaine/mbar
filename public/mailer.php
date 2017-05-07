@@ -6,6 +6,11 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
+
+
+        $recipientEmail = filter_var(trim($_POST["recipient"]), FILTER_SANITIZE_EMAIL);
+
+
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
@@ -19,17 +24,13 @@
             exit;
         }
 
-
-
         // $doc = new DOMDocument();
         // $doc->loadHTML($buffer);
         // $recipEmail = $doc->getElementById('recipient_email');
-
-
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "erin@mbarseattle.com";
-
+        $recipient = $recipientEmail;
+        // $recipient = "erin@mbarseattle.com";
 
         $sender = $email;
 
