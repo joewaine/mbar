@@ -498,11 +498,6 @@ height: 100%;
 {{ block.eventsbookingDescription }}
 
 
-<div id="recipient_email" style="display:none;">
-{{ block.eventsbookingRecipientEmail }}
-</div>
-
-
 </div>
 </div>
 
@@ -526,6 +521,12 @@ height: 100%;
       </div>
 
         <form id="ajax-contact" method="post" action="mailer.php" style="position:relative;">
+
+            <div class="field for-recipientEmail" style="display:none;">
+                <!-- <label for="name">Name:</label> -->
+        <input placeholder="recipient" type="text" id="recipient" name="recipient" value="{{ block.eventsbookingRecipientEmail }}" required>
+            </div>
+
             <div class="field for-name">
                 <!-- <label for="name">Name:</label> -->
                 <input placeholder="name" type="text" id="name" name="name" required>
