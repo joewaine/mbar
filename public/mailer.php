@@ -21,9 +21,9 @@
 
 
 
-        $doc = new DOMDocument();
-        $doc->loadHTML($buffer);
-        $recipEmail = $doc->getElementById('recipient_email');
+        // $doc = new DOMDocument();
+        // $doc->loadHTML($buffer);
+        // $recipEmail = $doc->getElementById('recipient_email');
 
 
         // Set the recipient email address.
