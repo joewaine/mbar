@@ -518,7 +518,12 @@ var fixedPadding = null;
 
 annoHeight = $('.announcements').height();
 contItemVal = 30;
-fixedPadding = annoHeight + contItemVal + 'px';
+fixedPadding = annoHeight + contItemVal + 30 + 'px';
+
+
+console.log('anno:' + annoHeight);
+
+console.log('cont:' + contItemVal);
 
 // $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding);
@@ -540,7 +545,7 @@ var fixedPadding2 = null;
 
 annoHeight2 = $('.announcements').height();
 contItemVal2 = 30;
-fixedPadding2 = annoHeight2 + contItemVal2 + 'px';
+fixedPadding2 = annoHeight2 + contItemVal2 + 30 + 'px';
 
 // $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding2);
