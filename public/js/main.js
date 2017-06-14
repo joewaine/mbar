@@ -519,12 +519,6 @@ var fixedPadding = null;
 annoHeight = $('.announcements').height();
 contItemVal = 30;
 fixedPadding = annoHeight + contItemVal + 30 + 'px';
-
-
-console.log('anno:' + annoHeight);
-
-console.log('cont:' + contItemVal);
-
 // $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding);
 
