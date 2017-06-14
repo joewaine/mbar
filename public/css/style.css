@@ -1735,8 +1735,8 @@ border-radius: 0 !important;
 
 .announcements-mobile{
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: rgb(66, 89, 96);
     background: #FFCC3E;
     line-height: 32px;
@@ -1750,7 +1750,7 @@ border-radius: 0 !important;
 }
 
 .announcements-mobile span{
-      font-size: 21.75px;
+      font-size: 18px;
 }
 
 
