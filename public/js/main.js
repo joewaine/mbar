@@ -261,12 +261,34 @@ $(document).on('click', 'a', function(event){
 
 
   event.preventDefault();
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
+
+
+if($(window).scrollTop() < 138){
+
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 40;
+
+
 // alert($( $.attr(this, 'href') ).offset().top);
 // alert(amountOfScroll);
     $('html, body').animate({
         scrollTop: amountOfScroll
     }, 500);
+
+}else{
+
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 0;
+
+
+// alert($( $.attr(this, 'href') ).offset().top);
+// alert(amountOfScroll);
+    $('html, body').animate({
+        scrollTop: amountOfScroll
+    }, 500);
+
+
+
+}
+
 
 
 
@@ -328,8 +350,9 @@ window.onscroll = function(e) {
     h.style.zIndex = '10000';
     stuck = true;
 
- var offSetHeight = $('#waypoints').height() + 10;
+ var offSetHeight = $('#waypoints').height();
 
+// alert('rr');
 
 
 $('#container').css('margin-top', offSetHeight + 'px');
@@ -639,6 +662,16 @@ $(document).ready(function () {
 $(window).resize(function () {
     imgheightfix();
 });
+
+
+
+$('.contact-item-text.left').prepend('<div class="added-item-res">reserve<br>online</div>');
+
+
+
+$('.contact-item-text.for-tel').prepend('<div class="added-item-ph"><a href="tel:+12064578287">206 457 8287</div>')
+
+
 
 
 
