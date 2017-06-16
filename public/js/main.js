@@ -265,7 +265,7 @@ $(document).on('click', 'a', function(event){
 
 if($(window).scrollTop() < 138){
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height();
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 10;
 
 
 // alert($( $.attr(this, 'href') ).offset().top);
@@ -273,10 +273,13 @@ var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').h
     $('html, body').animate({
         scrollTop: amountOfScroll
     }, 500);
+
+
+// alert('f');
 
 }else{
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 2;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
 
 
 // alert($( $.attr(this, 'href') ).offset().top);
@@ -285,7 +288,7 @@ var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').h
         scrollTop: amountOfScroll
     }, 500);
 
-
+// alert('n');
 
 }
 
@@ -518,8 +521,7 @@ var fixedPadding = null;
 
 annoHeight = $('.announcements').height();
 contItemVal = 30;
-// fixedPadding = annoHeight + contItemVal + 30 + 'px';
-fixedPadding = annoHeight + contItemVal + 'px';
+fixedPadding = annoHeight + contItemVal + 30 + 'px';
 // $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding);
 
