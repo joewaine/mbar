@@ -1002,7 +1002,8 @@ input:focus {
 .media{
   background: #425960;
   padding-top: 26px;
-  padding-bottom: 26px;
+  /*padding-bottom: 26px;*/
+  padding-bottom: 180px;
 }
 .media-header{
     background-image: url(../img/press.svg);
@@ -2534,8 +2535,8 @@ section.menu{
 
 
 img.logo {
-    width: 60%;
-  margin-left: 2px;
+  width: 60%;
+  margin-left: 4px;
 
 }
 
@@ -3280,3 +3281,12 @@ font-size: 12px;
 }
 }
 
+
+
+@media only screen and (max-width: 660px) {
+
+}
+
+/*.slideshow{
+height: 328px;
+}*/

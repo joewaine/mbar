@@ -265,7 +265,7 @@ $(document).on('click', 'a', function(event){
 
 if($(window).scrollTop() < 138){
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 40;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height();
 
 
 // alert($( $.attr(this, 'href') ).offset().top);
@@ -276,7 +276,7 @@ var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').h
 
 }else{
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 0;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 2;
 
 
 // alert($( $.attr(this, 'href') ).offset().top);
@@ -519,12 +519,6 @@ var fixedPadding = null;
 annoHeight = $('.announcements').height();
 contItemVal = 30;
 fixedPadding = annoHeight + contItemVal + 30 + 'px';
-
-
-console.log('anno:' + annoHeight);
-
-console.log('cont:' + contItemVal);
-
 // $('.schedule-items.top').css('margin-top', '0px');
 $('.schedule-items.top .schedule').css('margin-top', fixedPadding);
 
@@ -677,6 +671,8 @@ $('.contact-item-text.left').prepend('<div class="added-item-res">reserve<br>onl
 $('.contact-item-text.for-tel').prepend('<div class="added-item-ph"><a href="tel:+12064578287">206 457 8287</div>')
 
 
+// $('html, body').animate({ scrollTop: 0 }, 'fast');
 
 
 
+console.log($('#instafeed').height());
