@@ -263,9 +263,9 @@ $(document).on('click', 'a', function(event){
   event.preventDefault();
 
 
-if($(window).scrollTop() < 138){
+// if($(window).scrollTop() < 138){
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() - 10;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
 
 
 // alert($( $.attr(this, 'href') ).offset().top);
@@ -277,20 +277,20 @@ var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').h
 
 // alert('f');
 
-}else{
+// }else{
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
+// var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
 
 
-// alert($( $.attr(this, 'href') ).offset().top);
-// alert(amountOfScroll);
-    $('html, body').animate({
-        scrollTop: amountOfScroll
-    }, 500);
+// // alert($( $.attr(this, 'href') ).offset().top);
+// // alert(amountOfScroll);
+//     $('html, body').animate({
+//         scrollTop: amountOfScroll
+//     }, 500);
 
-// alert('n');
+// // alert('n');
 
-}
+// }
 
 
 
