@@ -895,8 +895,8 @@ input:focus {
 
 .our-family{
   background: #FFCC3E;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 .our-family-header{
     background-image: url(../img/our-family.svg);
@@ -1001,7 +1001,7 @@ input:focus {
 
 .media{
   background: #425960;
-  padding-top: 26px;
+  padding-top: 36px;
   /*padding-bottom: 26px;*/
   padding-bottom: 180px;
 }
