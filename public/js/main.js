@@ -1,3 +1,28 @@
+
+var refHeight = function(){
+
+    if($(window).width() > 999){
+    var corwith = $(window).width()/5;
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    }else if($(window).width() > 659){
+    var corwith = $(window).width()/3;
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    }else{
+    var corwith = $(window).width();
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    }
+}
+
+$(document).ready(function(){
+    refHeight();
+});
+
+$(window).resize(function () {
+    refHeight();
+});
+
+
+
 // instafeed
 
     var userFeed = new Instafeed({
@@ -668,4 +693,6 @@ $(window).resize(function () {
 $('.contact-item-text.left').prepend('<div class="added-item-res">reserve<br>online</div>');
 
 $('.contact-item-text.for-tel').prepend('<div class="added-item-ph"><a href="tel:+12064578287">206 457 8287</div>')
+
+
 
