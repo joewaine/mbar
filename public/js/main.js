@@ -290,8 +290,9 @@ $(document).on('click', '#waypoints a', function(event){
 
 // if($(window).scrollTop() < 138){
 
-var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 1;
+var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 5;
 
+console.log('scroll to');
 
 // alert($( $.attr(this, 'href') ).offset().top);
 // alert(amountOfScroll);
@@ -674,24 +675,17 @@ function rotate(el, degs) {
   };
   $(el).css(styles);
 }
-
-
 var imgheightfix = function(){
     var owl3imgheight = parseInt($('#owl3').parent().width() * 0.66606498194) - 12 + 'px';
      $('#owl3').parent().css('height', owl3imgheight);
-
 }
-
 $(document).ready(function () {
     imgheightfix();
 });
-
 $(window).resize(function () {
     imgheightfix();
 });
-
 $('.contact-item-text.left').prepend('<div class="added-item-res">reserve<br>online</div>');
-
 $('.contact-item-text.for-tel').prepend('<div class="added-item-ph"><a href="tel:+12064578287">206 457 8287</div>')
 
 
