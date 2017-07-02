@@ -292,7 +292,7 @@ $(document).on('click', '#waypoints a', function(event){
 
 var amountOfScroll  = $( $.attr(this, 'href') ).offset().top - $('#waypoints').height() + 5;
 
-console.log('scroll to');
+
 
 // alert($( $.attr(this, 'href') ).offset().top);
 // alert(amountOfScroll);
