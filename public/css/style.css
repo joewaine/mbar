@@ -3290,3 +3290,8 @@ font-size: 12px;
 /*.slideshow{
 height: 328px;
 }*/
+
+.announcements a{
+  cursor: pointer;
+  color: rgb(66, 89, 96);
+}
