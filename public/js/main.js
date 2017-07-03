@@ -689,4 +689,9 @@ $('.contact-item-text.left').prepend('<div class="added-item-res">reserve<br>onl
 $('.contact-item-text.for-tel').prepend('<div class="added-item-ph"><a href="tel:+12064578287">206 457 8287</div>')
 
 
+$(window).on('beforeunload', function() {
+$(window).scrollTop(0);
+// console.log('hellotest');
+});
+
 
