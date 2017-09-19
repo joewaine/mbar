@@ -857,6 +857,10 @@ width: 430px;
 padding-right: 108px;
 }*/
 
+
+button.close-ot-modal,
+button.close-ot-modal:focus,
+button.close-ot-modal:active,
 button.close-modal,
 button.close-modal:focus,
 button.close-modal:active,
@@ -1185,6 +1189,7 @@ footer{
 }
 
 
+.close-ot-modal,
 .close-modal{
     background-image: url(../img/close-up-modal.svg);
     background-color: transparent;
@@ -3144,7 +3149,46 @@ right: 0;
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+#ot-widget-container2{
+display: none;
+}
+
+#ot-widget-container3{
+  display: block;
+  height: 220px;
+}
+
+
+
+.open-table.overlay .modal{
+ width: 70%;
+ padding-bottom: 0;
+}
+
+
+.open-table.overlay .item-description-modal{
+  text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+
+.open-table.overlay .modal{
+ width: 80%
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+
+#ot-widget-container2{
+display: block;
+}
+
+#ot-widget-container3{
+  display: none;
+}
+
 
 .events-booking, .find-us, section.menu {
     background-repeat: repeat;
@@ -3300,3 +3344,19 @@ height: 328px;
   cursor: pointer;
   color: rgb(66, 89, 96);
 }
+
+
+
+div[data-orientation='landscape'] .item{
+height:336px;background-position: center center;
+}
+
+div[data-orientation='portrait'] .item{
+height:336px;background-position: center center;
+}
+
+div[data-orientation='square'] .item{
+  /*display: none;*/
+  /*height:336px;background-position: center center;*/
+}
+

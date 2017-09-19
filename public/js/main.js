@@ -32,7 +32,11 @@ $(window).resize(function () {
         limit: 64,
         resolution: 'standard_resolution',
         autoWidth: false,
-        template: '<div class="owl-item"><div class="item"><img src="{{image}}" /></div></div>',
+        orientation: 'square',
+        template: '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-position: center;background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0;" /></div></div>',
+        // template: if(orientation == 'square'){
+        //     '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0;" /></div></div>';
+        // }else{},
         after: function() {
 
            $('#instafeed').owlCarousel({
@@ -275,6 +279,7 @@ $('body').on('click', '.close-modal', function () {
 $('.overlay').remove();
 
 });
+
 
 
 // media
@@ -587,9 +592,7 @@ $('.schedule-items.top .schedule').css('margin-top', '30px');
 
 
 
-$('.contact-item:first-child').click(function(){
-window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_blank');
-});
+
 
 
 
@@ -694,4 +697,28 @@ $(window).scrollTop(0);
 // console.log('hellotest');
 });
 
+
+
+// $('.contact-item:first-child').click(function(){
+// // alert('open');
+// // $('body').prepend('<div class="overlay"><div class="modal"><button class="close-modal">x</button><div class="family-member" style="background-color: white;">hello</div><div class="item-description-modal"><h2>Reserve</h2><p>reserve</p></div></div></div>');
+
+// $('.open-table.overlay').fadeIn();
+
+// });
+
+
+
+
+$('body').on('click', '.close-ot-modal', function () {
+
+$('.open-table.overlay').fadeOut();
+
+});
+
+
+
+$('.contact-item:first-child').click(function(){
+window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_blank');
+});
 
