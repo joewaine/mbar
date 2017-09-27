@@ -4,13 +4,16 @@ var refHeight = function(){
     if($(window).width() > 999){
     var corwith = $(window).width()/5;
     $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('#instafeed').css('height', corwith - 10 + 'px');
     }else if($(window).width() > 659){
     var corwith = $(window).width()/3;
     $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('#instafeed').css('height', corwith - 10 + 'px');
     }else{
     var corwith = $(window).width();
     // $('section.slideshow').css('height', corwith - 10 + 'px');
     $('section.slideshow').css('height', 'auto');
+    $('#instafeed').css('height', 'auto');
     }
 }
 
