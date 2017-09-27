@@ -9,7 +9,8 @@ var refHeight = function(){
     $('section.slideshow').css('height', corwith - 10 + 'px');
     }else{
     var corwith = $(window).width();
-    $('section.slideshow').css('height', corwith - 10 + 'px');
+    // $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('section.slideshow').css('height', 'auto');
     }
 }
 
