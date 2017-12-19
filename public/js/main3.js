@@ -18,11 +18,11 @@ var refHeight = function(){
 }
 
 $(document).ready(function(){
-    refHeight();
+    // refHeight();
 });
 
 $(window).resize(function () {
-    refHeight();
+    // refHeight();
 });
 
 
@@ -35,13 +35,22 @@ $(window).resize(function () {
         accessToken: '4012759170.1677ed0.8c1873c7a2ab4300a45e13d6b26b2cde',
         limit: 64,
         resolution: 'standard_resolution',
-        autoWidth: false,
+        autoWidth: true,
         orientation: 'square',
-        template: '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-position: center;background-image:url(https:{{image}});"><img src="{{image}}" style="" /></div></div>',
+        // template: '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-position: center;background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0;" /></div></div>',
+
+
+
+
+        template: '<div class="owl-item"><div class="item"><img src="{{image}}" style="opacity: 1;" /></div></div>',
+
+
+
+                // template: '<div class="owl-item" data-orientation="{{orientation}}" style="height: 336px;"><div class="item" style="background-position: center;background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0 !important;width: auto;height: 336px;" /></div></div>',
         // template: if(orientation == 'square'){
         //     '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0;" /></div></div>';
         // }else{},
-        after: function() {
+        after: function() {w
 
            $('#instafeed').owlCarousel({
                 touchDrag  : false,
@@ -50,18 +59,20 @@ $(window).resize(function () {
                 loop:true,
                 margin:0,
                 nav:true,
+                autoWidth:true,
+                lazyLoad: true,
                 dots: false,
-                responsive:{
-                    0:{
-                    items:1
-                },
-                660:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
+                // responsive:{
+                //     0:{
+                //     items:1
+                // },
+                // 660:{
+                //     items:3
+                // },
+                // 1000:{
+                //     items:5
+                // }
+            // }
 
         });
     }

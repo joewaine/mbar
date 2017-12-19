@@ -3360,3 +3360,20 @@ div[data-orientation='square'] .item{
   /*height:336px;background-position: center center;*/
 }
 
+div[data-orientation='landscape'] .item img{
+opacity: 0;
+}
+div[data-orientation='portrait'] .item img{
+opacity: 1;
+}
+div[data-orientation='square'] .item img{
+  opacity: 1;
+}
+
+
+.owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+
