@@ -472,6 +472,9 @@ $(function() {
             }
         });
 
+
+          $('#subForm button').click();
+
     });
 
 

@@ -593,6 +593,68 @@ height: 100%;
                 <button type="submit">Send</button>
             </div> -->
         </form>
+
+
+
+
+<div style="display: none;">
+    <h1>here is the space for the next form</h1>
+
+
+  <form action="https://mamnoonrestaurant.createsend.com/t/i/s/adrkjd/" method="post" id="subForm">
+
+      <input id="fieldName" name="cm-name" type="text" />
+      <br />
+       <input id="fieldEmail" name="cm-adrkjd-adrkjd" type="email" required /><br />
+          <button class="submit" type="submit" value="Subscribe">Subscribe</button>
+  </form>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          $('#subForm').submit(function (e) {
+              e.preventDefault();
+              $.getJSON(
+              this.action + "?callback=?",
+              $(this).serialize(),
+              function (data) {
+                  if (data.Status === 400) {
+                      // alert("Error: " + data.Message);
+                      // $('#modal .error').slideDown();
+                      // $('#modal .error').delay( 800 ).fadeOut();
+                  } else { // 200
+                      // $('#modal .thankyou').slideDown().delay( 2000 ).fadeOut();
+                      // $('#modal').delay( 800 ).fadeOut();
+$('#fieldEmail, #fieldName').val('');
+                  }
+              });
+          });
+      });
+
+
+$( "input#name" ).change(function() {
+
+$('input#fieldName').val($(this).val());
+
+});
+
+$( "input#email" ).change(function() {
+
+$('input#fieldEmail').val($(this).val());
+
+});
+
+
+
+
+
+
+  </script>
+
+
+
+</div>
+
+
     </div>
 
 
