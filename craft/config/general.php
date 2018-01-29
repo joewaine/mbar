@@ -9,10 +9,10 @@
 
 return array(
 
-    'siteUrl' => 'http://testsite.mamnoon.webfactional.com/',
+    'siteUrl' => 'http://mbarseattle.com/',
     'environmentVariables' => array(
 		'basePath' => $_SERVER['DOCUMENT_ROOT'].'/',
-		'siteUrl'  => 'http://testsite.mamnoon.webfactional.com/',
+		'siteUrl'  => 'http://mbarseattle.com/',
     ),
     'enableCsrfProtection' => true,
     'omitScriptNameInUrls' => 'auto',
