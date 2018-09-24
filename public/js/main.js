@@ -561,12 +561,18 @@ var annoHeight = null;
 var contItemVal = null;
 var fixedPadding = null;
 
-
-annoHeight = $('.announcements').height();
+annoHeight = $('.announcements').outerHeight();
 contItemVal = 30;
-fixedPadding = annoHeight + contItemVal + 30 + 'px';
-// $('.schedule-items.top').css('margin-top', '0px');
-$('.schedule-items.top .schedule').css('margin-top', fixedPadding);
+
+console.log(annoHeight);
+
+console.log($('.announcements').outerHeight());
+
+if(annoHeight){
+fixedPadding = annoHeight - 50 + 'px';
+}
+
+$('.schedule-items.top').css('margin-top', fixedPadding);
 
 
 annoHeight = null;
@@ -583,12 +589,19 @@ var annoHeight2 = null;
 var contItemVal2 = null;
 var fixedPadding2 = null;
 
-annoHeight2 = $('.announcements').height();
+annoHeight2 = $('.announcements').outerHeight();
 contItemVal2 = 30;
-fixedPadding2 = annoHeight2 + contItemVal2 + 30 + 'px';
 
-// $('.schedule-items.top').css('margin-top', '0px');
-$('.schedule-items.top .schedule').css('margin-top', fixedPadding2);
+console.log(annoHeight2);
+
+console.log($('.announcements').outerHeight());
+
+if(annoHeight2){
+fixedPadding2 = annoHeight2 - 50 + 'px';
+}
+
+$('.schedule-items.top').css('margin-top', fixedPadding);
+
 
 annoHeight2 = null;
 contItemVal2 = null;
