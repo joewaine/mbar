@@ -1,7 +1,21 @@
 
 var refHeight = function(){
 
-    if($(window).width() > 999){
+
+
+    if($(window).width() > 2399){
+    var corwith = $(window).width()/8;
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('#instafeed').css('height', corwith - 10 + 'px');
+    }else if($(window).width() > 1999){
+    var corwith = $(window).width()/7;
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('#instafeed').css('height', corwith - 10 + 'px');
+    }else if($(window).width() > 1599){
+    var corwith = $(window).width()/6;
+    $('section.slideshow').css('height', corwith - 10 + 'px');
+    $('#instafeed').css('height', corwith - 10 + 'px');
+    }else if($(window).width() > 999){
     var corwith = $(window).width()/5;
     $('section.slideshow').css('height', corwith - 10 + 'px');
     $('#instafeed').css('height', corwith - 10 + 'px');
@@ -60,7 +74,17 @@ $(window).resize(function () {
                 },
                 1000:{
                     items:5
+                },
+                1600:{
+                    items: 6
+                },
+                2000:{
+                    items: 7
+                },
+                2400:{
+                    items: 8
                 }
+
             }
 
         });
