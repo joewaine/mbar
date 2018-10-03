@@ -588,9 +588,8 @@ var fixedPadding = null;
 annoHeight = $('.announcements').outerHeight();
 contItemVal = 30;
 
-console.log(annoHeight);
-
-console.log($('.announcements').outerHeight());
+// console.log(annoHeight);
+// console.log($('.announcements').outerHeight());
 
 if(annoHeight){
 fixedPadding = annoHeight - 50 + 'px';
