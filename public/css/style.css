@@ -3376,4 +3376,6 @@ div[data-orientation='square'] .item img{
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
-
+.contact-item{
+  cursor: pointer;
+}

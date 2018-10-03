@@ -767,7 +767,7 @@ $('.open-table.overlay').fadeOut();
 
 
 
-$('.contact-item:first-child').click(function(){
-window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_blank');
-});
+// $('.contact-item:first-child').click(function(){
+// window.open('http://www.opentable.com/single.aspx?rid=295054&restref=295054', '_blank');
+// });/
 
