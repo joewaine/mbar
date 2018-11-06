@@ -3379,3 +3379,165 @@ div[data-orientation='square'] .item img{
 .contact-item{
   cursor: pointer;
 }
+
+
+
+
+
+/*new years button edits*/
+/*new years button edits*/
+
+
+.new-years-reserve{
+      background-image: url(../img/new-years-button.svg);
+      background-repeat: no-repeat;
+
+
+  -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+
+
+
+}
+
+.new-years-reserve:hover{
+      background-image: url(../img/new-years-button-hover.svg);
+cursor: pointer;
+}
+
+
+
+
+
+
+.new-years-reserve:first-child{
+  width:198px;
+  height:178px;
+  /*background:yellow;*/
+  position: absolute;
+  top: 46px;
+  left: 25%;
+  color: transparent;
+}
+
+
+
+.new-years-reserve:nth-child(2){
+  width:198px;
+  height:178px;
+  /*background:yellow;*/
+  position: absolute;
+  top: 46px;
+  right: 25%;
+  color: transparent;
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+
+.new-years-reserve:first-child{
+  left: 5%;
+}
+
+
+
+.new-years-reserve:nth-child(2){
+  right: 5%;
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+.new-years-reserve:first-child{
+  left: 10px;
+}
+
+
+
+.new-years-reserve:nth-child(2){
+  right: 10px;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+
+
+.new-years-reserve{
+    width: 172px;
+    top: 56px;
+
+}
+
+
+.new-years-reserve:nth-child(2){
+display: none;
+}
+
+.new-years-reserve:first-child {
+
+  left: 50%;
+  margin-left: -86px;
+}
+
+
+
+.contact-items-container{
+  width: 96%;
+}
+
+}
+
+
+@media only screen and (max-width: 660px) {
+
+
+.new-years-reserve:first-child {
+    width: 140px;
+    top: 9px;
+  left: 50%;
+  margin-left: -70px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 420px) {
+
+
+.new-years-reserve:first-child {
+    width: 120px;
+    top: 16px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+.contact-items-container{
+  width: 100%;
+}
+
+
+}
+
+
+
+
+/*new years button edits*/
+/*new years button edits*/
