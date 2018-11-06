@@ -3513,6 +3513,54 @@ display: none;
   margin-left: -70px;
 }
 
+.contact-item:first-child{
+  margin-left: 2px;
+    width: 140px;
+    height: 138px;
+    background-size: 123px;
+    margin-left: -10px;
+
+
+}
+
+
+
+
+.contact-item:first-child .added-item-res{
+      font-size: 13px;
+    left: 12px;
+    top: 55px;
+}
+
+.contact-item:last-child{
+    width: 140px;
+    height: 138px;
+    background-size: 123px;
+    margin-right: 6px;
+}
+
+
+
+
+.contact-item-text.for-tel{
+    width: 60px;
+    margin-left: -110px;
+    position: relative;
+  }
+
+.contact-item:last-child .added-item-ph{
+    font-size: 12px;
+    position: absolute;
+    width: 60px;
+    left: -2px;
+    top: 54px;
+}
+
+.contact-item-text.for-tel a{
+  font-size:13px;
+  }
+
+
 
 }
 
