@@ -3685,6 +3685,11 @@ display: none;
 }
 
 
+#owl-announcements-mobile p, .announcements-mobile p {
+    width: 80%;
+    line-height: 22px;
+    margin: 0px auto;
+}
 
 
 
@@ -3711,6 +3716,12 @@ display: none;
 }
 
 
+
+
+
+#owl-announcements-mobile p, .announcements-mobile p {
+    width: 90%;
+}
 
 
 }
