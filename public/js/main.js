@@ -592,11 +592,11 @@ contItemVal = 30;
 // console.log($('.announcements').outerHeight());
 
 if(annoHeight){
-fixedPadding = annoHeight - 50 + 'px';
+fixedPadding = annoHeight + 50 + 'px';
 }
 
 $('.schedule-items.top').css('margin-top', fixedPadding);
-
+console.log(fixedPadding);
 
 annoHeight = null;
 contItemVal = null;
@@ -615,16 +615,17 @@ var fixedPadding2 = null;
 annoHeight2 = $('.announcements').outerHeight();
 contItemVal2 = 30;
 
-console.log(annoHeight2);
+//console.log(annoHeight2);
 
-console.log($('.announcements').outerHeight());
+//console.log($('.announcements').outerHeight());
 
 if(annoHeight2){
-fixedPadding2 = annoHeight2 - 50 + 'px';
+fixedPadding2 = annoHeight2 + 50 + 'px';
 }
 
-$('.schedule-items.top').css('margin-top', fixedPadding);
+$('.schedule-items.top').css('margin-top', fixedPadding2);
 
+console.log(fixedPadding2);
 
 annoHeight2 = null;
 contItemVal2 = null;
