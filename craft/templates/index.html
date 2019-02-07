@@ -94,6 +94,78 @@ twitter
 
             </nav>
 
+
+
+<style>
+
+  #owl-announcements-mobile .owl-nav,
+  #owl-announcements .owl-nav{
+    margin-top: -60px;
+    z-index: 100;
+    position: relative;
+}
+
+#owl-announcements-mobile .owl-prev,
+#owl-announcements .owl-prev{
+      left: 0;
+    position: absolute;
+}
+
+#owl-announcements-mobile .owl-next,
+#owl-announcements .owl-next{
+      right: 0;
+    position: absolute;
+}
+
+
+
+
+</style>
+
+<div id="owl-announcements" class="owl-carousel owl-theme" style="">
+
+
+
+<div class="item" style="height:100px;">
+
+<div class="announcements">
+
+<!-- <button class="close-announcement">X</button> -->
+
+<span class="announcement-header">
+    ..... or come as you are to our anti-valentine's rooftop party!
+</span>
+<p>
+  Join us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
+</p>
+</div>
+</div>
+
+
+<div class="item" style="height:100px;">
+
+<div class="announcements">
+
+<!-- <button class="close-announcement">X</button> -->
+
+<span class="announcement-header">
+two... or come as you are to our anti-valentine's rooftop party!
+</span>
+<p>
+two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
+</p>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
 <div class="announcements">
 
@@ -243,6 +315,50 @@ twitter
 
 
 <!-- mobile announcements -->
+
+
+
+
+<div id="owl-announcements-mobile" class="owl-carousel owl-theme" style="">
+
+
+
+<div class="item" style="height:100px;">
+
+<div class="announcements">
+
+<!-- <button class="close-announcement">X</button> -->
+
+<span class="announcement-header">
+    ..... or come as you are to our anti-valentine's rooftop party!
+</span>
+<p>
+  Join us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
+</p>
+</div>
+</div>
+
+
+<div class="item" style="height:100px;">
+
+<div class="announcements">
+
+<!-- <button class="close-announcement">X</button> -->
+
+<span class="announcement-header">
+two... or come as you are to our anti-valentine's rooftop party!
+</span>
+<p>
+two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
+</p>
+</div>
+</div>
+
+</div>
+
+
+
+
 
 
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}

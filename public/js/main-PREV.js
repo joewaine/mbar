@@ -139,63 +139,6 @@ $('#owl3').owlCarousel({
     }
 });
 
-
-
-
-$('#owl-announcements-mobile').owlCarousel({
-    touchDrag  : false,
-    mouseDrag  : false,
-    loop:true,
-    margin:0,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    },
-    autoplay: true,
-    autoplayTimeout: 6000,
-    autoplayHoverPause: true,
-    loop: true
- });
-
-
-
-
-
-
-
-$('#owl-announcements').owlCarousel({
-    touchDrag  : false,
-    mouseDrag  : false,
-    loop:true,
-    margin:0,
-    nav:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    },
-    autoplay: true,
-    autoplayTimeout: 6000,
-    autoplayHoverPause: true,
-    loop: true
-});
-
 // $('.slideshow-box-text').append($('#owl2 .item.active .about').text());
 $('.slideshow-box-text').append($('#owl2 .active .about').html());
 $('#owl2 .owl-next, #owl2 .owl-prev').click(function(){
@@ -642,25 +585,18 @@ var annoHeight = null;
 var contItemVal = null;
 var fixedPadding = null;
 
-// annoHeight = $('.announcements').outerHeight();
-
-annoHeight = $('#owl-announcements').outerHeight();
-
-
-
-
-
+annoHeight = $('.announcements').outerHeight();
 contItemVal = 30;
 
 // console.log(annoHeight);
 // console.log($('.announcements').outerHeight());
 
 if(annoHeight){
-fixedPadding = annoHeight - 0 + 'px';
+fixedPadding = annoHeight + 50 + 'px';
 }
 
 $('.schedule-items.top').css('margin-top', fixedPadding);
-
+console.log(fixedPadding);
 
 annoHeight = null;
 contItemVal = null;
@@ -676,28 +612,20 @@ var annoHeight2 = null;
 var contItemVal2 = null;
 var fixedPadding2 = null;
 
-// annoHeight2 = $('.announcements').outerHeight();
-annoHeight2 = $('#owl-announcements').outerHeight();
-
-
-
-
-
+annoHeight2 = $('.announcements').outerHeight();
 contItemVal2 = 30;
 
-console.log(annoHeight2);
+//console.log(annoHeight2);
 
-// console.log($('.announcements').outerHeight());
-
-
-console.log($('#owl-announcements').outerHeight());
+//console.log($('.announcements').outerHeight());
 
 if(annoHeight2){
-fixedPadding2 = annoHeight2 - 0 + 'px';
+fixedPadding2 = annoHeight2 + 50 + 'px';
 }
 
-$('.schedule-items.top').css('margin-top', fixedPadding);
+$('.schedule-items.top').css('margin-top', fixedPadding2);
 
+console.log(fixedPadding2);
 
 annoHeight2 = null;
 contItemVal2 = null;
