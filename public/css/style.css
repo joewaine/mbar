@@ -3617,7 +3617,7 @@ display: none;
     position: absolute !important;
     left: 4px !important;
     top: 0 !important;
-    margin-top: -22px !important;
+    margin-top: -40px !important;
     -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -3642,7 +3642,7 @@ display: none;
     position: absolute !important;
     right: 4px !important;
     top: 0 !important;
-        margin-top: -22px !important;
+    margin-top: -40px !important;
 
 }
 
