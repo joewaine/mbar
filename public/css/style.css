@@ -3667,24 +3667,12 @@ display: none;
 }
 
 
-#owl-announcements-mobile .announcements{
-    font-size: 12px;
-    line-height: 20px;
-    padding-top: 5px;
-    width: 70%;
-}
-
-
-
 #owl-announcements{
   display: none;
 }
 
 
 
-#owl-announcements-mobile span{
-    font-size: 16px;
-}
 
 
 
@@ -3703,6 +3691,32 @@ display: none;
 
 
 }
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+
+#owl-announcements-mobile span {
+    font-size: 16px;
+}
+
+
+#owl-announcements-mobile .announcements {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 5px;
+    width: 70%;
+}
+
+
+
+
+}
+
+
+
 
 
 
