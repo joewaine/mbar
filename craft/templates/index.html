@@ -126,47 +126,8 @@ twitter
 
 
 
-<div class="item" style="height:100px;">
-
-<div class="announcements">
-
-<!-- <button class="close-announcement">X</button> -->
-
-<span class="announcement-header">
-    ..... or come as you are to our anti-valentine's rooftop party!
-</span>
-<p>
-  Join us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
-</p>
-</div>
-</div>
-
-
-<div class="item" style="height:100px;">
-
-<div class="announcements">
-
-<!-- <button class="close-announcement">X</button> -->
-
-<span class="announcement-header">
-two... or come as you are to our anti-valentine's rooftop party!
-</span>
-<p>
-two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
-</p>
-</div>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
+<div class="item">
 <div class="announcements">
 
 <!-- <button class="close-announcement">X</button> -->
@@ -176,7 +137,20 @@ two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s 
 </span>
 {{ timedAnnouncement.announcementText }}
 </div>
+</div>
 {% endfor %}
+
+
+
+</div>
+
+
+
+
+
+
+
+
 
 
 
@@ -323,47 +297,9 @@ two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s 
 
 
 
-<div class="item" style="height:100px;">
-
-<div class="announcements">
-
-<!-- <button class="close-announcement">X</button> -->
-
-<span class="announcement-header">
-    ..... or come as you are to our anti-valentine's rooftop party!
-</span>
-<p>
-  Join us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
-</p>
-</div>
-</div>
-
-
-<div class="item" style="height:100px;">
-
-<div class="announcements">
-
-<!-- <button class="close-announcement">X</button> -->
-
-<span class="announcement-header">
-two... or come as you are to our anti-valentine's rooftop party!
-</span>
-<p>
-two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s day rooftop patio party&nbsp;on&nbsp;<strong>February
-</p>
-</div>
-</div>
-
-</div>
-
-
-
-
-
-
 {% for timedAnnouncement in craft.entries.section('timedAnnouncements') %}
-<div class="announcements-mobile" style="display: none;">
-
+<div class="item" style="height:100px;">
+<div class="announcements">
 <!-- <button class="close-announcement">X</button> -->
 
 <span class="announcement-header">
@@ -373,9 +309,18 @@ two us at mbar for&nbsp;<strong>Come As You Are</strong>, an anti-valentine’s 
 {{ timedAnnouncement.announcementText }}
 </p>
 
-
+</div>
 </div>
 {% endfor %}
+
+</div>
+
+
+
+
+
+
+
 
 
 
