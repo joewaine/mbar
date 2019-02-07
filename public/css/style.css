@@ -3642,8 +3642,14 @@ display: none;
     position: absolute !important;
     right: 4px !important;
     top: 0 !important;
-    margin-top: -22px !important;
+
 }
+
+#owl-announcements-mobile .owl-prev,
+#owl-announcements-mobile .owl-next{
+      margin-top: -40px !important;
+}
+
 
 
 #owl-announcements-mobile{
