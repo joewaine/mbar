@@ -656,7 +656,7 @@ contItemVal = 30;
 // console.log($('.announcements').outerHeight());
 
 if(annoHeight){
-fixedPadding = annoHeight - 50 + 'px';
+fixedPadding = annoHeight - 90 + 'px';
 }
 
 $('.schedule-items.top').css('margin-top', fixedPadding);
@@ -693,7 +693,7 @@ console.log(annoHeight2);
 console.log($('#owl-announcements').outerHeight());
 
 if(annoHeight2){
-fixedPadding2 = annoHeight2 - 50 + 'px';
+fixedPadding2 = annoHeight2 - 90 + 'px';
 }
 
 $('.schedule-items.top').css('margin-top', fixedPadding);
