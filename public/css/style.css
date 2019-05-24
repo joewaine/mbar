@@ -233,7 +233,7 @@ padding-top: -100px;
 
 .contact-item:first-child{
 float: left;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .contact-item:last-child{
@@ -3761,3 +3761,13 @@ display: none;
 
 
 
+@media only screen and (max-width: 960px) {
+
+  .contact-items-container.wider{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+  }
+  
+}
