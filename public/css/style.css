@@ -275,8 +275,8 @@ float: none;
 
 
 .contact-item.as-circle:hover{
-  background-image: url('') !important ;
-  background-color: blue !important;
+  background-image: none !important;
+  /* background-color: blue !important; */
 }
 
 .contact-item-text{
