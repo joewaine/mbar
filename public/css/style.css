@@ -249,6 +249,13 @@ float: none;
 }
 
 
+.contact-item.as-circle{
+  width: 144px;
+  border-radius: 72px;
+  background: red;
+  cursor: pointer;
+}
+
 
 .contact-item-text{
   width: 200px;
