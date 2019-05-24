@@ -238,6 +238,16 @@ float: left;
 float: right
 }
 
+
+.contact-item.on-the-end:last-child{
+  top: 0;
+  position: absolute;
+  right: 0;
+float: none;
+}
+
+
+
 .contact-item-text{
   width: 200px;
   float: right;
