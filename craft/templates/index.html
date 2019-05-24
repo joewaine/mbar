@@ -122,6 +122,8 @@ twitter
 
 </style>
 
+
+{% if craft.entries.section('timedAnnouncements').ids() | length > 0 %}
 <div id="owl-announcements" class="owl-carousel owl-theme" style="height: 140px;background: rgb(255, 204, 62);">
 
 
@@ -145,7 +147,7 @@ twitter
 </div>
 
 
-
+{% endif %}
 
 
 
@@ -290,9 +292,7 @@ twitter
 
 <!-- mobile announcements -->
 
-
-
-
+{% if craft.entries.section('timedAnnouncements').ids() | length > 0 %}
 <div id="owl-announcements-mobile" class="owl-carousel owl-theme" style="height:150px;">
 
 
@@ -315,7 +315,7 @@ twitter
 
 </div>
 
-
+{% endif %}
 
 
 
