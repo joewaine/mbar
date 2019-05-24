@@ -201,6 +201,8 @@ padding-top: -100px;
 .contact-items-container.wider{
   margin: 0 auto;
   width: 826px;
+  position: relative;
+  margin-top: -100px;
 }
 
 
