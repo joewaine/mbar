@@ -252,9 +252,26 @@ float: none;
 .contact-item.as-circle{
   width: 144px;
   border-radius: 72px;
-  background: red;
+ background-size:100%;
+ background-repeat: no-repeat;
   cursor: pointer;
 }
+
+
+.contact-item.as-circle.one{
+  background-image: url(../img/one.png);
+}
+
+
+.contact-item.as-circle.two{
+  background-image: url(../img/two.png);
+}
+
+.contact-item.as-circle.three{
+  background-image: url(../img/three.png);
+
+}
+
 
 
 .contact-item.as-circle:hover{
