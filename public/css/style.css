@@ -257,6 +257,11 @@ float: none;
 }
 
 
+.contact-item.as-circle:hover{
+  background-image: url('') !important ;
+  background-color: blue !important;
+}
+
 .contact-item-text{
   width: 200px;
   float: right;
