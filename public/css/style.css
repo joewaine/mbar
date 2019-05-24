@@ -187,9 +187,20 @@ img.logo{
   display: inline-block;
 }
 
+
+
+.contact-items.second-row{
+padding-top: -100px;
+}
+
 .contact-items-container{
     margin: 0 auto;
     width: 486px;
+}
+
+.contact-items-container.wider{
+  margin: 0 auto;
+  width: 826px;
 }
 
 
