@@ -260,16 +260,21 @@ float: none;
 
 .contact-item.as-circle.one{
   background-image: url(../img/one.png);
+  background-size: 102%;
+  background-position: center center;
 }
 
 
 .contact-item.as-circle.two{
   background-image: url(../img/two.png);
+  background-size: 102%;
+  background-position: center center;
 }
 
 .contact-item.as-circle.three{
   background-image: url(../img/three.png);
-
+  background-size: 102%;
+  background-position: center center;
 }
 
 
