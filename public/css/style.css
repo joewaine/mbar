@@ -282,7 +282,7 @@ float: none;
 .as-circle{
 
   -webkit-transition: all .25s ease;
-  transition: all 25s ease;
+  transition: all .25s ease;
 
 }
 .as-circle:hover{
