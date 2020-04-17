@@ -3808,7 +3808,7 @@ display: none;
     position: relative;
     margin-top: 0px;
   }
-
+  
 }
 
 
@@ -3818,7 +3818,7 @@ display: none;
     width:120px;
     height: 120px;
   }
-
+  
 
 }
 
@@ -3853,8 +3853,8 @@ display:none;
 
 
 
-/*  to show only "one" (center) and "two" (left) event widgets
-.contact-item.as-circle.two,     wassef 11-18-2019 */
+
+.contact-item.as-circle.two,
 .contact-item.as-circle.three{
 
 opacity:0;
@@ -3872,3 +3872,5 @@ pointer-events: none;
 }
 
 }
+
+

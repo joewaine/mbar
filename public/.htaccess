@@ -35,3 +35,10 @@ ExpiresDefault "access 2 days"
 RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-SSL} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Remove www from any URLs that have them:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://mbarseattle.com/$1 [R=301,L]
+
+
