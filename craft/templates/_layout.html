@@ -23,7 +23,33 @@
 	{% includeCssFile "css/font.css" %}
 	{% includeCssFile "css/style.css" %}
 
-<script>    !function(t,o,c,k){if(!t.tock){var e=t.tock=function(){e.callMethod?    e.callMethod.apply(e,arguments):e.queue.push(arguments)};t._tock||(t._tock=e),    e.push=e,e.loaded=!0,e.version='1.0',e.queue=[];var f=o.createElement(c);f.async=!0,    f.src=k;var g=o.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g)}}(    window,document,'script','https://www.exploretock.com/tock.js');    tock('init', 'mbar');    </script>
+<script>    !function(t,o,c,k){if(!t.tock){var e=t.tock=function(){e.callMethod?    e.callMethod.apply(e,arguments):e.queue.push(arguments)};t._tock||(t._tock=e),    e.push=e,e.loaded=!0,e.version='1.0',e.queue=[];var f=o.createElement(c);f.async=!0,    f.src=k;var g=o.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g)}}(    window,document,'script','https://www.exploretock.com/tock.js');    tock('init', 'mamnoonrestaurant');    </script>
+
+
+
+
+
+<style type="text/css">
+
+.schedule-items.top .schedule .hours p{
+    width: 90%;
+    margin-left: 5.5%;
+}
+
+@media only screen and (max-width: 960px) {
+
+.schedule-items.top .schedule .hours p{
+    width: 96%;
+    margin-left: initial;
+    margin: 10px auto 0;
+}
+}
+
+</style>
+
+
+
+
 </head>
 <body id ="waypointschild" class="planecursor">
 	<div id="container">
@@ -105,8 +131,9 @@ SevenroomsWidget.init({
       type: 'reservations',
       defaultPartySize: 2,
       defaultTime: '7:00PM',
-      allVenues: ['mbarseattle','mamnoon'],
-  })
+      //allVenues: ['mbarseattle','mamnoon'],
+	allVenues: ['mbarseattle'] 
+ })
 
 </script>
 
@@ -153,7 +180,23 @@ $('#second-button').click(function(){
 
 	
 
+var myElement = $('<span class="TockWidget-B2">Book now</span>')[0];
 
+
+var observer = new MutationObserver(function(mutations) {
+   if (document.contains(myElement)) {
+        console.log("It's in the DOM!");
+$(".TockWidget-B2").text('mama family meal');
+        observer.disconnect();
+    }
+});
+
+observer.observe(document, {attributes: false, childList: true, characterData: false, subtree:true});
+
+
+$('#mamma-dummy-button').click(function(){
+$('#Tock_widget_container').click();
+});
 
 	</script>
 	

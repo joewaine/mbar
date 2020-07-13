@@ -372,7 +372,7 @@ $('.overlay').remove();
 
 
 // menu
-$(document).on('click', '#waypoints a', function(event){
+$(document).on('click', '#waypoints a.anchors', function(event){
 
 
   event.preventDefault();

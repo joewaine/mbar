@@ -59,16 +59,20 @@ twitter
 
 <ul class="mobile-nav">
 {% for topNavigation in craft.entries.section('topNavigation') %}
+{% if topNavigation.external == '' %}
 <li>
-<a href="#{{ topNavigation.slug }}">
+<a class="anchor" href="#{{ topNavigation.slug }}">
 {{ topNavigation.title }}
 </a>
 </li>
+{% else %}
+<li>
+<a class="external-link" target="_blank" href="{{ topNavigation.external }}">
+{{ topNavigation.title }}
+</a>
+</li>
+{% endif %}
 {% endfor %}
-
-
-
-
 </ul>
 </div>
 
@@ -79,11 +83,19 @@ twitter
 
 
 {% for topNavigation in craft.entries.section('topNavigation') %}
+{% if topNavigation.external == '' %}
 <li>
-<a href="#{{ topNavigation.slug }}">
+<a class="anchor"  href="#{{ topNavigation.slug }}">
 {{ topNavigation.title }}
 </a>
 </li>
+{% else %}
+<li>
+<a class="external-link" target="_blank" href="{{ topNavigation.external }}">
+{{ topNavigation.title }}
+</a>
+</li>
+{% endif %}
 {% endfor %}
 
 
@@ -276,7 +288,7 @@ twitter
     </div>
 
         <div class="contact-items-container wider">
-<div style="width: 100%;text-align: center;font-family: AvenirLTStdthick;color: white;">Place an order for pickup:</div>
+<div style="width: 100%;text-align: center;font-family: AvenirLTStdthick;color: white;">Place an order for pickup at Mamnoon:</div>
             <div id="link-1" class="contact-item as-circle three" style="display:none;">
 
             </div>
@@ -332,12 +344,44 @@ color: #ffffff;
 
 
 </style>
-<div id="Tock_widget_container" data-tock-display-mode="Button" data-tock-color-mode="Blue" data-tock-locale="en-us" data-tock-timezone="America/Los_Angeles"></div>
+<div style="display:none;"  id="Tock_widget_container" data-tock-display-mode="Button" data-tock-color-mode="Blue" data-tock-locale="en-us" data-tock-timezone="America/Los_Angeles"></div>
          <div id="link-3" class="contact-item  as-circle on-the-end three">
             <!--    <div id="link-2" class="contact-item  as-circle on-the-end one"> wassef 142020 -->
 
                 </div>
     </div>
+
+
+
+<style type="text/css">
+
+
+
+#mama-dummy-button{
+    background-color: #2020c0;
+    color: #fff;
+    text-align: center;
+
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 51px;
+    line-height: 52px;
+    text-decoration: none;
+    width: 200px;
+    margin: 18px auto 0;  
+
+}
+
+
+
+
+</style>
+
+
+<div style="cursor:pointer;" id="mama-dummy-button" class="TockButton-buttonContainer"><div data-tock-reserve="true" class="TockButton-link"><div class="TockButton TockButton-blue"><span class="TockWidget-B2">Mama Family Meal</span></div></div></div>
+
+
     </section>
     <!-- end contact items -->
 
