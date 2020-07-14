@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 294.3 205.6" style="enable-background:new 0 0 294.3 205.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F5CD34;}
 	.st1{fill:#FFE881;}
 	.st2{fill:#425960;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:#47626D;}
+	.st5{font-family:'Avenir-Black';}
+	.st6{font-size:27.2839px;}
+	.st7{fill:#FFCC3E;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
-<title>Asset 8</title>
-<rect x="118.8" y="30.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.6041 165.4779)" class="st0" width="145.3" height="145.3"/>
-<polygon class="st1" points="102.8,205.6 190.9,205.4 88.2,102.6 0,102.8 "/>
-<polygon class="st2" points="88.2,103.2 0,103 102.8,0.2 190.9,0.4 "/>
+<g id="Layer_2">
+	
+		<rect x="118.8" y="30.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.594 165.4549)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="132.8,205.6 190.9,205.4 88.2,102.6 30,102.8 	"/>
+	<polygon class="st2" points="88.2,103.2 30,103 132.8,0.2 190.9,0.4 	"/>
+</g>
+<g id="Layer_1">
+	
+		<image style="overflow:visible;" width="264" height="206" xlink:href="contact-item-sm-bg-hover.png"  transform="matrix(1 0 0 1 298 -230.8)">
+	</image>
+	<rect x="-28" y="-624" class="st3" width="56" height="1032.1"/>
+	
+		<image style="overflow:visible;" width="264" height="206" xlink:href="contact-item-sm-bg.png"  transform="matrix(1 0 0 1 568 -80)">
+	</image>
+	<text transform="matrix(1 0 0 1 145.009 93.117)"><tspan x="0" y="0" class="st4 st5 st6">reserve</tspan><tspan x="0" y="32.7" class="st4 st5 st6">online</tspan></text>
+	<text transform="matrix(1 0 0 1 -482.6943 -143.5757)" style="font-family:'Avenir-Heavy'; font-size:12px;">rgb(71, 98, 109);</text>
+	
+		<rect x="104.5" y="698.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -493.2282 351.0507)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="118.5,873.7 176.6,873.5 73.9,770.7 15.7,770.9 	"/>
+	<polygon class="st2" points="73.9,771.3 15.7,771.1 118.5,668.3 176.6,668.5 	"/>
+	<text transform="matrix(1 0 0 1 130.7258 761.2634)"><tspan x="0" y="0" class="st4 st5 st6">reserve</tspan><tspan x="0" y="32.7" class="st4 st5 st6">online</tspan></text>
+	
+		<rect x="-71.3" y="465.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -380.0872 158.5486)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="-57.3,640.9 0.8,640.7 -101.9,537.9 -160.1,538.1 	"/>
+	<polygon class="st2" points="-101.9,538.5 -160.1,538.3 -57.3,435.5 0.8,435.7 	"/>
+	<text transform="matrix(1 0 0 1 -45.0742 528.439)"><tspan x="0" y="0" class="st4 st5 st6">reserve</tspan><tspan x="0" y="32.7" class="st4 st5 st6">online</tspan></text>
+	
+		<rect x="104.5" y="951.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -672.5865 425.3433)" class="st2" width="145.3" height="145.3"/>
+	<polygon class="st7" points="118.5,1127.4 176.6,1127.2 73.9,1024.4 15.7,1024.6 	"/>
+	<polygon class="st1" points="73.9,1025 15.7,1024.8 118.5,922 176.6,922.2 	"/>
+	<text transform="matrix(1 0 0 1 130.7258 1014.9142)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">reserve</tspan><tspan x="0" y="32.7" class="st5 st6" style="fill:#FFFFFF;">online</tspan></text>
+	
+		<rect x="406.7" y="698.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -404.7155 564.7393)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="420.7,873.7 478.8,873.5 376.1,770.7 317.9,770.9 	"/>
+	<polygon class="st2" points="376.1,771.3 317.9,771.1 420.7,668.3 478.8,668.5 	"/>
+	<text transform="matrix(1 0 0 1 432.9271 761.2634)"><tspan x="0" y="0" class="st4 st5 st6">join </tspan><tspan x="0" y="32.7" class="st4 st5 st6">waitlist</tspan></text>
+	
+		<rect x="471.1" y="465.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -221.0733 542.0258)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="485.1,640.7 543.2,640.5 440.5,537.7 382.3,537.9 	"/>
+	<polygon class="st2" points="440.5,538.3 382.3,538.1 485.1,435.3 543.2,435.5 	"/>
+	<text transform="matrix(1 0 0 1 497.3306 528.2307)"><tspan x="0" y="0" class="st4 st5 st6">join </tspan><tspan x="0" y="32.7" class="st4 st5 st6">waitlist</tspan></text>
+	
+		<rect x="406.7" y="951.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -584.0738 639.0319)" class="st2" width="145.3" height="145.3"/>
+	<polygon class="st7" points="420.7,1127.4 478.8,1127.2 376.1,1024.4 317.9,1024.6 	"/>
+	<polygon class="st1" points="376.1,1025 317.9,1024.8 420.7,922 478.8,922.2 	"/>
+	<text transform="matrix(1 0 0 1 432.9271 1014.9142)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">join </tspan><tspan x="0" y="32.7" class="st5 st6" style="fill:#FFFFFF;">waitlist</tspan></text>
+	
+		<rect x="745.6" y="465.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -140.7981 736.1433)" class="st2" width="145.3" height="145.3"/>
+	<polygon class="st7" points="759.6,640.9 817.7,640.7 715,537.9 656.8,538.1 	"/>
+	<polygon class="st1" points="715,538.5 656.8,538.3 759.6,435.5 817.7,435.7 	"/>
+	<text transform="matrix(1 0 0 1 771.7888 528.3889)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">join </tspan><tspan x="0" y="32.7" class="st5 st6" style="fill:#FFFFFF;">waitlist</tspan></text>
+	
+		<rect x="745.6" y="698.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -305.4653 804.3506)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="759.6,873.7 817.7,873.5 715,770.7 656.8,770.9 	"/>
+	<polygon class="st2" points="715,771.3 656.8,771.1 759.6,668.3 817.7,668.5 	"/>
+	
+		<rect x="745.6" y="951.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -484.8235 878.6432)" class="st2" width="145.3" height="145.3"/>
+	<polygon class="st7" points="759.6,1127.4 817.7,1127.2 715,1024.4 656.8,1024.6 	"/>
+	<polygon class="st1" points="715,1025 656.8,1024.8 759.6,922 817.7,922.2 	"/>
+	<g>
+		<text transform="matrix(1 0 0 1 765.7105 764.2634)"><tspan x="0" y="0" class="st4 st5 st6">206 457</tspan><tspan x="20.2" y="32.7" class="st4 st5 st6">8287</tspan></text>
+		<text transform="matrix(1 0 0 1 765.7105 1017.9142)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">206 457</tspan><tspan x="20.2" y="32.7" class="st5 st6" style="fill:#FFFFFF;">8287</tspan></text>
+	</g>
+	
+		<rect x="1009.7" y="479" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -73.0764 926.9346)" class="st0" width="145.3" height="145.3"/>
+	<polygon class="st1" points="1023.7,654.5 1081.8,654.3 979.1,551.5 920.9,551.7 	"/>
+	<polygon class="st2" points="979.1,552.1 920.9,551.9 1023.7,449.1 1081.8,449.3 	"/>
+	<g>
+		<text transform="matrix(1 0 0 1 1029.8768 545.0371)"><tspan x="0" y="0" class="st4 st5 st6">206 457</tspan><tspan x="20.2" y="32.7" class="st4 st5 st6">8287</tspan></text>
+		<text transform="matrix(1 0 0 1 1029.8768 798.688)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">206 457</tspan><tspan x="20.2" y="32.7" class="st5 st6" style="fill:#FFFFFF;">8287</tspan></text>
+	</g>
+	
+		<rect x="198.6" y="466.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -301.5679 349.5952)" class="st2" width="145.3" height="145.3"/>
+	<polygon class="st7" points="212.6,641.7 270.7,641.5 168,538.7 109.8,538.9 	"/>
+	<polygon class="st1" points="168,539.3 109.8,539.1 212.6,436.3 270.7,436.5 	"/>
+	<text transform="matrix(1 0 0 1 224.7991 529.1812)"><tspan x="0" y="0" class="st5 st6" style="fill:#FFFFFF;">reserve</tspan><tspan x="0" y="32.7" class="st5 st6" style="fill:#FFFFFF;">online</tspan></text>
+	<rect x="-217.8" y="425.2" class="st8" width="1646.1" height="233.3"/>
+	<text transform="matrix(1 0 0 1 -205.2634 448.9366)" class="st5" style="fill:#FFFFFF; font-size:12px;">original</text>
+	
+		<image style="overflow:visible;" width="264" height="206" xlink:href="contact-item-sm-bg.png"  transform="matrix(1 0 0 1 949.8165 -9.883)">
+	</image>
+</g>
 </svg>

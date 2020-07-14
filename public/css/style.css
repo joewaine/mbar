@@ -195,7 +195,8 @@ padding-top: -100px;
 
 .contact-items-container{
     margin: 0 auto;
-    width: 486px;
+    /* width: 486px; */
+    width: 630px;
 }
 
 .contact-items-container.wider{
@@ -206,8 +207,14 @@ padding-top: -100px;
 }
 
 
+
+.added-item-res:nth-child(1){
+  display: none;
+}
+
 .contact-item{
-  background-image: url(../img/contact-item-bg.png);
+  /* background-image: url(../img/contact-item-bg.png); */
+  /* background-image: url(../img/SVG/contact-item-sm-bg.png); */
   background-repeat: no-repeat;
   width: 210px;
   color: white;
@@ -217,13 +224,59 @@ padding-top: -100px;
   -webkit-transition: background-image 0.2s ease-in;
   transition: background-image 0.2s ease-in;
    background-position: right center;
-       background-size: 210px 144px;
+       /* background-size: 210px 144px; */
+       background-size: 100%;
+
+
+
+       background-size: 100% 100%;
+       height: 144px;
+       width: 182px;
+
+       display: inline-block;
+       /* background-color: pink; */
+       margin-right: 10px;
 }
+
+
+
+.contact-item:first-child{
+  background-image: url(../img/SVG/reserve-online.svg);
+}
+
 
 .contact-item:first-child:hover{
-  background-image: url(../img/contact-item-bg-hover.png);
+  background-image: url(../img/SVG/reserve-online-hover.svg);
 }
 
+
+
+.contact-item:nth-child(2){
+  background-image: url(../img/SVG/join-waitlist.svg);
+}
+
+
+.contact-item:nth-child(2):hover{
+  background-image: url(../img/SVG/join-waitlist-hover.svg);
+}
+
+
+
+.contact-item:nth-child(3){
+  background-image: url(../img/SVG/phone.svg);
+}
+
+
+.contact-item:nth-child(3):hover{
+  background-image: url(../img/SVG/phone-hover.svg);
+}
+
+
+
+
+.contact-item-text{
+  display: none;
+}
 
 
 /*.contact-item:hover .contact-item-text a,*/
@@ -232,12 +285,14 @@ padding-top: -100px;
 }
 
 .contact-item:first-child{
-float: left;
+/* float: left; */
     /* margin-left: 10px; */
 }
 
 .contact-item:last-child{
-float: right
+/* float: right */
+
+margin-right: 0;
 }
 
 
@@ -308,7 +363,16 @@ float: none;
   margin-bottom: 50px;
   text-align: center;
   margin-top: -4px;
+  text-transform: lowercase;
 }
+
+.schedule-items > *{
+  text-transform: lowercase;
+}
+
+
+
+
 
 .schedule{
     background-image: url(../img/hours-bg.svg);
@@ -1424,7 +1488,8 @@ body.fixedwaypoint{
 .contact-item-text.left{
     position: relative !important;
     top: -8px;
-    left: 0;
+    left: -8px;
+
 }
 
 
@@ -1529,7 +1594,7 @@ nav ul li:last-child{
 
     margin-left: 28px;
 
-
+text-transform: lowercase;
 }
 
 .schedule .hours{
@@ -2540,9 +2605,9 @@ section.menu{
   color: #425960 !important;
 }
 
-.contact-item:hover{
+/* .contact-item:hover{
   background-image: url(../img/contact-item-bg-hover.png);
-}
+} */
 
   .events-slideshow {
     width: 94%;
@@ -2563,6 +2628,8 @@ section.menu{
     width: 86px;
     padding-top: 55px;
     margin-right: 10px;
+    padding-top: 44px;
+
 }
 
 
@@ -2574,8 +2641,10 @@ section.menu{
 
 
     width: 150px;
-    background-size: 150px 102px;
 
+    width: 28%;
+    background-size: 100% 100%;
+    height: 120px;
 }
 
 
@@ -2817,6 +2886,7 @@ padding-top: 7px;
 
 .contact-items-container{
     width: 60%;
+    width: 90%;
   }
 
 /*form input[type="submit"] {
@@ -2874,7 +2944,7 @@ padding-top: 7px;
 @media only screen and (max-width: 560px) {
 
 .contact-items-container{
-    width: 80%;
+    width: 90%;
   }
 
 
@@ -2883,7 +2953,7 @@ padding-top: 7px;
 @media only screen and (max-width: 480px) {
 
 .contact-items-container{
-    width: 80%;
+    width: 90%;
   }
 
 

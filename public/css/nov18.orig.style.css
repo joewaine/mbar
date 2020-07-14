@@ -1425,6 +1425,7 @@ body.fixedwaypoint{
     position: relative !important;
     top: -8px;
     left: 0;
+    left: -6px;
 }
 
 
