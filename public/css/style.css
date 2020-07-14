@@ -284,7 +284,12 @@ padding-top: -100px;
 /*close modal*/
 
 
-button[aria-label='close modal'], button[aria-label='close modal']:active, button[aria-label='close modal']:focus {
+
+
+
+button[style='color: rgb(255, 255, 255); cursor: pointer; font-family: "sans serif"; position: absolute; font-size: 36px; font-weight: 200; right: 0px; top: -44px; width: 40px; line-height: 44px; text-align: right; background-color: transparent; border: 0px;'],
+button[style='color: rgb(255, 255, 255); cursor: pointer; font-family: "sans serif"; position: absolute; font-size: 36px; font-weight: 200; right: 0px; top: -44px; width: 40px; line-height: 44px; text-align: right; background-color: transparent; border: 0px;']:active,
+button[style='color: rgb(255, 255, 255); cursor: pointer; font-family: "sans serif"; position: absolute; font-size: 36px; font-weight: 200; right: 0px; top: -44px; width: 40px; line-height: 44px; text-align: right; background-color: transparent; border: 0px;']:focus {
   background-color: transparent !important;
   background-image: url(../img/SVG/closeX.svg);
   background-repeat: no-repeat;
