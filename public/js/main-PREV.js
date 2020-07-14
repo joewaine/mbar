@@ -615,7 +615,7 @@ var fixedPadding2 = null;
 annoHeight2 = $('.announcements').outerHeight();
 contItemVal2 = 30;
 
-//console.log(annoHeight2);
+
 
 //console.log($('.announcements').outerHeight());
 

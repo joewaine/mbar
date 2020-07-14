@@ -676,7 +676,6 @@ var annoHeight2 = null;
 var contItemVal2 = null;
 var fixedPadding2 = null;
 
-// annoHeight2 = $('.announcements').outerHeight();
 annoHeight2 = $('#owl-announcements').outerHeight();
 
 
@@ -685,9 +684,6 @@ annoHeight2 = $('#owl-announcements').outerHeight();
 
 contItemVal2 = 30;
 
-console.log(annoHeight2);
-
-// console.log($('.announcements').outerHeight());
 
 
 console.log($('#owl-announcements').outerHeight());
