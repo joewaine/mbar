@@ -252,12 +252,14 @@ padding-top: -100px;
 
 
 .contact-item:nth-child(2){
-  background-image: url(../img/SVG/join-waitlist.svg);
+  /* background-image: url(../img/SVG/join-waitlist.svg); */
+  background-image: url(../img/SVG/phone.svg);
 }
 
 
 .contact-item:nth-child(2):hover{
-  background-image: url(../img/SVG/join-waitlist-hover.svg);
+  /* background-image: url(../img/SVG/join-waitlist-hover.svg); */
+  background-image: url(../img/SVG/phone-hover.svg);
 }
 
 
