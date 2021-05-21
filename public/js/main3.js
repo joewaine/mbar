@@ -50,7 +50,7 @@ $(window).resize(function () {
         // template: if(orientation == 'square'){
         //     '<div class="owl-item" data-orientation="{{orientation}}" style="height:336px;"><div class="item" style="background-image:url(https:{{image}});"><img src="{{image}}" style="opacity: 0;" /></div></div>';
         // }else{},
-        after: function() {w
+        after: function() {
 
            $('#instafeed').owlCarousel({
                 touchDrag  : false,
@@ -77,7 +77,7 @@ $(window).resize(function () {
         });
     }
     });
-    userFeed.run();
+    // userFeed.run();
 
 
 

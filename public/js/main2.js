@@ -66,7 +66,7 @@ $(window).resize(function () {
         });
     }
     });
-    userFeed.run();
+    // userFeed.run();
 
 
 
